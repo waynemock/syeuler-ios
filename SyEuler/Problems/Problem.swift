@@ -43,7 +43,7 @@ class Problem: Identifiable {
 		return max(days, 1)
 	}
 
-	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Pe\(id).swift")! }
+	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id).swift")! }
 	public var url: URL { return URL(string: "https://projecteuler.net/problem=\(id)")! }
 }
 
