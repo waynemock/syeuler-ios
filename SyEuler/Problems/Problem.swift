@@ -1,5 +1,5 @@
 //
-//  EpBase.swift
+//  Problem.swift
 //  SyEuler
 //
 //  Created by Wayne Mock on 12/28/20.
@@ -43,7 +43,7 @@ class Problem: Identifiable {
 		return max(days, 1)
 	}
 
-	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id).swift")! }
+	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id).swift?ts=4")! }
 	public var url: URL { return URL(string: "https://projecteuler.net/problem=\(id)")! }
 }
 

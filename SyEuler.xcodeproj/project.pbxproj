@@ -13,7 +13,7 @@
 		B0533FAA259B84F3002B9581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533FA9259B84F3002B9581 /* Preview Assets.xcassets */; };
 		B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FB4259B84F3002B9581 /* SyEulerTests.swift */; };
 		B0533FC0259B84F3002B9581 /* SyEulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */; };
-		B0533FE7259B863C002B9581 /* Problem1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FE6259B863C002B9581 /* Problem1Test.swift */; };
+		B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FE6259B863C002B9581 /* Problem1Tests.swift */; };
 		B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF4259B87A2002B9581 /* Problem1.swift */; };
 		B0533FF7259B87A2002B9581 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF5259B87A2002B9581 /* Problem.swift */; };
 		B0533FFC259B87B1002B9581 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FFB259B87B1002B9581 /* Logger.swift */; };
@@ -26,6 +26,7 @@
 		B07BBCA1259BB5E300A8DE25 /* ProblemStartedOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCA0259BB5E300A8DE25 /* ProblemStartedOn.swift */; };
 		B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCB9259BC5B600A8DE25 /* Safari.swift */; };
 		B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */; };
+		B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,7 @@
 		B0533FBB259B84F3002B9581 /* SyEulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerUITests.swift; sourceTree = "<group>"; };
 		B0533FC1259B84F3002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0533FE6259B863C002B9581 /* Problem1Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem1Test.swift; sourceTree = "<group>"; };
+		B0533FE6259B863C002B9581 /* Problem1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem1Tests.swift; sourceTree = "<group>"; };
 		B0533FF4259B87A2002B9581 /* Problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem1.swift; sourceTree = "<group>"; };
 		B0533FF5259B87A2002B9581 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 		B0533FFB259B87B1002B9581 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		B07BBCA0259BB5E300A8DE25 /* ProblemStartedOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemStartedOn.swift; sourceTree = "<group>"; };
 		B07BBCB9259BC5B600A8DE25 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTitle.swift; sourceTree = "<group>"; };
+		B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				B0533FB6259B84F3002B9581 /* Info.plist */,
-				B0533FE6259B863C002B9581 /* Problem1Test.swift */,
+				B0533FE6259B863C002B9581 /* Problem1Tests.swift */,
+				B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -359,7 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533FE7259B863C002B9581 /* Problem1Test.swift in Sources */,
+				B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */,
+				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
 				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  Pe2.swift
+//  Problem2.swift
 //  SyEuler
 //
 //  Created by Wayne Mock on 12/29/20.
@@ -13,31 +13,26 @@ class Problem2: Problem {
 	public override var title: String { return "Even Fibonacci numbers" }
 	public override var summary: String { return "By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms." }
 
-	public override var state: State { return .inProgress }
+	public override var state: State { return .completed }
 	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Dec 29, 2020") }
+	public override var completedAt: Date?: Date? { return startedAt) }
 
 	/**
-	Returns the sum of all the multiples of 3 or 5 less than `below`.
+	Returns the sum of the even-valued terms in a Fibonacci sequence up to `target`.
 
-	Optimized to compute the result with the fewest iterations.
-
-	- Parameter below: Sums all multiples below this value.
+	- Parameter target: Sums all even terms up to this value.
 	*/
-	func compute(below: Int) -> Int {
-		guard below > 0 else { return 0 }
+	func compute(upTo target: Int) -> Int {
 		var sum = 0
-		for index in 1..<below {
-			let of3 = 3 * index
-			if of3 >= below {
-				break
+		var prev = 1
+		var next = 2
+		while next <= target {
+			if next % 2 == 0 {
+				sum += next
 			}
-			let of5 = 5 * index
-			if of5 < below {
-				sum += of5
-			}
-			if of3 % 5 != 0 {
-				sum += of3
-			}
+			let tmp = prev
+			prev = next
+			next += tmp
 		}
 		return sum
 	}
