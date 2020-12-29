@@ -9,9 +9,24 @@ import SwiftUI
 
 @main
 struct SyEulerApp: App {
-    var body: some Scene {
+	let problems = [
+		Problem2(),
+		Problem1(),
+	]
+
+	init() {
+		initAppearance()
+	}
+
+	private func initAppearance() {
+		let navBar = UINavigationBar.appearance()
+		navBar.largeTitleTextAttributes = [.foregroundColor: UIColor.main]
+		navBar.titleTextAttributes = [.foregroundColor: UIColor.main]
+	}
+
+	var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProblemList(problems: problems)
         }
     }
 }

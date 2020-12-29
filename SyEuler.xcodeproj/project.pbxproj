@@ -8,15 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA2259B84F1002B9581 /* SyEulerApp.swift */; };
-		B0533FA5259B84F1002B9581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA4259B84F1002B9581 /* ContentView.swift */; };
+		B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA4259B84F1002B9581 /* ProblemList.swift */; };
 		B0533FA7259B84F3002B9581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533FA6259B84F3002B9581 /* Assets.xcassets */; };
 		B0533FAA259B84F3002B9581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533FA9259B84F3002B9581 /* Preview Assets.xcassets */; };
 		B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FB4259B84F3002B9581 /* SyEulerTests.swift */; };
 		B0533FC0259B84F3002B9581 /* SyEulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */; };
-		B0533FE7259B863C002B9581 /* Pe1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FE6259B863C002B9581 /* Pe1Test.swift */; };
-		B0533FF6259B87A2002B9581 /* Pe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF4259B87A2002B9581 /* Pe1.swift */; };
-		B0533FF7259B87A2002B9581 /* PeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF5259B87A2002B9581 /* PeBase.swift */; };
+		B0533FE7259B863C002B9581 /* Problem1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FE6259B863C002B9581 /* Problem1Test.swift */; };
+		B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF4259B87A2002B9581 /* Problem1.swift */; };
+		B0533FF7259B87A2002B9581 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF5259B87A2002B9581 /* Problem.swift */; };
 		B0533FFC259B87B1002B9581 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FFB259B87B1002B9581 /* Logger.swift */; };
+		B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC70259B8F8200A8DE25 /* Problem2.swift */; };
+		B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC78259B92E000A8DE25 /* ProblemRow.swift */; };
+		B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC87259B981200A8DE25 /* UIColorExtension.swift */; };
+		B07BBC8F259B9F9200A8DE25 /* ProblemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC8E259B9F9200A8DE25 /* ProblemDetail.swift */; };
+		B07BBC97259BA17F00A8DE25 /* GeneralInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC96259BA17F00A8DE25 /* GeneralInfo.swift */; };
+		B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC9B259BB49800A8DE25 /* ProblemCompletedOn.swift */; };
+		B07BBCA1259BB5E300A8DE25 /* ProblemStartedOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCA0259BB5E300A8DE25 /* ProblemStartedOn.swift */; };
+		B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCB9259BC5B600A8DE25 /* Safari.swift */; };
+		B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +48,7 @@
 /* Begin PBXFileReference section */
 		B0533F9F259B84F1002B9581 /* SyEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0533FA2259B84F1002B9581 /* SyEulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerApp.swift; sourceTree = "<group>"; };
-		B0533FA4259B84F1002B9581 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0533FA4259B84F1002B9581 /* ProblemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemList.swift; sourceTree = "<group>"; };
 		B0533FA6259B84F3002B9581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0533FA9259B84F3002B9581 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B0533FAB259B84F3002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,10 +58,19 @@
 		B0533FBB259B84F3002B9581 /* SyEulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerUITests.swift; sourceTree = "<group>"; };
 		B0533FC1259B84F3002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0533FE6259B863C002B9581 /* Pe1Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pe1Test.swift; sourceTree = "<group>"; };
-		B0533FF4259B87A2002B9581 /* Pe1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pe1.swift; sourceTree = "<group>"; };
-		B0533FF5259B87A2002B9581 /* PeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeBase.swift; sourceTree = "<group>"; };
+		B0533FE6259B863C002B9581 /* Problem1Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem1Test.swift; sourceTree = "<group>"; };
+		B0533FF4259B87A2002B9581 /* Problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem1.swift; sourceTree = "<group>"; };
+		B0533FF5259B87A2002B9581 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 		B0533FFB259B87B1002B9581 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B07BBC70259B8F8200A8DE25 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
+		B07BBC78259B92E000A8DE25 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
+		B07BBC87259B981200A8DE25 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B07BBC8E259B9F9200A8DE25 /* ProblemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetail.swift; sourceTree = "<group>"; };
+		B07BBC96259BA17F00A8DE25 /* GeneralInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInfo.swift; sourceTree = "<group>"; };
+		B07BBC9B259BB49800A8DE25 /* ProblemCompletedOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemCompletedOn.swift; sourceTree = "<group>"; };
+		B07BBCA0259BB5E300A8DE25 /* ProblemStartedOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemStartedOn.swift; sourceTree = "<group>"; };
+		B07BBCB9259BC5B600A8DE25 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
+		B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,7 @@
 		B0533FA1259B84F1002B9581 /* SyEuler */ = {
 			isa = PBXGroup;
 			children = (
+				B07BBC86259B97D900A8DE25 /* Extensions */,
 				B0533FD3259B8520002B9581 /* Problems */,
 				B0534003259B87E1002B9581 /* Supporting */,
 				B0534004259B8801002B9581 /* Views */,
@@ -122,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B0533FB6259B84F3002B9581 /* Info.plist */,
-				B0533FE6259B863C002B9581 /* Pe1Test.swift */,
+				B0533FE6259B863C002B9581 /* Problem1Test.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -140,8 +159,9 @@
 		B0533FD3259B8520002B9581 /* Problems */ = {
 			isa = PBXGroup;
 			children = (
-				B0533FF4259B87A2002B9581 /* Pe1.swift */,
-				B0533FF5259B87A2002B9581 /* PeBase.swift */,
+				B0533FF5259B87A2002B9581 /* Problem.swift */,
+				B0533FF4259B87A2002B9581 /* Problem1.swift */,
+				B07BBC70259B8F8200A8DE25 /* Problem2.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -149,10 +169,10 @@
 		B0534003259B87E1002B9581 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				B0533FA8259B84F3002B9581 /* Preview Content */,
 				B0533FA6259B84F3002B9581 /* Assets.xcassets */,
 				B0533FAB259B84F3002B9581 /* Info.plist */,
 				B0533FFB259B87B1002B9581 /* Logger.swift */,
+				B0533FA8259B84F3002B9581 /* Preview Content */,
 				B0533FA2259B84F1002B9581 /* SyEulerApp.swift */,
 			);
 			path = Supporting;
@@ -161,9 +181,32 @@
 		B0534004259B8801002B9581 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B0533FA4259B84F1002B9581 /* ContentView.swift */,
+				B07BBC96259BA17F00A8DE25 /* GeneralInfo.swift */,
+				B07BBCBE259BC75700A8DE25 /* Problems */,
+				B07BBCB9259BC5B600A8DE25 /* Safari.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B07BBC86259B97D900A8DE25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B07BBC87259B981200A8DE25 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B07BBCBE259BC75700A8DE25 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				B07BBC9B259BB49800A8DE25 /* ProblemCompletedOn.swift */,
+				B07BBC8E259B9F9200A8DE25 /* ProblemDetail.swift */,
+				B0533FA4259B84F1002B9581 /* ProblemList.swift */,
+				B07BBC78259B92E000A8DE25 /* ProblemRow.swift */,
+				B07BBCA0259BB5E300A8DE25 /* ProblemStartedOn.swift */,
+				B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */,
+			);
+			path = Problems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,11 +338,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533FF6259B87A2002B9581 /* Pe1.swift in Sources */,
+				B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */,
+				B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */,
 				B0533FFC259B87B1002B9581 /* Logger.swift in Sources */,
-				B0533FF7259B87A2002B9581 /* PeBase.swift in Sources */,
-				B0533FA5259B84F1002B9581 /* ContentView.swift in Sources */,
+				B0533FF7259B87A2002B9581 /* Problem.swift in Sources */,
+				B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */,
+				B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */,
+				B07BBC8F259B9F9200A8DE25 /* ProblemDetail.swift in Sources */,
+				B07BBCA1259BB5E300A8DE25 /* ProblemStartedOn.swift in Sources */,
+				B07BBC97259BA17F00A8DE25 /* GeneralInfo.swift in Sources */,
+				B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */,
+				B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */,
+				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
 				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
+				B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533FE7259B863C002B9581 /* Pe1Test.swift in Sources */,
+				B0533FE7259B863C002B9581 /* Problem1Test.swift in Sources */,
 				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

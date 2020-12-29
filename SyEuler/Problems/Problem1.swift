@@ -7,11 +7,15 @@
 
 import Foundation
 
-struct Pe1: PeBase {
+class Problem1: Problem {
 
-	public var id: Int { return 1 }
-	public var title: String { return "Multiples of 3 and 5" }
-	public var description: String { return "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.\nFind the sum of all the multiples of 3 or 5 below 1000." }
+	public override var id: Int { return 1 }
+	public override var title: String { return "Multiples of 3 and 5" }
+	public override var summary: String { return "Find the sum of all the multiples of 3 or 5 below 1000." }
+
+	public override var state: State { return .completed }
+	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Dec 28, 2020") }
+	public override var completedAt: Date? { return Problem.dateFormatter.date(from: "Dec 28, 2020") }
 
 	/**
 	Returns the sum of all the multiples of 3 or 5 less than `below`.

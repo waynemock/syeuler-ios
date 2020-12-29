@@ -10,7 +10,7 @@ import XCTest
 
 class Ep1Test: XCTestCase {
 
-	let problem = Pe1()
+	let problem = Problem1()
 
 	func testBelowMinus1() throws {
 		XCTAssertEqual(problem.compute(below: -1), 0)
