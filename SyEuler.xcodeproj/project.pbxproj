@@ -7,74 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0533F1B259A923C002B9581 /* SyEulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F1A259A923C002B9581 /* SyEulerApp.swift */; };
-		B0533F1D259A923C002B9581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F1C259A923C002B9581 /* ContentView.swift */; };
-		B0533F1F259A923F002B9581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533F1E259A923F002B9581 /* Assets.xcassets */; };
-		B0533F22259A923F002B9581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533F21259A923F002B9581 /* Preview Assets.xcassets */; };
-		B0533F24259A923F002B9581 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F23259A923F002B9581 /* Persistence.swift */; };
-		B0533F27259A923F002B9581 /* SyEuler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0533F25259A923F002B9581 /* SyEuler.xcdatamodeld */; };
-		B0533F32259A923F002B9581 /* SyEulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F31259A923F002B9581 /* SyEulerTests.swift */; };
-		B0533F3D259A923F002B9581 /* SyEulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F3C259A923F002B9581 /* SyEulerUITests.swift */; };
-		B0533F6A259A9AB5002B9581 /* Pe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F69259A9AB5002B9581 /* Pe1.swift */; };
-		B0533F72259A9ADD002B9581 /* PeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F71259A9ADD002B9581 /* PeBase.swift */; };
-		B0533F77259A9B27002B9581 /* Pe1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F76259A9B27002B9581 /* Pe1Test.swift */; };
-		B0533F7D259A9D32002B9581 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F7C259A9D32002B9581 /* Logger.swift */; };
+		B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA2259B84F1002B9581 /* SyEulerApp.swift */; };
+		B0533FA5259B84F1002B9581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA4259B84F1002B9581 /* ContentView.swift */; };
+		B0533FA7259B84F3002B9581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533FA6259B84F3002B9581 /* Assets.xcassets */; };
+		B0533FAA259B84F3002B9581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533FA9259B84F3002B9581 /* Preview Assets.xcassets */; };
+		B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FB4259B84F3002B9581 /* SyEulerTests.swift */; };
+		B0533FC0259B84F3002B9581 /* SyEulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */; };
+		B0533FE7259B863C002B9581 /* Pe1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FE6259B863C002B9581 /* Pe1Test.swift */; };
+		B0533FF6259B87A2002B9581 /* Pe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF4259B87A2002B9581 /* Pe1.swift */; };
+		B0533FF7259B87A2002B9581 /* PeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF5259B87A2002B9581 /* PeBase.swift */; };
+		B0533FFC259B87B1002B9581 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FFB259B87B1002B9581 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B0533F2E259A923F002B9581 /* PBXContainerItemProxy */ = {
+		B0533FB1259B84F3002B9581 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B0533F0F259A923C002B9581 /* Project object */;
+			containerPortal = B0533F97259B84F1002B9581 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B0533F16259A923C002B9581;
+			remoteGlobalIDString = B0533F9E259B84F1002B9581;
 			remoteInfo = SyEuler;
 		};
-		B0533F39259A923F002B9581 /* PBXContainerItemProxy */ = {
+		B0533FBC259B84F3002B9581 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B0533F0F259A923C002B9581 /* Project object */;
+			containerPortal = B0533F97259B84F1002B9581 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B0533F16259A923C002B9581;
+			remoteGlobalIDString = B0533F9E259B84F1002B9581;
 			remoteInfo = SyEuler;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B0533F17259A923C002B9581 /* SyEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0533F1A259A923C002B9581 /* SyEulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerApp.swift; sourceTree = "<group>"; };
-		B0533F1C259A923C002B9581 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B0533F1E259A923F002B9581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B0533F21259A923F002B9581 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B0533F23259A923F002B9581 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		B0533F26259A923F002B9581 /* SyEuler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyEuler.xcdatamodel; sourceTree = "<group>"; };
-		B0533F28259A923F002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0533F2D259A923F002B9581 /* SyEulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0533F31259A923F002B9581 /* SyEulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerTests.swift; sourceTree = "<group>"; };
-		B0533F33259A923F002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0533F38259A923F002B9581 /* SyEulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0533F3C259A923F002B9581 /* SyEulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerUITests.swift; sourceTree = "<group>"; };
-		B0533F3E259A923F002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0533F69259A9AB5002B9581 /* Pe1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pe1.swift; sourceTree = "<group>"; };
-		B0533F71259A9ADD002B9581 /* PeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeBase.swift; sourceTree = "<group>"; };
-		B0533F76259A9B27002B9581 /* Pe1Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pe1Test.swift; sourceTree = "<group>"; };
-		B0533F7C259A9D32002B9581 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B0533F9F259B84F1002B9581 /* SyEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0533FA2259B84F1002B9581 /* SyEulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerApp.swift; sourceTree = "<group>"; };
+		B0533FA4259B84F1002B9581 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0533FA6259B84F3002B9581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0533FA9259B84F3002B9581 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0533FAB259B84F3002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0533FB0259B84F3002B9581 /* SyEulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0533FB4259B84F3002B9581 /* SyEulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerTests.swift; sourceTree = "<group>"; };
+		B0533FB6259B84F3002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0533FBB259B84F3002B9581 /* SyEulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerUITests.swift; sourceTree = "<group>"; };
+		B0533FC1259B84F3002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0533FE6259B863C002B9581 /* Pe1Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pe1Test.swift; sourceTree = "<group>"; };
+		B0533FF4259B87A2002B9581 /* Pe1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pe1.swift; sourceTree = "<group>"; };
+		B0533FF5259B87A2002B9581 /* PeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeBase.swift; sourceTree = "<group>"; };
+		B0533FFB259B87B1002B9581 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B0533F14259A923C002B9581 /* Frameworks */ = {
+		B0533F9C259B84F1002B9581 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0533F2A259A923F002B9581 /* Frameworks */ = {
+		B0533FAD259B84F3002B9581 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0533F35259A923F002B9581 /* Frameworks */ = {
+		B0533FB8259B84F3002B9581 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,96 +80,102 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B0533F0E259A923C002B9581 = {
+		B0533F96259B84F1002B9581 = {
 			isa = PBXGroup;
 			children = (
-				B0533F19259A923C002B9581 /* SyEuler */,
-				B0533F30259A923F002B9581 /* SyEulerTests */,
-				B0533F3B259A923F002B9581 /* SyEulerUITests */,
-				B0533F18259A923C002B9581 /* Products */,
+				B0533FA1259B84F1002B9581 /* SyEuler */,
+				B0533FB3259B84F3002B9581 /* SyEulerTests */,
+				B0533FBE259B84F3002B9581 /* SyEulerUITests */,
+				B0533FA0259B84F1002B9581 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B0533F18259A923C002B9581 /* Products */ = {
+		B0533FA0259B84F1002B9581 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F17259A923C002B9581 /* SyEuler.app */,
-				B0533F2D259A923F002B9581 /* SyEulerTests.xctest */,
-				B0533F38259A923F002B9581 /* SyEulerUITests.xctest */,
+				B0533F9F259B84F1002B9581 /* SyEuler.app */,
+				B0533FB0259B84F3002B9581 /* SyEulerTests.xctest */,
+				B0533FBB259B84F3002B9581 /* SyEulerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0533F19259A923C002B9581 /* SyEuler */ = {
+		B0533FA1259B84F1002B9581 /* SyEuler */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F1E259A923F002B9581 /* Assets.xcassets */,
-				B0533F1C259A923C002B9581 /* ContentView.swift */,
-				B0533F28259A923F002B9581 /* Info.plist */,
-				B0533F23259A923F002B9581 /* Persistence.swift */,
-				B0533F20259A923F002B9581 /* Preview Content */,
-				B0533F68259A9A9C002B9581 /* Problems */,
-				B0533F25259A923F002B9581 /* SyEuler.xcdatamodeld */,
-				B0533F1A259A923C002B9581 /* SyEulerApp.swift */,
-				B0533F7B259A9D12002B9581 /* Utilities */,
+				B0533FD3259B8520002B9581 /* Problems */,
+				B0534003259B87E1002B9581 /* Supporting */,
+				B0534004259B8801002B9581 /* Views */,
 			);
 			path = SyEuler;
 			sourceTree = "<group>";
 		};
-		B0533F20259A923F002B9581 /* Preview Content */ = {
+		B0533FA8259B84F3002B9581 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F21259A923F002B9581 /* Preview Assets.xcassets */,
+				B0533FA9259B84F3002B9581 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B0533F30259A923F002B9581 /* SyEulerTests */ = {
+		B0533FB3259B84F3002B9581 /* SyEulerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F31259A923F002B9581 /* SyEulerTests.swift */,
-				B0533F33259A923F002B9581 /* Info.plist */,
-				B0533F76259A9B27002B9581 /* Pe1Test.swift */,
+				B0533FB6259B84F3002B9581 /* Info.plist */,
+				B0533FE6259B863C002B9581 /* Pe1Test.swift */,
+				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
 			sourceTree = "<group>";
 		};
-		B0533F3B259A923F002B9581 /* SyEulerUITests */ = {
+		B0533FBE259B84F3002B9581 /* SyEulerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F3C259A923F002B9581 /* SyEulerUITests.swift */,
-				B0533F3E259A923F002B9581 /* Info.plist */,
+				B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */,
+				B0533FC1259B84F3002B9581 /* Info.plist */,
 			);
 			path = SyEulerUITests;
 			sourceTree = "<group>";
 		};
-		B0533F68259A9A9C002B9581 /* Problems */ = {
+		B0533FD3259B8520002B9581 /* Problems */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F69259A9AB5002B9581 /* Pe1.swift */,
-				B0533F71259A9ADD002B9581 /* PeBase.swift */,
+				B0533FF4259B87A2002B9581 /* Pe1.swift */,
+				B0533FF5259B87A2002B9581 /* PeBase.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
 		};
-		B0533F7B259A9D12002B9581 /* Utilities */ = {
+		B0534003259B87E1002B9581 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F7C259A9D32002B9581 /* Logger.swift */,
+				B0533FA8259B84F3002B9581 /* Preview Content */,
+				B0533FA6259B84F3002B9581 /* Assets.xcassets */,
+				B0533FAB259B84F3002B9581 /* Info.plist */,
+				B0533FFB259B87B1002B9581 /* Logger.swift */,
+				B0533FA2259B84F1002B9581 /* SyEulerApp.swift */,
 			);
-			path = Utilities;
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		B0534004259B8801002B9581 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0533FA4259B84F1002B9581 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0533F16259A923C002B9581 /* SyEuler */ = {
+		B0533F9E259B84F1002B9581 /* SyEuler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0533F41259A923F002B9581 /* Build configuration list for PBXNativeTarget "SyEuler" */;
+			buildConfigurationList = B0533FC4259B84F3002B9581 /* Build configuration list for PBXNativeTarget "SyEuler" */;
 			buildPhases = (
-				B0533F13259A923C002B9581 /* Sources */,
-				B0533F14259A923C002B9581 /* Frameworks */,
-				B0533F15259A923C002B9581 /* Resources */,
+				B0533F9B259B84F1002B9581 /* Sources */,
+				B0533F9C259B84F1002B9581 /* Frameworks */,
+				B0533F9D259B84F1002B9581 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -181,68 +183,68 @@
 			);
 			name = SyEuler;
 			productName = SyEuler;
-			productReference = B0533F17259A923C002B9581 /* SyEuler.app */;
+			productReference = B0533F9F259B84F1002B9581 /* SyEuler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B0533F2C259A923F002B9581 /* SyEulerTests */ = {
+		B0533FAF259B84F3002B9581 /* SyEulerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0533F44259A923F002B9581 /* Build configuration list for PBXNativeTarget "SyEulerTests" */;
+			buildConfigurationList = B0533FC7259B84F3002B9581 /* Build configuration list for PBXNativeTarget "SyEulerTests" */;
 			buildPhases = (
-				B0533F29259A923F002B9581 /* Sources */,
-				B0533F2A259A923F002B9581 /* Frameworks */,
-				B0533F2B259A923F002B9581 /* Resources */,
+				B0533FAC259B84F3002B9581 /* Sources */,
+				B0533FAD259B84F3002B9581 /* Frameworks */,
+				B0533FAE259B84F3002B9581 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0533F2F259A923F002B9581 /* PBXTargetDependency */,
+				B0533FB2259B84F3002B9581 /* PBXTargetDependency */,
 			);
 			name = SyEulerTests;
 			productName = SyEulerTests;
-			productReference = B0533F2D259A923F002B9581 /* SyEulerTests.xctest */;
+			productReference = B0533FB0259B84F3002B9581 /* SyEulerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B0533F37259A923F002B9581 /* SyEulerUITests */ = {
+		B0533FBA259B84F3002B9581 /* SyEulerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0533F47259A923F002B9581 /* Build configuration list for PBXNativeTarget "SyEulerUITests" */;
+			buildConfigurationList = B0533FCA259B84F3002B9581 /* Build configuration list for PBXNativeTarget "SyEulerUITests" */;
 			buildPhases = (
-				B0533F34259A923F002B9581 /* Sources */,
-				B0533F35259A923F002B9581 /* Frameworks */,
-				B0533F36259A923F002B9581 /* Resources */,
+				B0533FB7259B84F3002B9581 /* Sources */,
+				B0533FB8259B84F3002B9581 /* Frameworks */,
+				B0533FB9259B84F3002B9581 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B0533F3A259A923F002B9581 /* PBXTargetDependency */,
+				B0533FBD259B84F3002B9581 /* PBXTargetDependency */,
 			);
 			name = SyEulerUITests;
 			productName = SyEulerUITests;
-			productReference = B0533F38259A923F002B9581 /* SyEulerUITests.xctest */;
+			productReference = B0533FBB259B84F3002B9581 /* SyEulerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B0533F0F259A923C002B9581 /* Project object */ = {
+		B0533F97259B84F1002B9581 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					B0533F16259A923C002B9581 = {
+					B0533F9E259B84F1002B9581 = {
 						CreatedOnToolsVersion = 12.3;
 					};
-					B0533F2C259A923F002B9581 = {
+					B0533FAF259B84F3002B9581 = {
 						CreatedOnToolsVersion = 12.3;
-						TestTargetID = B0533F16259A923C002B9581;
+						TestTargetID = B0533F9E259B84F1002B9581;
 					};
-					B0533F37259A923F002B9581 = {
+					B0533FBA259B84F3002B9581 = {
 						CreatedOnToolsVersion = 12.3;
-						TestTargetID = B0533F16259A923C002B9581;
+						TestTargetID = B0533F9E259B84F1002B9581;
 					};
 				};
 			};
-			buildConfigurationList = B0533F12259A923C002B9581 /* Build configuration list for PBXProject "SyEuler" */;
+			buildConfigurationList = B0533F9A259B84F1002B9581 /* Build configuration list for PBXProject "SyEuler" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -250,36 +252,36 @@
 				en,
 				Base,
 			);
-			mainGroup = B0533F0E259A923C002B9581;
-			productRefGroup = B0533F18259A923C002B9581 /* Products */;
+			mainGroup = B0533F96259B84F1002B9581;
+			productRefGroup = B0533FA0259B84F1002B9581 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0533F16259A923C002B9581 /* SyEuler */,
-				B0533F2C259A923F002B9581 /* SyEulerTests */,
-				B0533F37259A923F002B9581 /* SyEulerUITests */,
+				B0533F9E259B84F1002B9581 /* SyEuler */,
+				B0533FAF259B84F3002B9581 /* SyEulerTests */,
+				B0533FBA259B84F3002B9581 /* SyEulerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B0533F15259A923C002B9581 /* Resources */ = {
+		B0533F9D259B84F1002B9581 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533F22259A923F002B9581 /* Preview Assets.xcassets in Resources */,
-				B0533F1F259A923F002B9581 /* Assets.xcassets in Resources */,
+				B0533FAA259B84F3002B9581 /* Preview Assets.xcassets in Resources */,
+				B0533FA7259B84F3002B9581 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0533F2B259A923F002B9581 /* Resources */ = {
+		B0533FAE259B84F3002B9581 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0533F36259A923F002B9581 /* Resources */ = {
+		B0533FB9259B84F3002B9581 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,54 +291,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B0533F13259A923C002B9581 /* Sources */ = {
+		B0533F9B259B84F1002B9581 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533F6A259A9AB5002B9581 /* Pe1.swift in Sources */,
-				B0533F24259A923F002B9581 /* Persistence.swift in Sources */,
-				B0533F27259A923F002B9581 /* SyEuler.xcdatamodeld in Sources */,
-				B0533F72259A9ADD002B9581 /* PeBase.swift in Sources */,
-				B0533F7D259A9D32002B9581 /* Logger.swift in Sources */,
-				B0533F1D259A923C002B9581 /* ContentView.swift in Sources */,
-				B0533F1B259A923C002B9581 /* SyEulerApp.swift in Sources */,
+				B0533FF6259B87A2002B9581 /* Pe1.swift in Sources */,
+				B0533FFC259B87B1002B9581 /* Logger.swift in Sources */,
+				B0533FF7259B87A2002B9581 /* PeBase.swift in Sources */,
+				B0533FA5259B84F1002B9581 /* ContentView.swift in Sources */,
+				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0533F29259A923F002B9581 /* Sources */ = {
+		B0533FAC259B84F3002B9581 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533F77259A9B27002B9581 /* Pe1Test.swift in Sources */,
-				B0533F32259A923F002B9581 /* SyEulerTests.swift in Sources */,
+				B0533FE7259B863C002B9581 /* Pe1Test.swift in Sources */,
+				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0533F34259A923F002B9581 /* Sources */ = {
+		B0533FB7259B84F3002B9581 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0533F3D259A923F002B9581 /* SyEulerUITests.swift in Sources */,
+				B0533FC0259B84F3002B9581 /* SyEulerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B0533F2F259A923F002B9581 /* PBXTargetDependency */ = {
+		B0533FB2259B84F3002B9581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0533F16259A923C002B9581 /* SyEuler */;
-			targetProxy = B0533F2E259A923F002B9581 /* PBXContainerItemProxy */;
+			target = B0533F9E259B84F1002B9581 /* SyEuler */;
+			targetProxy = B0533FB1259B84F3002B9581 /* PBXContainerItemProxy */;
 		};
-		B0533F3A259A923F002B9581 /* PBXTargetDependency */ = {
+		B0533FBD259B84F3002B9581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0533F16259A923C002B9581 /* SyEuler */;
-			targetProxy = B0533F39259A923F002B9581 /* PBXContainerItemProxy */;
+			target = B0533F9E259B84F1002B9581 /* SyEuler */;
+			targetProxy = B0533FBC259B84F3002B9581 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B0533F3F259A923F002B9581 /* Debug */ = {
+		B0533FC2259B84F3002B9581 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,7 +397,7 @@
 			};
 			name = Debug;
 		};
-		B0533F40259A923F002B9581 /* Release */ = {
+		B0533FC3259B84F3002B9581 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -452,16 +452,16 @@
 			};
 			name = Release;
 		};
-		B0533F42259A923F002B9581 /* Debug */ = {
+		B0533FC5259B84F3002B9581 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Supporting/Preview Content\"";
 				DEVELOPMENT_TEAM = PXZ9H8P4AQ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SyEuler/Info.plist;
+				INFOPLIST_FILE = SyEuler/Supporting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,16 +474,16 @@
 			};
 			name = Debug;
 		};
-		B0533F43259A923F002B9581 /* Release */ = {
+		B0533FC6259B84F3002B9581 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Supporting/Preview Content\"";
 				DEVELOPMENT_TEAM = PXZ9H8P4AQ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SyEuler/Info.plist;
+				INFOPLIST_FILE = SyEuler/Supporting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,7 +496,7 @@
 			};
 			name = Release;
 		};
-		B0533F45259A923F002B9581 /* Debug */ = {
+		B0533FC8259B84F3002B9581 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -518,7 +518,7 @@
 			};
 			name = Debug;
 		};
-		B0533F46259A923F002B9581 /* Release */ = {
+		B0533FC9259B84F3002B9581 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -540,7 +540,7 @@
 			};
 			name = Release;
 		};
-		B0533F48259A923F002B9581 /* Debug */ = {
+		B0533FCB259B84F3002B9581 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -560,7 +560,7 @@
 			};
 			name = Debug;
 		};
-		B0533F49259A923F002B9581 /* Release */ = {
+		B0533FCC259B84F3002B9581 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -583,56 +583,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0533F12259A923C002B9581 /* Build configuration list for PBXProject "SyEuler" */ = {
+		B0533F9A259B84F1002B9581 /* Build configuration list for PBXProject "SyEuler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0533F3F259A923F002B9581 /* Debug */,
-				B0533F40259A923F002B9581 /* Release */,
+				B0533FC2259B84F3002B9581 /* Debug */,
+				B0533FC3259B84F3002B9581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0533F41259A923F002B9581 /* Build configuration list for PBXNativeTarget "SyEuler" */ = {
+		B0533FC4259B84F3002B9581 /* Build configuration list for PBXNativeTarget "SyEuler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0533F42259A923F002B9581 /* Debug */,
-				B0533F43259A923F002B9581 /* Release */,
+				B0533FC5259B84F3002B9581 /* Debug */,
+				B0533FC6259B84F3002B9581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0533F44259A923F002B9581 /* Build configuration list for PBXNativeTarget "SyEulerTests" */ = {
+		B0533FC7259B84F3002B9581 /* Build configuration list for PBXNativeTarget "SyEulerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0533F45259A923F002B9581 /* Debug */,
-				B0533F46259A923F002B9581 /* Release */,
+				B0533FC8259B84F3002B9581 /* Debug */,
+				B0533FC9259B84F3002B9581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0533F47259A923F002B9581 /* Build configuration list for PBXNativeTarget "SyEulerUITests" */ = {
+		B0533FCA259B84F3002B9581 /* Build configuration list for PBXNativeTarget "SyEulerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0533F48259A923F002B9581 /* Debug */,
-				B0533F49259A923F002B9581 /* Release */,
+				B0533FCB259B84F3002B9581 /* Debug */,
+				B0533FCC259B84F3002B9581 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B0533F25259A923F002B9581 /* SyEuler.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B0533F26259A923F002B9581 /* SyEuler.xcdatamodel */,
-			);
-			currentVersion = B0533F26259A923F002B9581 /* SyEuler.xcdatamodel */;
-			path = SyEuler.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = B0533F0F259A923C002B9581 /* Project object */;
+	rootObject = B0533F97259B84F1002B9581 /* Project object */;
 }
