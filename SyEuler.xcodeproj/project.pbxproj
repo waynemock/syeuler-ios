@@ -15,6 +15,10 @@
 		B0533F27259A923F002B9581 /* SyEuler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0533F25259A923F002B9581 /* SyEuler.xcdatamodeld */; };
 		B0533F32259A923F002B9581 /* SyEulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F31259A923F002B9581 /* SyEulerTests.swift */; };
 		B0533F3D259A923F002B9581 /* SyEulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F3C259A923F002B9581 /* SyEulerUITests.swift */; };
+		B0533F6A259A9AB5002B9581 /* Pe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F69259A9AB5002B9581 /* Pe1.swift */; };
+		B0533F72259A9ADD002B9581 /* PeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F71259A9ADD002B9581 /* PeBase.swift */; };
+		B0533F77259A9B27002B9581 /* Pe1Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F76259A9B27002B9581 /* Pe1Test.swift */; };
+		B0533F7D259A9D32002B9581 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533F7C259A9D32002B9581 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B0533F38259A923F002B9581 /* SyEulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyEulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0533F3C259A923F002B9581 /* SyEulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerUITests.swift; sourceTree = "<group>"; };
 		B0533F3E259A923F002B9581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0533F69259A9AB5002B9581 /* Pe1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pe1.swift; sourceTree = "<group>"; };
+		B0533F71259A9ADD002B9581 /* PeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeBase.swift; sourceTree = "<group>"; };
+		B0533F76259A9B27002B9581 /* Pe1Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pe1Test.swift; sourceTree = "<group>"; };
+		B0533F7C259A9D32002B9581 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,15 @@
 		B0533F19259A923C002B9581 /* SyEuler */ = {
 			isa = PBXGroup;
 			children = (
-				B0533F1A259A923C002B9581 /* SyEulerApp.swift */,
-				B0533F1C259A923C002B9581 /* ContentView.swift */,
 				B0533F1E259A923F002B9581 /* Assets.xcassets */,
-				B0533F23259A923F002B9581 /* Persistence.swift */,
+				B0533F1C259A923C002B9581 /* ContentView.swift */,
 				B0533F28259A923F002B9581 /* Info.plist */,
-				B0533F25259A923F002B9581 /* SyEuler.xcdatamodeld */,
+				B0533F23259A923F002B9581 /* Persistence.swift */,
 				B0533F20259A923F002B9581 /* Preview Content */,
+				B0533F68259A9A9C002B9581 /* Problems */,
+				B0533F25259A923F002B9581 /* SyEuler.xcdatamodeld */,
+				B0533F1A259A923C002B9581 /* SyEulerApp.swift */,
+				B0533F7B259A9D12002B9581 /* Utilities */,
 			);
 			path = SyEuler;
 			sourceTree = "<group>";
@@ -123,6 +133,7 @@
 			children = (
 				B0533F31259A923F002B9581 /* SyEulerTests.swift */,
 				B0533F33259A923F002B9581 /* Info.plist */,
+				B0533F76259A9B27002B9581 /* Pe1Test.swift */,
 			);
 			path = SyEulerTests;
 			sourceTree = "<group>";
@@ -134,6 +145,23 @@
 				B0533F3E259A923F002B9581 /* Info.plist */,
 			);
 			path = SyEulerUITests;
+			sourceTree = "<group>";
+		};
+		B0533F68259A9A9C002B9581 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				B0533F69259A9AB5002B9581 /* Pe1.swift */,
+				B0533F71259A9ADD002B9581 /* PeBase.swift */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
+		B0533F7B259A9D12002B9581 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B0533F7C259A9D32002B9581 /* Logger.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0533F6A259A9AB5002B9581 /* Pe1.swift in Sources */,
 				B0533F24259A923F002B9581 /* Persistence.swift in Sources */,
 				B0533F27259A923F002B9581 /* SyEuler.xcdatamodeld in Sources */,
+				B0533F72259A9ADD002B9581 /* PeBase.swift in Sources */,
+				B0533F7D259A9D32002B9581 /* Logger.swift in Sources */,
 				B0533F1D259A923C002B9581 /* ContentView.swift in Sources */,
 				B0533F1B259A923C002B9581 /* SyEulerApp.swift in Sources */,
 			);
@@ -276,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0533F77259A9B27002B9581 /* Pe1Test.swift in Sources */,
 				B0533F32259A923F002B9581 /* SyEulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
