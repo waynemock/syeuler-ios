@@ -15,7 +15,7 @@ class Problem2: Problem {
 
 	public override var state: State { return .completed }
 	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Dec 29, 2020") }
-	public override var completedAt: Date?: Date? { return startedAt) }
+	public override var completedAt: Date? { return startedAt }
 
 	/**
 	Returns the sum of the even-valued terms in a Fibonacci sequence up to `target`.
