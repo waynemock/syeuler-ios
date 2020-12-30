@@ -1,5 +1,5 @@
 //
-//  Ep1Test.swift
+//  Problem1Tests.swift
 //  SyEulerTests
 //
 //  Created by Wayne Mock on 12/28/20.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import SyEuler
 
-class Ep1Test: XCTestCase {
+class Problem1Tests: XCTestCase {
 
 	let problem = Problem1()
 

@@ -21,11 +21,9 @@ struct ProblemDetail: View {
 		ScrollView {
 			VStack(alignment: .leading, spacing: 8.0) {
 				ProblemTitle(problem: problem)
-					.foregroundColor(.white)
 				Text(problem.summary)
-					.font(.subheadline)
-					.foregroundColor(.white)
 			}
+			.foregroundColor(.white)
 			.padding()
 			.background(Color.main)
 
@@ -40,15 +38,14 @@ struct ProblemDetail: View {
 					Button(action: { activeSheet = .euler }) {
 						Text("Project Euler")
 							.underline()
-							.foregroundColor(.white)
 					}
 					Spacer()
 					Button(action: { activeSheet = .github }) {
 						Text("Source code")
 							.underline()
-							.foregroundColor(.white)
 					}
 				}
+				.foregroundColor(.white)
 			}
 			.padding(.horizontal)
 			.padding(.vertical, 8)
@@ -67,6 +64,7 @@ struct ProblemDetail: View {
 struct ProblemDetail_Previews: PreviewProvider {
     static var previews: some View {
 		ProblemDetail(problem: Problem1())
+			.preferredColorScheme(.dark)
 		ProblemDetail(problem: Problem2())
     }
 }
