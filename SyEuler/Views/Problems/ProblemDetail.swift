@@ -10,10 +10,14 @@ import SwiftUI
 struct ProblemDetail: View {
 	let problem: Problem
 
+	@State private var state = GoButton.GoState.done
 	@State private var activeSheet: Sheet?
 	@State private var amount = ""
-	@State private var answer: Int?
-	@State private var elapsed = TimeInterval(0)
+	@State private var answer: String?
+	@State private var elapsed: TimeInterval?
+	@State private var percentComplete: Double?
+
+	private let queue = ProblemQueue()
 
 	enum Sheet: Identifiable {
 		case euler, github
@@ -21,13 +25,30 @@ struct ProblemDetail: View {
 	}
 
 	func go() {
-		answer = nil
-		if let amount = Int(amount) {
-			let start = Date()
-			answer = problem.compute(target: amount)
-			elapsed = start.distance(to: Date()) * 1000
+		switch state {
+		case .done:
+			if queue.operationCount == 0 {
+				answer = nil
+				elapsed = nil
+				percentComplete = nil
+				state = .running
+				queue.start(op: problem.getOp(inputs: [amount]) { result in
+					answer = result.answer
+					percentComplete = result.precentComplete
+					elapsed = result.elapsed
+					if result.isDone {
+						state = .done
+					}
+				})
+			}
+		case .running:
+			state = .stopping
+			queue.stop()
+		case .stopping:
+			break
 		}
 	}
+
 
 	var body: some View {
 		ScrollView {
@@ -75,20 +96,33 @@ struct ProblemDetail: View {
 							.textFieldStyle(RoundedBorderTextFieldStyle())
 							.disableAutocorrection(true)
 							.keyboardType(.numberPad)
-						Spacer()
-						GoButton(action: go)
+							.disabled(!state.isDone)
+						if amount.count > 0 {
+							Spacer()
+							GoButton(state: state, action: go)
+						}
 					}
 					.padding()
 				}
 				.background(Color.main)
-				if let answer = answer {
-					VStack(alignment: .leading) {
-						Text("Answer: \(answer)")
-						Text("\(elapsed.roundTo2) ms")
-							.font(.footnote)
+				VStack(alignment: .leading) {
+					if let answer = answer {
+						Text(answer)
 					}
-					.padding(.horizontal)
+					if let percentComplete = percentComplete {
+						ProgressView(value: percentComplete)
+					}
+					if let elapsed = elapsed {
+						if elapsed < 1 {
+							Text("\((elapsed * 1000).roundTo1) ms")
+								.font(.footnote)
+						} else {
+							Text("\(elapsed.roundTo0) seconds")
+								.font(.footnote)
+						}
+					}
 				}
+				.padding(.horizontal)
 			}
 
 		}
@@ -99,6 +133,9 @@ struct ProblemDetail: View {
 			}
 		}
 		.navigationBarTitle(Text(""), displayMode: .inline)
+		.onDisappear {
+			queue.stop()
+		}
     }
 }
 

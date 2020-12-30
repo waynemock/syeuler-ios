@@ -1,21 +1,22 @@
 //
-//  Problem1.swift
-//  SyLinguist
+//  Problem1Op.swift
+//  SyEuler
 //
-//  Created by Wayne Mock on 12/28/20.
+//  Created by Wayne Mock on 12/30/20.
 //
 
 import Foundation
 
-class Problem1: Problem {
+class Problem1Op: ProblemIntOp {
 	/**
 	Returns the sum of all the multiples of 3 or 5 below the `target`.
 
 	Optimized to compute the result with the fewest iterations.
 
 	- Parameter target: Sums all multiples below this value.
+	- Returns: The sum, or `nil` if cancelled before completion.
 	*/
-	override func compute(target: Int) -> Int {
+	override func compute(target: Int) -> Int? {
 		guard target > 3 else { return 0 }
 		let iterations = Int(ceil(Double(target) / 3))
 		var sum = 0
@@ -30,16 +31,11 @@ class Problem1: Problem {
 			if of3 % 5 != 0 {
 				sum += of3
 			}
+			if isCancelled {
+				return nil
+			}
+			report(progress: Double(index) / Double(iterations))
 		}
 		return sum
 	}
-
-	public override var id: Int { return 1 }
-	public override var title: String { return "Multiples of 3 and 5" }
-	public override var summary: String { return "Find the sum of all the multiples of 3 or 5 below 1000." }
-	
-	public override var state: State { return .completed }
-	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Dec 28, 2020") }
-	public override var completedAt: Date? { return startedAt }
-
 }
