@@ -10,77 +10,77 @@ import XCTest
 
 class Problem1Tests: XCTestCase {
 
-	let problem = Problem1()
+	let problem = Problem1Op(inputs: []) { results in }
 
-	func testBelowMinus1() throws {
-		XCTAssertEqual(problem.compute(below: -1), 0)
+	func testtargetMinus1() throws {
+		XCTAssertEqual(problem.compute(target: -1), 0)
 	}
 
-	func testBelow0() throws {
-		XCTAssertEqual(problem.compute(below: 0), 0)
+	func testtarget0() throws {
+		XCTAssertEqual(problem.compute(target: 0), 0)
 	}
 
-	func testBelow1() throws {
-		XCTAssertEqual(problem.compute(below: 1), 0)
+	func testtarget1() throws {
+		XCTAssertEqual(problem.compute(target: 1), 0)
 	}
 
-	func testBelow2() throws {
-		XCTAssertEqual(problem.compute(below: 2), 0)
+	func testtarget2() throws {
+		XCTAssertEqual(problem.compute(target: 2), 0)
 	}
 
-	func testBelow3() throws {
-		XCTAssertEqual(problem.compute(below: 3), 0)
+	func testtarget3() throws {
+		XCTAssertEqual(problem.compute(target: 3), 0)
 	}
 
-	func testBelow4() throws {
-		XCTAssertEqual(problem.compute(below: 4), 3)
+	func testtarget4() throws {
+		XCTAssertEqual(problem.compute(target: 4), 3)
 	}
 
-	func testBelow6() throws {
-		XCTAssertEqual(problem.compute(below: 6), 8)
+	func testtarget6() throws {
+		XCTAssertEqual(problem.compute(target: 6), 8)
 	}
 
-	func testBelow10() throws {
-		XCTAssertEqual(problem.compute(below: 10), 23)
+	func testtarget10() throws {
+		XCTAssertEqual(problem.compute(target: 10), 23)
 	}
 
-	func testBelow15() throws {
-		XCTAssertEqual(problem.compute(below: 15), 45)
+	func testtarget15() throws {
+		XCTAssertEqual(problem.compute(target: 15), 45)
 	}
 
-	func testBelow18() throws {
-		XCTAssertEqual(problem.compute(below: 18), 60)
+	func testtarget18() throws {
+		XCTAssertEqual(problem.compute(target: 18), 60)
 	}
 
-	func testBelow20() throws {
-		XCTAssertEqual(problem.compute(below: 20), 78)
+	func testtarget20() throws {
+		XCTAssertEqual(problem.compute(target: 20), 78)
 	}
 
-	func testBelow21() throws {
-		XCTAssertEqual(problem.compute(below: 21), 98)
+	func testtarget21() throws {
+		XCTAssertEqual(problem.compute(target: 21), 98)
 	}
 
-	func testBelow24() throws {
-		XCTAssertEqual(problem.compute(below: 24), 119)
+	func testtarget24() throws {
+		XCTAssertEqual(problem.compute(target: 24), 119)
 	}
 
-	func testBelow25() throws {
-		XCTAssertEqual(problem.compute(below: 25), 143)
+	func testtarget25() throws {
+		XCTAssertEqual(problem.compute(target: 25), 143)
 	}
 
-	func testBelow26() throws {
-		XCTAssertEqual(problem.compute(below: 26), 168)
+	func testtarget26() throws {
+		XCTAssertEqual(problem.compute(target: 26), 168)
 	}
 
-	func testBelow28() throws {
-		XCTAssertEqual(problem.compute(below: 28), 195)
+	func testtarget28() throws {
+		XCTAssertEqual(problem.compute(target: 28), 195)
 	}
 
-	func testBelow31() throws {
-		XCTAssertEqual(problem.compute(below: 31), 225)
+	func testtarget31() throws {
+		XCTAssertEqual(problem.compute(target: 31), 225)
 	}
 
-	func testBelow1000() throws {
-		XCTAssertEqual(problem.compute(below: 1000), 233168)
+	func testtarget1000() throws {
+		XCTAssertEqual(problem.compute(target: 1000), 233168)
     }
 }

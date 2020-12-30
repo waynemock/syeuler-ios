@@ -15,4 +15,8 @@ class Problem2: Problem {
 	public override var state: State { return .completed }
 	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Dec 29, 2020") }
 	public override var completedAt: Date? { return startedAt }
+
+	public override func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
+		return Problem2Op(inputs: inputs, completion: completion)
+	}
 }

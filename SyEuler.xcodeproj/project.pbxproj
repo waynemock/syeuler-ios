@@ -27,9 +27,12 @@
 		B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCB9259BC5B600A8DE25 /* Safari.swift */; };
 		B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */; };
 		B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */; };
-		B07BBCEB259C081900A8DE25 /* Problem1.solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCEA259C081900A8DE25 /* Problem1.solution.swift */; };
-		B07BBCF0259C08A700A8DE25 /* Problem2.solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCEF259C08A700A8DE25 /* Problem2.solution.swift */; };
 		B07BBCF6259C0C7E00A8DE25 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07BBCF5259C0C7E00A8DE25 /* Launch Screen.storyboard */; };
+		B07BBD07259C163E00A8DE25 /* Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD06259C163E00A8DE25 /* Problem3.swift */; };
+		B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD0E259C234300A8DE25 /* GoButton.swift */; };
+		B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */; };
+		B07BBD27259D20D100A8DE25 /* Problem1Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD26259D20D100A8DE25 /* Problem1Op.swift */; };
+		B07BBD2F259D20F900A8DE25 /* Problem2Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +79,12 @@
 		B07BBCB9259BC5B600A8DE25 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTitle.swift; sourceTree = "<group>"; };
 		B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2Tests.swift; sourceTree = "<group>"; };
-		B07BBCEA259C081900A8DE25 /* Problem1.solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem1.solution.swift; sourceTree = "<group>"; };
-		B07BBCEF259C08A700A8DE25 /* Problem2.solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.solution.swift; sourceTree = "<group>"; };
 		B07BBCF5259C0C7E00A8DE25 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B07BBD06259C163E00A8DE25 /* Problem3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3.swift; sourceTree = "<group>"; };
+		B07BBD0E259C234300A8DE25 /* GoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoButton.swift; sourceTree = "<group>"; };
+		B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		B07BBD26259D20D100A8DE25 /* Problem1Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem1Op.swift; sourceTree = "<group>"; };
+		B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2Op.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +165,8 @@
 		B0533FBE259B84F3002B9581 /* SyEulerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */,
 				B0533FC1259B84F3002B9581 /* Info.plist */,
+				B0533FBF259B84F3002B9581 /* SyEulerUITests.swift */,
 			);
 			path = SyEulerUITests;
 			sourceTree = "<group>";
@@ -168,11 +174,9 @@
 		B0533FD3259B8520002B9581 /* Problems */ = {
 			isa = PBXGroup;
 			children = (
-				B0533FF5259B87A2002B9581 /* Problem.swift */,
-				B0533FF4259B87A2002B9581 /* Problem1.swift */,
-				B07BBCEA259C081900A8DE25 /* Problem1.solution.swift */,
-				B07BBC70259B8F8200A8DE25 /* Problem2.swift */,
-				B07BBCEF259C08A700A8DE25 /* Problem2.solution.swift */,
+				B07BBD36259D212700A8DE25 /* Helpers */,
+				B07BBD26259D20D100A8DE25 /* Problem1Op.swift */,
+				B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -182,10 +186,10 @@
 			children = (
 				B0533FA6259B84F3002B9581 /* Assets.xcassets */,
 				B0533FAB259B84F3002B9581 /* Info.plist */,
+				B07BBCF5259C0C7E00A8DE25 /* Launch Screen.storyboard */,
 				B0533FFB259B87B1002B9581 /* Logger.swift */,
 				B0533FA8259B84F3002B9581 /* Preview Content */,
 				B0533FA2259B84F1002B9581 /* SyEulerApp.swift */,
-				B07BBCF5259C0C7E00A8DE25 /* Launch Screen.storyboard */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -202,6 +206,7 @@
 		B07BBC86259B97D900A8DE25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */,
 				B07BBC87259B981200A8DE25 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
@@ -224,9 +229,21 @@
 			isa = PBXGroup;
 			children = (
 				B07BBC96259BA17F00A8DE25 /* GeneralInfo.swift */,
+				B07BBD0E259C234300A8DE25 /* GoButton.swift */,
 				B07BBCB9259BC5B600A8DE25 /* Safari.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B07BBD36259D212700A8DE25 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B0533FF5259B87A2002B9581 /* Problem.swift */,
+				B0533FF4259B87A2002B9581 /* Problem1.swift */,
+				B07BBC70259B8F8200A8DE25 /* Problem2.swift */,
+				B07BBD06259C163E00A8DE25 /* Problem3.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,10 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07BBCF0259C08A700A8DE25 /* Problem2.solution.swift in Sources */,
 				B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */,
+				B07BBD27259D20D100A8DE25 /* Problem1Op.swift in Sources */,
 				B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */,
 				B0533FFC259B87B1002B9581 /* Logger.swift in Sources */,
+				B07BBD2F259D20F900A8DE25 /* Problem2Op.swift in Sources */,
 				B0533FF7259B87A2002B9581 /* Problem.swift in Sources */,
 				B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */,
 				B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */,
@@ -371,8 +389,10 @@
 				B07BBC97259BA17F00A8DE25 /* GeneralInfo.swift in Sources */,
 				B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */,
 				B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */,
+				B07BBD07259C163E00A8DE25 /* Problem3.swift in Sources */,
+				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
 				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
-				B07BBCEB259C081900A8DE25 /* Problem1.solution.swift in Sources */,
+				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
 				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
 				B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */,
 			);
@@ -463,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -518,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -543,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -566,7 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

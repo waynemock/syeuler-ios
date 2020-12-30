@@ -1,21 +1,22 @@
 //
-//  Problem1.solution.swift
+//  Problem1Op.swift
 //  SyEuler
 //
-//  Created by Wayne Mock on 12/29/20.
+//  Created by Wayne Mock on 12/30/20.
 //
 
 import Foundation
 
-extension Problem1 {
+class Problem1Op: ProblemIntOp {
 	/**
 	Returns the sum of all the multiples of 3 or 5 below the `target`.
 
 	Optimized to compute the result with the fewest iterations.
 
 	- Parameter target: Sums all multiples below this value.
+	- Returns: The sum, or `nil` if cancelled before completion.
 	*/
-	func compute(below target: Int) -> Int {
+	override func compute(target: Int) -> Int? {
 		guard target > 3 else { return 0 }
 		let iterations = Int(ceil(Double(target) / 3))
 		var sum = 0
@@ -30,6 +31,10 @@ extension Problem1 {
 			if of3 % 5 != 0 {
 				sum += of3
 			}
+			if isCancelled {
+				return nil
+			}
+			report(progress: Double(index) / Double(iterations))
 		}
 		return sum
 	}
