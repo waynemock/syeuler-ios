@@ -47,7 +47,7 @@ class Problem: Identifiable {
 	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id)Op.swift?ts=2")! }
 
 	public func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
-		return ProblemOp(inputs: inputs, completion: completion)
+		return ProblemNoOp(inputs: inputs, completion: completion)
 	}
 }
 
@@ -97,6 +97,15 @@ class ProblemOp: Operation {
 
 	func format(int value: Int) -> String {
 		return ProblemOp.intFormatter.string(from: NSNumber(value: value)) ?? "\(value)"
+	}
+}
+
+class ProblemNoOp: ProblemOp {
+	override func main() {
+		super.main()
+		results.isDone = true
+		results.answer = "No implementation yet..."
+		completion(results)
 	}
 }
 
