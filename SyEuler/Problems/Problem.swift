@@ -32,7 +32,7 @@ class Problem: Identifiable {
 	public var id: Int { return 0 }
 	public var title: String { return "" }
 	public var summary: String { return "" }
-
+	
 	public var state: State { return .inProgress }
 	public var startedAt: Date? { return nil }
 	public var completedAt: Date? { return nil }
@@ -43,7 +43,11 @@ class Problem: Identifiable {
 		return max(days, 1)
 	}
 
-	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id).solution.swift?ts=2")! }
 	public var url: URL { return URL(string: "https://projecteuler.net/problem=\(id)")! }
+	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id).swift?ts=2")! }
+
+	public func compute(target: Int) -> Int {
+		return 0
+	}
 }
 
