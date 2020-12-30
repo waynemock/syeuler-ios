@@ -27,6 +27,8 @@
 		B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCB9259BC5B600A8DE25 /* Safari.swift */; };
 		B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */; };
 		B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */; };
+		B07BBCEB259C081900A8DE25 /* Problem1.solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCEA259C081900A8DE25 /* Problem1.solution.swift */; };
+		B07BBCF0259C08A700A8DE25 /* Problem2.solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBCEF259C08A700A8DE25 /* Problem2.solution.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		B07BBCB9259BC5B600A8DE25 /* Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safari.swift; sourceTree = "<group>"; };
 		B07BBCC2259BC76B00A8DE25 /* ProblemTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTitle.swift; sourceTree = "<group>"; };
 		B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2Tests.swift; sourceTree = "<group>"; };
+		B07BBCEA259C081900A8DE25 /* Problem1.solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem1.solution.swift; sourceTree = "<group>"; };
+		B07BBCEF259C08A700A8DE25 /* Problem2.solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.solution.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +168,9 @@
 			children = (
 				B0533FF5259B87A2002B9581 /* Problem.swift */,
 				B0533FF4259B87A2002B9581 /* Problem1.swift */,
+				B07BBCEA259C081900A8DE25 /* Problem1.solution.swift */,
 				B07BBC70259B8F8200A8DE25 /* Problem2.swift */,
+				B07BBCEF259C08A700A8DE25 /* Problem2.solution.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07BBCF0259C08A700A8DE25 /* Problem2.solution.swift in Sources */,
 				B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */,
 				B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */,
 				B0533FFC259B87B1002B9581 /* Logger.swift in Sources */,
@@ -353,6 +360,7 @@
 				B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */,
 				B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */,
 				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
+				B07BBCEB259C081900A8DE25 /* Problem1.solution.swift in Sources */,
 				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
 				B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */,
 			);
