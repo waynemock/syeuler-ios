@@ -71,13 +71,6 @@ class ProblemOp: Operation {
 	var results = ProblemOpResults()
 	var lastProgressReport = TimeInterval(0)
 
-	static let intFormatter: NumberFormatter = {
-		let formatter = NumberFormatter()
-		formatter.numberStyle = NumberFormatter.Style.decimal
-		formatter.usesGroupingSeparator = true
-		return formatter
-	}()
-
 	init(inputs: [String], completion: @escaping ProblemOpCompletion) {
 		self.inputs = inputs
 		self.completion = completion
@@ -94,10 +87,6 @@ class ProblemOp: Operation {
 			completion(results)
 			lastProgressReport = results.elapsed
 		}
-	}
-
-	func format(int value: Int) -> String {
-		return ProblemOp.intFormatter.string(from: NSNumber(value: value)) ?? "\(value)"
 	}
 }
 
@@ -133,15 +122,15 @@ class ProblemQueue {
 
 class ProblemIntOp: ProblemOp {
 
-	func compute(target: Int) -> Int? {
+	func compute(target: Int) -> IntAnswer? {
 		return nil
 	}
 
 	override func main() {
 		super.main()
 		if let target = Int(inputs[0]) {
-			if let sum = compute(target: target) {
-				results.answer = "Answer: \(format(int: sum))"
+			if let answer = compute(target: target) {
+				results.answer = answer.combined
 			} else {
 				results.answer = "Canceled"
 			}
@@ -154,3 +143,37 @@ class ProblemIntOp: ProblemOp {
 	}
 }
 
+struct ProblemFormatter {
+
+	static let intFormatter: NumberFormatter = {
+		let formatter = NumberFormatter()
+		formatter.numberStyle = NumberFormatter.Style.decimal
+		formatter.usesGroupingSeparator = true
+		return formatter
+	}()
+
+	static func format(int value: Int) -> String {
+		return intFormatter.string(from: NSNumber(value: value)) ?? "\(value)"
+	}
+}
+
+
+struct IntAnswer {
+	var value: Int?
+	var details: String?
+	var error: String?
+
+	var combined: String {
+		var answers = [String]()
+		if let value = value {
+			answers.append("Answer: \(ProblemFormatter.format(int: value))")
+		}
+		if let details = details {
+			answers.append(details)
+		}
+		if let error = error {
+			answers.append(error)
+		}
+		return answers.joined(separator: "\n")
+	}
+}

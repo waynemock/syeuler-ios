@@ -15,7 +15,7 @@ class Problem2Op: ProblemIntOp {
 	- Parameter target: The term to stop on.
 	- Returns: The sum, or `nil` if cancelled before completion.
 	*/
-	override func compute(target: Int) -> Int? {
+	override func compute(target: Int) -> IntAnswer? {
 		var sum = 0
 		var prev = 1
 		var next = 2
@@ -32,6 +32,6 @@ class Problem2Op: ProblemIntOp {
 				return nil
 			}
 		}
-		return sum
+		return IntAnswer(value: sum)
 	}
 }

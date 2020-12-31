@@ -17,8 +17,8 @@ class Problem1Op: ProblemIntOp {
 	- Parameter target: Sums all multiples below this value.
 	- Returns: The sum, or `nil` if cancelled before completion.
 	*/
-	override func compute(target: Int) -> Int? {
-		guard target > 3 else { return 0 }
+	override func compute(target: Int) -> IntAnswer? {
+		guard target > 3 else { return IntAnswer(value: 0) }
 		let iterations = Int(ceil(Double(target) / 3))
 		var sum = 0
 		for index in 1..<iterations {
@@ -37,6 +37,6 @@ class Problem1Op: ProblemIntOp {
 			}
 			report(progress: Double(index) / Double(iterations))
 		}
-		return sum
+		return IntAnswer(value: sum)
 	}
 }
