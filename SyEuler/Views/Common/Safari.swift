@@ -3,14 +3,15 @@
 //  SyEuler
 //
 //  Created by Wayne Mock on 12/29/20.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import SafariServices
 import SwiftUI
 
 enum SafariSheet: Identifiable {
-	case euler, github, syzygy
-	var id: Int { return hashValue }
+	case url(URL?)
+	var id: String { return "\(self)" }
 }
 
 struct SafariView: UIViewControllerRepresentable {

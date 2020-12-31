@@ -3,7 +3,7 @@
 //  SyWord
 //
 //  Created by Wayne Mock on 1/28/19.
-//  Copyright © 2020 Syzygy Softwerks LLC. All rights reserved.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import UIKit
