@@ -11,18 +11,13 @@ struct ProblemDetail: View {
 	let problem: Problem
 
 	@State private var state = GoButton.GoState.done
-	@State private var activeSheet: Sheet?
+	@State private var activeSheet: SafariSheet?
 	@State private var amount = ""
 	@State private var answer: String?
 	@State private var elapsed: TimeInterval?
 	@State private var percentComplete: Double?
 
 	private let queue = ProblemQueue()
-
-	enum Sheet: Identifiable {
-		case euler, github
-		var id: Int { return hashValue }
-	}
 
 	func go() {
 		switch state {
@@ -68,15 +63,9 @@ struct ProblemDetail: View {
 
 			VStack(alignment: .leading, spacing: 8.0) {
 				HStack {
-					Button(action: { activeSheet = .euler }) {
-						Text("Project Euler")
-							.underline()
-					}
+					CapsuleButton(label: "Project Euler", borderColor: .white, action: { activeSheet = .euler })
 					Spacer()
-					Button(action: { activeSheet = .github }) {
-						Text("Source code")
-							.underline()
-					}
+					CapsuleButton(label: "Source code", borderColor: .white, action: { activeSheet = .github })
 				}
 				.foregroundColor(.white)
 			}
@@ -87,6 +76,7 @@ struct ProblemDetail: View {
 			VStack(alignment: .leading, spacing: 8.0) {
 				Text("Try it out")
 					.font(.title3)
+					.bold()
 					.padding(.top)
 					.padding(.horizontal)
 				VStack(alignment: .leading) {
@@ -130,6 +120,7 @@ struct ProblemDetail: View {
 			switch item {
 			case .euler: SafariView(url: problem.url)
 			case .github: SafariView(url: problem.sourceUrl)
+			default: let _ = 1
 			}
 		}
 		.navigationBarTitle(Text(""), displayMode: .inline)

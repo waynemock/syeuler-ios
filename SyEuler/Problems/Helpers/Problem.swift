@@ -43,8 +43,8 @@ class Problem: Identifiable {
 		return max(days, 1)
 	}
 
-	public var url: URL { return URL(string: "https://projecteuler.net/problem=\(id)")! }
-	public var sourceUrl: URL { return URL(string: "https://github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id)Op.swift?ts=2")! }
+	public var url: URL { return URL(string: "https://www.projecteuler.net/problem=\(id)")! }
+	public var sourceUrl: URL { return URL(string: "https://www.github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id)Op.swift?ts=2")! }
 
 	public func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
 		return ProblemNoOp(inputs: inputs, completion: completion)
