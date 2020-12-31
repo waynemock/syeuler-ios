@@ -3,6 +3,7 @@
 //  SyEulerTests
 //
 //  Created by Wayne Mock on 12/29/20.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import XCTest
@@ -12,59 +13,59 @@ class Problem2Tests: XCTestCase {
 
 	let problem = Problem2Op(inputs: []) { results in }
 
-	func testtargetMinus1() throws {
+	func testTargetMinus1() throws {
 		XCTAssertEqual(problem.compute(target: -1), 0)
 	}
 
-	func testtarget0() throws {
+	func testTarget0() throws {
 		XCTAssertEqual(problem.compute(target: 0), 0)
 	}
 
-	func testtarget1() throws {
+	func testTarget1() throws {
 		XCTAssertEqual(problem.compute(target: 1), 0)
 	}
 
-	func testtarget2() throws {
+	func testTarget2() throws {
 		XCTAssertEqual(problem.compute(target: 2), 2)
 	}
 
-	func testtarget8() throws {
+	func testTarget8() throws {
 		XCTAssertEqual(problem.compute(target: 8), 10)
 	}
 
-	func testtarget34() throws {
+	func testTarget34() throws {
 		XCTAssertEqual(problem.compute(target: 34), 44)
 	}
 
-	func testtarget144() throws {
+	func testTarget144() throws {
 		XCTAssertEqual(problem.compute(target: 144), 188)
 	}
 
-	func testtarget400() throws {
+	func testTarget400() throws {
 		XCTAssertEqual(problem.compute(target: 400), 188)
 	}
 
-	func testtarget2584() throws {
+	func testTarget2584() throws {
 		XCTAssertEqual(problem.compute(target: 2584), 3382)
 	}
 
-	func testtarget4k() throws {
+	func testTarget4k() throws {
 		XCTAssertEqual(problem.compute(target: 4000), 3382)
 	}
 
-	func testtarget317811() throws {
+	func testTarget317811() throws {
 		XCTAssertEqual(problem.compute(target: 317811), 257114)
 	}
 
-	func testtarget400k() throws {
+	func testTarget400k() throws {
 		XCTAssertEqual(problem.compute(target: 400000), 257114)
 	}
 
-	func testtarget3524578() throws {
+	func testTarget3524578() throws {
 		XCTAssertEqual(problem.compute(target: 3524578), 4613732)
 	}
 
-	func testtarget4m() throws {
+	func testTarget4m() throws {
 		XCTAssertEqual(problem.compute(target: 4000000), 4613732)
 	}
 

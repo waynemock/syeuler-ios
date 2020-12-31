@@ -3,6 +3,7 @@
 //  SyWord
 //
 //  Created by Wayne Mock on 11/24/20.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import SwiftUI

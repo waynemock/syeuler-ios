@@ -3,6 +3,7 @@
 //  SyEuler
 //
 //  Created by Wayne Mock on 12/30/20.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import Foundation

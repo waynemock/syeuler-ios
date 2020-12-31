@@ -3,6 +3,7 @@
 //  SyEuler
 //
 //  Created by Wayne Mock on 12/29/20.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import SwiftUI
@@ -64,8 +65,8 @@ struct ProblemDetail: View {
 			VStack(alignment: .leading, spacing: 8.0) {
 				HStack {
 					CapsuleButton(label: "Project Euler", borderColor: .white, action: { activeSheet = .euler })
-					Spacer()
 					CapsuleButton(label: "Source code", borderColor: .white, action: { activeSheet = .github })
+					Spacer()
 				}
 				.foregroundColor(.white)
 			}

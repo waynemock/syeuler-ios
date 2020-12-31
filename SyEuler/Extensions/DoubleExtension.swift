@@ -3,7 +3,7 @@
 //  SyEmber
 //
 //  Created by Wayne Mock on 6/14/17.
-//  Copyright © 2019 Syzygy Softwerks LLC. All rights reserved.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import UIKit

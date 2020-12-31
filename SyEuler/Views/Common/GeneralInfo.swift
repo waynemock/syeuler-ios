@@ -3,6 +3,7 @@
 //  SyEuler
 //
 //  Created by Wayne Mock on 12/29/20.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import SwiftUI
@@ -16,6 +17,7 @@ struct GeneralInfo: View {
 		ScrollView {
 			VStack {
 				HStack {
+					Text("Version \(Bundle.main.appVersion)")
 					Spacer()
 					Button(action: close) {
 						Text("Close")

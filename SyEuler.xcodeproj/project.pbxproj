@@ -21,6 +21,8 @@
 		B05C558A259D5D7C0077BEC2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B05C5589259D5D7C0077BEC2 /* README.md */; };
 		B05C5592259D5EAC0077BEC2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B05C5591259D5EAC0077BEC2 /* LICENSE */; };
 		B05C5597259D618E0077BEC2 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C5596259D618E0077BEC2 /* CapsuleButton.swift */; };
+		B05C55A5259E18920077BEC2 /* Problem3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55A4259E18920077BEC2 /* Problem3Tests.swift */; };
+		B05C55AD259E25FF0077BEC2 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55AC259E25FF0077BEC2 /* BundleExtension.swift */; };
 		B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC70259B8F8200A8DE25 /* Problem2.swift */; };
 		B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC78259B92E000A8DE25 /* ProblemRow.swift */; };
 		B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC87259B981200A8DE25 /* UIColorExtension.swift */; };
@@ -77,6 +79,8 @@
 		B05C5589259D5D7C0077BEC2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B05C5591259D5EAC0077BEC2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B05C5596259D618E0077BEC2 /* CapsuleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
+		B05C55A4259E18920077BEC2 /* Problem3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3Tests.swift; sourceTree = "<group>"; };
+		B05C55AC259E25FF0077BEC2 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		B07BBC70259B8F8200A8DE25 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		B07BBC78259B92E000A8DE25 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
 		B07BBC87259B981200A8DE25 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				B0533FB6259B84F3002B9581 /* Info.plist */,
 				B0533FE6259B863C002B9581 /* Problem1Tests.swift */,
 				B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */,
+				B05C55A4259E18920077BEC2 /* Problem3Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -217,6 +222,7 @@
 		B07BBC86259B97D900A8DE25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B05C55AC259E25FF0077BEC2 /* BundleExtension.swift */,
 				B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */,
 				B07BBC87259B981200A8DE25 /* UIColorExtension.swift */,
 			);
@@ -411,6 +417,7 @@
 				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
 				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
 				B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */,
+				B05C55AD259E25FF0077BEC2 /* BundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */,
+				B05C55A5259E18920077BEC2 /* Problem3Tests.swift in Sources */,
 				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
 				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);
