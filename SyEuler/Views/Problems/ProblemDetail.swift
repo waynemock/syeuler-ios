@@ -64,8 +64,8 @@ struct ProblemDetail: View {
 
 			VStack(alignment: .leading, spacing: 8.0) {
 				HStack {
-					CapsuleButton(label: "Project Euler", borderColor: .white, action: { activeSheet = .euler })
-					CapsuleButton(label: "Source code", borderColor: .white, action: { activeSheet = .github })
+					CapsuleButton(label: "Project Euler", borderColor: .white, action: { activeSheet = .url(problem.url) })
+					CapsuleButton(label: "Source code", borderColor: .white, action: { activeSheet = .url(problem.sourceUrl) })
 					Spacer()
 				}
 				.foregroundColor(.white)
@@ -75,25 +75,26 @@ struct ProblemDetail: View {
 			.background(Color.main)
 
 			VStack(alignment: .leading, spacing: 8.0) {
-				Text("Try it out")
-					.font(.title3)
-					.bold()
-					.padding(.top)
-					.padding(.horizontal)
 				VStack(alignment: .leading) {
-					HStack {
-						TextField("Enter an amount", text: $amount, onCommit: go)
-							.padding(.trailing, 8)
-							.textFieldStyle(RoundedBorderTextFieldStyle())
-							.disableAutocorrection(true)
-							.keyboardType(.numberPad)
-							.disabled(!state.isDone)
-						if amount.count > 0 {
-							Spacer()
-							GoButton(state: state, action: go)
+					VStack(alignment: .leading, spacing: 6) {
+						Text("Try it out")
+							.bold()
+							.foregroundColor(.white)
+						HStack {
+							TextField("Enter an amount", text: $amount, onCommit: go)
+								.textFieldStyle(RoundedBorderTextFieldStyle())
+								.disableAutocorrection(true)
+								.keyboardType(.numberPad)
+								.disabled(!state.isDone)
+							if amount.count > 0 {
+								Spacer()
+								GoButton(state: state, action: go)
+							}
 						}
 					}
-					.padding()
+					.padding(.horizontal)
+					.padding(.top, 8)
+					.padding(.bottom)
 				}
 				.background(Color.main)
 				VStack(alignment: .leading) {
@@ -116,12 +117,35 @@ struct ProblemDetail: View {
 				.padding(.horizontal)
 			}
 
+			if problem.references.count > 0 {
+				VStack(alignment: .leading, spacing: 16.0) {
+					VStack {
+						HStack {
+							Text("References")
+								.bold()
+								.foregroundColor(.white)
+							Spacer()
+						}
+						.padding(.horizontal)
+					}
+					.padding(.vertical, 8)
+					.background(Color.main)
+					VStack(alignment: .leading, spacing: 12.0) {
+						ForEach(problem.references) { reference in
+							CapsuleButton(label: reference.label, action: { activeSheet = .url(reference.url) })
+						}
+					}
+					.padding(.horizontal)
+				}
+			}
+
 		}
 		.sheet(item: $activeSheet) { item in
 			switch item {
-			case .euler: SafariView(url: problem.url)
-			case .github: SafariView(url: problem.sourceUrl)
-			default: let _ = 1
+			case let .url(url):
+				if let url = url {
+					SafariView(url: url)
+				}
 			}
 		}
 		.navigationBarTitle(Text(""), displayMode: .inline)
@@ -133,7 +157,7 @@ struct ProblemDetail: View {
 
 struct ProblemDetail_Previews: PreviewProvider {
     static var previews: some View {
-		ProblemDetail(problem: Problem1())
+		ProblemDetail(problem: Problem3())
 			.preferredColorScheme(.dark)
 		ProblemDetail(problem: Problem2())
     }

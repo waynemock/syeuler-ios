@@ -20,4 +20,11 @@ class Problem3: Problem {
 	public override func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
 		return Problem3Op(inputs: inputs, completion: completion)
 	}
+
+	public override var references: [ProblemReference] {
+		[
+			ProblemReference(label: "Wheel factorization", link: "https://en.m.wikipedia.org/wiki/Wheel_factorization"),
+			ProblemReference(label: "Table of prime factors", link: "https://en.wikipedia.org/wiki/Table_of_prime_factors"),
+		]
+	}
 }

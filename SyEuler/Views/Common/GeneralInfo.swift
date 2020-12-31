@@ -17,11 +17,11 @@ struct GeneralInfo: View {
 		ScrollView {
 			VStack {
 				HStack {
-					Text("Version \(Bundle.main.appVersion)")
-					Spacer()
 					Button(action: close) {
-						Text("Close")
+						Text("Done").font(.title3).bold()
 					}
+					Spacer()
+					Text("Version \(Bundle.main.appVersion)").italic().foregroundColor(.main)
 				}
 				.padding(.vertical, 10)
 				VStack(alignment: .leading, spacing: 8.0) {
@@ -32,21 +32,21 @@ struct GeneralInfo: View {
 					Text("Long running computations show a progress bar and elapsed time, so you have something to watch while you wait. Most problems run in a few milliseconds.")
 					Text("More information can be found on the Project Euler site, my GitHub repo, or my website.")
 					Text("")
-					HStack {
-						CapsuleButton(label: "projecteuler.net", action: { activeSheet = .euler })
-						CapsuleButton(label: "github.com", action: { activeSheet = .github })
+					VStack(alignment: .leading, spacing: 16.0) {
+						CapsuleButton(label: "projecteuler.net", action: { activeSheet = .url(URL(string: "https://www.projecteuler.net")) })
+						CapsuleButton(label: "github.com", action: { activeSheet = .url(URL(string: "https://www.github.com/waynemock/syeuler-ios")) })
+						CapsuleButton(label: "syzygysoftwerks.com", action: { activeSheet = .url(URL(string: "https://www.syzygysoftwerks.com")) })
 					}
-					CapsuleButton(label: "syzygysoftwerks.com", action: { activeSheet = .syzygy })
 				}
 			}
 			.padding()
 		}
-		.foregroundColor(.main)
 		.sheet(item: $activeSheet) { item in
 			switch item {
-			case .euler: SafariView(url: URL(string: "https://www.projecteuler.net")!)
-			case .github: SafariView(url: URL(string: "https://www.github.com/waynemock/syeuler-ios")!)
-			case .syzygy: SafariView(url: URL(string: "https://www.syzygysoftwerks.com/")!)
+			case let .url(url):
+				if let url = url {
+					SafariView(url: url)
+				}
 			}
 		}
     }

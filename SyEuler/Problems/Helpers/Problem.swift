@@ -33,6 +33,7 @@ class Problem: Identifiable {
 	public var id: Int { return 0 }
 	public var title: String { return "" }
 	public var summary: String { return "" }
+	public var references: [ProblemReference] { return [] }
 	
 	public var state: State { return .inProgress }
 	public var startedAt: Date? { return nil }
@@ -97,6 +98,14 @@ class ProblemNoOp: ProblemOp {
 		results.answer = "No implementation yet..."
 		completion(results)
 	}
+}
+
+struct ProblemReference: Identifiable {
+	var label: String
+	var link = ""
+
+	var url: URL? { return URL(string: link) }
+	let id = UUID().uuidString
 }
 
 class ProblemQueue {
