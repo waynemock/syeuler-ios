@@ -21,10 +21,9 @@ class Problem3Op: ProblemIntOp {
 	- Returns: The largest prime factor, or `nil` if cancelled before completion.
 	*/
 	override func compute(target: Int) -> Int? {
-		guard target > 0 else { return 0 }
-		guard target > 1 else { return 1 }
+		guard target != 0 else { return 0 }
+		var n = abs(target)
 		var factors = [Int]()
-		var n = target
 		[2, 3, 5].forEach { factor in
 			while n % factor == 0 {
 				factors.append(factor)
@@ -41,7 +40,7 @@ class Problem3Op: ProblemIntOp {
 				i = (i + 1) % inc.count
 			}
 			if isCancelled {
-				return n
+				return nil
 			}
 			report(progress: (Double(k) / Double(n)))
 		}
@@ -49,13 +48,13 @@ class Problem3Op: ProblemIntOp {
 			factors.append(n)
 		}
 
-		/// Test the results, multiplying all the factors together should equal the `target`.
+		/// Test the results by multiplying all the factors together, which should equal the `target`.
 		let result = factors.reduce(1, { $0 * $1 })
 		if result != target {
 			LogError(self, "result(\(result) != target(\(target)")
 		}
 
-		return factors.last
+		return factors.last ?? n
 	}
 
 	/// Increments for finding the next prime.

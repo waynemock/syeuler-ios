@@ -16,16 +16,16 @@ class Problem3Tests: XCTestCase {
 
 	let problem = Problem3Op(inputs: []) { results in }
 
-	func testTargetMinus1() throws {
-		XCTAssertEqual(problem.compute(target: -1), 0)
-	}
-
 	func testTarget0() throws {
 		XCTAssertEqual(problem.compute(target: 0), 0)
 	}
 
 	func testTarget1() throws {
 		XCTAssertEqual(problem.compute(target: 1), 1)
+	}
+
+	func testTargetMinus1() throws {
+		XCTAssertEqual(problem.compute(target: -1), 1)
 	}
 
 	func testTarget2() throws {
@@ -86,5 +86,9 @@ class Problem3Tests: XCTestCase {
 
 	func testTarget999() throws {
 		XCTAssertEqual(problem.compute(target: 999), 37)
+	}
+
+	func testTargetMinus999() throws {
+		XCTAssertEqual(problem.compute(target: -999), 37)
 	}
 }
