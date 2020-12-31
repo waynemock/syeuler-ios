@@ -8,6 +8,11 @@
 import SafariServices
 import SwiftUI
 
+enum SafariSheet: Identifiable {
+	case euler, github, syzygy
+	var id: Int { return hashValue }
+}
+
 struct SafariView: UIViewControllerRepresentable {
 
 	let url: URL

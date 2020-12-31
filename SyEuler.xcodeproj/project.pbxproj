@@ -17,6 +17,10 @@
 		B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF4259B87A2002B9581 /* Problem1.swift */; };
 		B0533FF7259B87A2002B9581 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FF5259B87A2002B9581 /* Problem.swift */; };
 		B0533FFC259B87B1002B9581 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FFB259B87B1002B9581 /* Logger.swift */; };
+		B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C5584259D388E0077BEC2 /* Problem3Op.swift */; };
+		B05C558A259D5D7C0077BEC2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B05C5589259D5D7C0077BEC2 /* README.md */; };
+		B05C5592259D5EAC0077BEC2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B05C5591259D5EAC0077BEC2 /* LICENSE */; };
+		B05C5597259D618E0077BEC2 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C5596259D618E0077BEC2 /* CapsuleButton.swift */; };
 		B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC70259B8F8200A8DE25 /* Problem2.swift */; };
 		B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC78259B92E000A8DE25 /* ProblemRow.swift */; };
 		B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC87259B981200A8DE25 /* UIColorExtension.swift */; };
@@ -69,6 +73,10 @@
 		B0533FF4259B87A2002B9581 /* Problem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem1.swift; sourceTree = "<group>"; };
 		B0533FF5259B87A2002B9581 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
 		B0533FFB259B87B1002B9581 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B05C5584259D388E0077BEC2 /* Problem3Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3Op.swift; sourceTree = "<group>"; };
+		B05C5589259D5D7C0077BEC2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		B05C5591259D5EAC0077BEC2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B05C5596259D618E0077BEC2 /* CapsuleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		B07BBC70259B8F8200A8DE25 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		B07BBC78259B92E000A8DE25 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
 		B07BBC87259B981200A8DE25 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -115,6 +123,8 @@
 		B0533F96259B84F1002B9581 = {
 			isa = PBXGroup;
 			children = (
+				B05C5591259D5EAC0077BEC2 /* LICENSE */,
+				B05C5589259D5D7C0077BEC2 /* README.md */,
 				B0533FA1259B84F1002B9581 /* SyEuler */,
 				B0533FB3259B84F3002B9581 /* SyEulerTests */,
 				B0533FBE259B84F3002B9581 /* SyEulerUITests */,
@@ -177,6 +187,7 @@
 				B07BBD36259D212700A8DE25 /* Helpers */,
 				B07BBD26259D20D100A8DE25 /* Problem1Op.swift */,
 				B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */,
+				B05C5584259D388E0077BEC2 /* Problem3Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 		B07BBCF4259C0C2700A8DE25 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B05C5596259D618E0077BEC2 /* CapsuleButton.swift */,
 				B07BBC96259BA17F00A8DE25 /* GeneralInfo.swift */,
 				B07BBD0E259C234300A8DE25 /* GoButton.swift */,
 				B07BBCB9259BC5B600A8DE25 /* Safari.swift */,
@@ -351,7 +363,9 @@
 			files = (
 				B07BBCF6259C0C7E00A8DE25 /* Launch Screen.storyboard in Resources */,
 				B0533FAA259B84F3002B9581 /* Preview Assets.xcassets in Resources */,
+				B05C558A259D5D7C0077BEC2 /* README.md in Resources */,
 				B0533FA7259B84F3002B9581 /* Assets.xcassets in Resources */,
+				B05C5592259D5EAC0077BEC2 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +397,7 @@
 				B07BBD2F259D20F900A8DE25 /* Problem2Op.swift in Sources */,
 				B0533FF7259B87A2002B9581 /* Problem.swift in Sources */,
 				B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */,
+				B05C5597259D618E0077BEC2 /* CapsuleButton.swift in Sources */,
 				B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */,
 				B07BBC8F259B9F9200A8DE25 /* ProblemDetail.swift in Sources */,
 				B07BBCA1259BB5E300A8DE25 /* ProblemStartedOn.swift in Sources */,
@@ -390,6 +405,7 @@
 				B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */,
 				B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */,
 				B07BBD07259C163E00A8DE25 /* Problem3.swift in Sources */,
+				B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */,
 				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
 				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
 				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
