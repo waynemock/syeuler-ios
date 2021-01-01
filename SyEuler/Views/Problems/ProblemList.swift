@@ -15,9 +15,12 @@ struct ProblemList: View {
 
 	enum Sheet: Identifiable {
 		case info
+		case link(String)
+		var id: String { return "\(self)" }
+	}
 
-		var id: Int { return hashValue }
-		var isInfoActive: Bool { return self == .info }
+	struct Link {
+		static let problems = Sheet.link("https://projecteuler.net/archives")
 	}
 
     var body: some View {
@@ -28,6 +31,7 @@ struct ProblemList: View {
 						ProblemRow(problem: problem)
 					}
 				}
+				CapsuleButton(label: "All problems", action: { activeSheet = Link.problems })
 			}
 			.toolbar {
 				ToolbarItem(placement: .navigationBarLeading) {
@@ -48,6 +52,10 @@ struct ProblemList: View {
 			switch item {
 			case .info:
 				GeneralInfo()
+			case let .link(link):
+				if let url = URL(string: link) {
+					SafariView(url: url)
+				}
 			}
 		}
     }
@@ -56,6 +64,7 @@ struct ProblemList: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		ProblemList(problems: [
+			Problem3(),
 			Problem2(),
 			Problem1(),
 		])

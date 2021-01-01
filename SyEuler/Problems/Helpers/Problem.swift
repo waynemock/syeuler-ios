@@ -33,6 +33,7 @@ class Problem: Identifiable {
 	public var id: Int { return 0 }
 	public var title: String { return "" }
 	public var summary: String { return "" }
+	public var defaultAmount: String { return "" }
 	public var references: [ProblemReference] { return [] }
 	
 	public var state: State { return .inProgress }
@@ -45,8 +46,8 @@ class Problem: Identifiable {
 		return max(days, 1)
 	}
 
-	public var url: URL { return URL(string: "https://www.projecteuler.net/problem=\(id)")! }
-	public var sourceUrl: URL { return URL(string: "https://www.github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id)Op.swift?ts=2")! }
+	public var url: String { return "https://www.projecteuler.net/problem=\(id)" }
+	public var sourceUrl: String { return "https://www.github.com/waynemock/syeuler-ios/blob/main/SyEuler/Problems/Problem\(id)Op.swift?ts=2" }
 
 	public func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
 		return ProblemNoOp(inputs: inputs, completion: completion)
