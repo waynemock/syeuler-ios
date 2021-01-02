@@ -17,7 +17,7 @@ class Problem3Op: ProblemIntOp {
 	See this Wikipedia article for more details:
 	https://en.m.wikipedia.org/wiki/Wheel_factorization
 
-	- Parameter target: The targe number.
+	- Parameter target: The target number.
 	- Returns: The largest prime factor, or `nil` if cancelled before completion.
 	*/
 	override func compute(target: Int) -> IntAnswer? {
@@ -30,7 +30,7 @@ class Problem3Op: ProblemIntOp {
 			}
 		}
 		var k = 7, i = 0
-		while k ^ 2 <= n {
+		while k * k <= n {
 			if n % k == 0 {
 				factors.append(k)
 				n /= k

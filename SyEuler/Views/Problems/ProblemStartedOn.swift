@@ -13,7 +13,7 @@ struct ProblemStartedOn: View {
 	var body: some View {
 		HStack {
 			if let startedAt = problem.startedAt {
-				Text("Started on \(startedAt, formatter: ProblemRow.itemFormatter)")
+				Text("Started on \(startedAt, formatter: Problem.dateFormatter)")
 					.font(.subheadline)
 			}
 			Spacer()

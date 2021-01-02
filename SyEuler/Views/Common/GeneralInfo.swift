@@ -13,17 +13,28 @@ struct GeneralInfo: View {
 
 	@State private var activeSheet: SafariSheet?
 
+	struct Link {
+		static let euler = SafariSheet.link("https://projecteuler.net")
+		static let github = SafariSheet.link("https://www.github.com/waynemock/syeuler-ios")
+		static let syzygy = SafariSheet.link("https://www.syzygysoftwerks.com")
+	}
+
     var body: some View {
 		ScrollView {
 			VStack {
-				HStack {
-					Button(action: close) {
-						Text("Done").font(.title3).bold()
+				VStack {
+					HStack {
+						Button(action: close) {
+							Text("Done").font(.title3).bold()
+						}
+						Spacer()
+						Text("Version \(Bundle.main.appVersion)").italic()
 					}
-					Spacer()
-					Text("Version \(Bundle.main.appVersion)").italic().foregroundColor(.main)
+					.padding()
 				}
-				.padding(.vertical, 10)
+				.foregroundColor(.white)
+				.background(Color.main)
+				.ignoresSafeArea()
 				VStack(alignment: .leading, spacing: 8.0) {
 					Text("Hi!").font(.title)
 					Text("SyEuler provides access to my solutions to the Project Euler problems. All my solutions are developed in Swift.")
@@ -33,18 +44,18 @@ struct GeneralInfo: View {
 					Text("More information can be found on the Project Euler site, my GitHub repo, or my website.")
 					Text("")
 					VStack(alignment: .leading, spacing: 16.0) {
-						CapsuleButton(label: "projecteuler.net", action: { activeSheet = .url(URL(string: "https://www.projecteuler.net")) })
-						CapsuleButton(label: "github.com", action: { activeSheet = .url(URL(string: "https://www.github.com/waynemock/syeuler-ios")) })
-						CapsuleButton(label: "syzygysoftwerks.com", action: { activeSheet = .url(URL(string: "https://www.syzygysoftwerks.com")) })
+						CapsuleButton(label: "projecteuler.net", action: { activeSheet = Link.euler })
+						CapsuleButton(label: "github.com", action: { activeSheet = Link.github })
+						CapsuleButton(label: "syzygysoftwerks.com", action: { activeSheet = Link.syzygy })
 					}
 				}
+				.padding()
 			}
-			.padding()
 		}
 		.sheet(item: $activeSheet) { item in
 			switch item {
-			case let .url(url):
-				if let url = url {
+			case let .link(link):
+				if let url = URL(string: link) {
 					SafariView(url: url)
 				}
 			}

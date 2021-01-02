@@ -11,6 +11,7 @@ import SwiftUI
 @main
 struct SyEulerApp: App {
 	let problems = [
+		Problem4(),
 		Problem3(),
 		Problem2(),
 		Problem1(),

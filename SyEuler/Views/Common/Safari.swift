@@ -10,7 +10,7 @@ import SafariServices
 import SwiftUI
 
 enum SafariSheet: Identifiable {
-	case url(URL?)
+	case link(String)
 	var id: String { return "\(self)" }
 }
 

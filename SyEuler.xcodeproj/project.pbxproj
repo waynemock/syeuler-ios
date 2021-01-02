@@ -23,6 +23,10 @@
 		B05C5597259D618E0077BEC2 /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C5596259D618E0077BEC2 /* CapsuleButton.swift */; };
 		B05C55A5259E18920077BEC2 /* Problem3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55A4259E18920077BEC2 /* Problem3Tests.swift */; };
 		B05C55AD259E25FF0077BEC2 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55AC259E25FF0077BEC2 /* BundleExtension.swift */; };
+		B05C55B8259F6AF70077BEC2 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55B7259F6AF70077BEC2 /* Problem4.swift */; };
+		B05C55BD259F6BE20077BEC2 /* Problem4Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55BC259F6BE20077BEC2 /* Problem4Op.swift */; };
+		B05C55C2259FB1410077BEC2 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55C1259FB1410077BEC2 /* IntExtension.swift */; };
+		B05C55CA259FE7D00077BEC2 /* Problem4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05C55C9259FE7D00077BEC2 /* Problem4Tests.swift */; };
 		B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC70259B8F8200A8DE25 /* Problem2.swift */; };
 		B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC78259B92E000A8DE25 /* ProblemRow.swift */; };
 		B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC87259B981200A8DE25 /* UIColorExtension.swift */; };
@@ -81,6 +85,10 @@
 		B05C5596259D618E0077BEC2 /* CapsuleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		B05C55A4259E18920077BEC2 /* Problem3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem3Tests.swift; sourceTree = "<group>"; };
 		B05C55AC259E25FF0077BEC2 /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		B05C55B7259F6AF70077BEC2 /* Problem4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem4.swift; sourceTree = "<group>"; };
+		B05C55BC259F6BE20077BEC2 /* Problem4Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem4Op.swift; sourceTree = "<group>"; };
+		B05C55C1259FB1410077BEC2 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		B05C55C9259FE7D00077BEC2 /* Problem4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem4Tests.swift; sourceTree = "<group>"; };
 		B07BBC70259B8F8200A8DE25 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		B07BBC78259B92E000A8DE25 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
 		B07BBC87259B981200A8DE25 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -172,6 +180,7 @@
 				B0533FE6259B863C002B9581 /* Problem1Tests.swift */,
 				B07BBCE2259BE36500A8DE25 /* Problem2Tests.swift */,
 				B05C55A4259E18920077BEC2 /* Problem3Tests.swift */,
+				B05C55C9259FE7D00077BEC2 /* Problem4Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -193,6 +202,7 @@
 				B07BBD26259D20D100A8DE25 /* Problem1Op.swift */,
 				B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */,
 				B05C5584259D388E0077BEC2 /* Problem3Op.swift */,
+				B05C55BC259F6BE20077BEC2 /* Problem4Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -224,6 +234,7 @@
 			children = (
 				B05C55AC259E25FF0077BEC2 /* BundleExtension.swift */,
 				B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */,
+				B05C55C1259FB1410077BEC2 /* IntExtension.swift */,
 				B07BBC87259B981200A8DE25 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
@@ -260,6 +271,7 @@
 				B0533FF4259B87A2002B9581 /* Problem1.swift */,
 				B07BBC70259B8F8200A8DE25 /* Problem2.swift */,
 				B07BBD06259C163E00A8DE25 /* Problem3.swift */,
+				B05C55B7259F6AF70077BEC2 /* Problem4.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -399,6 +411,7 @@
 				B07BBCC3259BC76B00A8DE25 /* ProblemTitle.swift in Sources */,
 				B07BBD27259D20D100A8DE25 /* Problem1Op.swift in Sources */,
 				B0533FF6259B87A2002B9581 /* Problem1.swift in Sources */,
+				B05C55C2259FB1410077BEC2 /* IntExtension.swift in Sources */,
 				B0533FFC259B87B1002B9581 /* Logger.swift in Sources */,
 				B07BBD2F259D20F900A8DE25 /* Problem2Op.swift in Sources */,
 				B0533FF7259B87A2002B9581 /* Problem.swift in Sources */,
@@ -414,10 +427,12 @@
 				B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */,
 				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
 				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
+				B05C55B8259F6AF70077BEC2 /* Problem4.swift in Sources */,
 				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
 				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
 				B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */,
 				B05C55AD259E25FF0077BEC2 /* BundleExtension.swift in Sources */,
+				B05C55BD259F6BE20077BEC2 /* Problem4Op.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +443,7 @@
 				B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */,
 				B05C55A5259E18920077BEC2 /* Problem3Tests.swift in Sources */,
 				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
+				B05C55CA259FE7D00077BEC2 /* Problem4Tests.swift in Sources */,
 				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,7 +603,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -610,7 +626,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

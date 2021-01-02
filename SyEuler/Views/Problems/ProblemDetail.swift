@@ -13,12 +13,19 @@ struct ProblemDetail: View {
 
 	@State private var state = GoButton.GoState.done
 	@State private var activeSheet: SafariSheet?
-	@State private var amount = ""
+	@State private var input = ""
 	@State private var answer: String?
 	@State private var elapsed: TimeInterval?
 	@State private var percentComplete: Double?
+	@State private var placeholder = ""
 
 	private let queue = ProblemQueue()
+
+	struct Link {
+		static let euler = SafariSheet.link("https://projecteuler.net")
+		static let github = SafariSheet.link("https://www.github.com/waynemock/syeuler-ios")
+		static let syzygy = SafariSheet.link("https://www.syzygysoftwerks.com")
+	}
 
 	func go() {
 		switch state {
@@ -28,7 +35,7 @@ struct ProblemDetail: View {
 				elapsed = nil
 				percentComplete = nil
 				state = .running
-				queue.start(op: problem.getOp(inputs: [amount]) { result in
+				queue.start(op: problem.getOp(inputs: [input]) { result in
 					answer = result.answer
 					percentComplete = result.precentComplete
 					elapsed = result.elapsed
@@ -64,8 +71,8 @@ struct ProblemDetail: View {
 
 			VStack(alignment: .leading, spacing: 8.0) {
 				HStack {
-					CapsuleButton(label: "Project Euler", borderColor: .white, action: { activeSheet = .url(problem.url) })
-					CapsuleButton(label: "Source code", borderColor: .white, action: { activeSheet = .url(problem.sourceUrl) })
+					CapsuleButton(label: "Project Euler", borderColor: .white, action: { activeSheet = .link(problem.url) })
+					CapsuleButton(label: "Source code", borderColor: .white, action: { activeSheet = .link(problem.sourceUrl) })
 					Spacer()
 				}
 				.foregroundColor(.white)
@@ -81,12 +88,12 @@ struct ProblemDetail: View {
 							.bold()
 							.foregroundColor(.white)
 						HStack {
-							TextField("Enter an amount", text: $amount, onCommit: go)
+							TextField(placeholder, text: $input, onCommit: go)
 								.textFieldStyle(RoundedBorderTextFieldStyle())
 								.disableAutocorrection(true)
 								.keyboardType(.numberPad)
 								.disabled(!state.isDone)
-							if amount.count > 0 {
+							if input.count > 0 {
 								Spacer()
 								GoButton(state: state, action: go)
 							}
@@ -132,7 +139,7 @@ struct ProblemDetail: View {
 					.background(Color.main)
 					VStack(alignment: .leading, spacing: 12.0) {
 						ForEach(problem.references) { reference in
-							CapsuleButton(label: reference.label, action: { activeSheet = .url(reference.url) })
+							CapsuleButton(label: reference.label, action: { activeSheet = .link(reference.link) })
 						}
 					}
 					.padding(.horizontal)
@@ -142,13 +149,17 @@ struct ProblemDetail: View {
 		}
 		.sheet(item: $activeSheet) { item in
 			switch item {
-			case let .url(url):
-				if let url = url {
+			case let .link(link):
+				if let url = URL(string: link) {
 					SafariView(url: url)
 				}
 			}
 		}
 		.navigationBarTitle(Text(""), displayMode: .inline)
+		.onAppear {
+			input = problem.defaultInput
+			placeholder = problem.inputPlaceholder
+		}
 		.onDisappear {
 			queue.stop()
 		}

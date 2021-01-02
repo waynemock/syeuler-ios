@@ -14,13 +14,16 @@ struct ProblemCompletedOn: View {
 		HStack {
 			if let completedAt = problem.completedAt {
 				let days = problem.daysToComplete
-				if days == 1 {
-					Text("Completed on \(completedAt, formatter: ProblemRow.itemFormatter) in \(problem.daysToComplete) day")
+				switch days {
+				case 0:
+					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in less than a day")
 						.font(.subheadline)
-				} else {
-					Text("Completed on \(completedAt, formatter: ProblemRow.itemFormatter) in \(problem.daysToComplete) days")
+				case 1:
+					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in \(days) day")
 						.font(.subheadline)
-
+				default:
+					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in \(problem.daysToComplete) days")
+						.font(.subheadline)
 				}
 				Spacer()
 			}
