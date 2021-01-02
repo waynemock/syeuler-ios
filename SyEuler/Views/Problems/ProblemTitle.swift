@@ -9,15 +9,16 @@
 import SwiftUI
 
 struct ProblemTitle: View {
+	let font = Font.title3
 	var problem: Problem
 	var body: some View {
 		HStack {
 			Text("\(problem.id): \(problem.title)")
-				.font(.title2)
+				.font(font)
 				.bold()
 			if problem.state.isCompleted {
 				Image(systemName: "checkmark.shield.fill")
-					.font(.title2)
+					.font(font)
 			}
 			Spacer()
 		}

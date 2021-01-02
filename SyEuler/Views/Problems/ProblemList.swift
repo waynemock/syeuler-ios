@@ -12,6 +12,7 @@ struct ProblemList: View {
 	let problems: [Problem];
 
 	@State private var activeSheet: Sheet?
+	@State private var nextProblem = 0
 
 	enum Sheet: Identifiable {
 		case info
@@ -20,7 +21,8 @@ struct ProblemList: View {
 	}
 
 	struct Link {
-		static let problems = Sheet.link("https://projecteuler.net/archives")
+		static let all = Sheet.link("https://projecteuler.net/archives")
+		static let next = "https://www.projecteuler.net/problem="
 	}
 
     var body: some View {
@@ -31,18 +33,21 @@ struct ProblemList: View {
 						ProblemRow(problem: problem)
 					}
 				}
-				CapsuleButton(label: "All problems", action: { activeSheet = Link.problems })
 			}
 			.toolbar {
 				ToolbarItem(placement: .navigationBarLeading) {
-					Text("SyEuler")
-						.font(.title3)
-						.bold()
-						.foregroundColor(.main)
-				}
-				ToolbarItem(placement: .navigationBarTrailing) {
 					Button(action: { activeSheet = .info  }) {
 						Label("General information", systemImage: "info.circle")
+					}
+				}
+				ToolbarItem(placement: .navigationBarTrailing) {
+					Button(action: { activeSheet = Sheet.link("\(Link.next)\(nextProblem)") }) {
+						Label("Next problem", systemImage: "function")
+					}
+				}
+				ToolbarItem(placement: .navigationBarTrailing) {
+					Button(action: { activeSheet = Link.all  }) {
+						Label("All problems", systemImage: "sum")
 					}
 				}
 			}
@@ -57,6 +62,9 @@ struct ProblemList: View {
 					SafariView(url: url)
 				}
 			}
+		}
+		.onAppear {
+			nextProblem = problems.count + 1
 		}
     }
 }
