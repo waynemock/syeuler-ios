@@ -13,10 +13,11 @@ struct ProblemDetail: View {
 
 	@State private var state = GoButton.GoState.done
 	@State private var activeSheet: SafariSheet?
-	@State private var amount = ""
+	@State private var input = ""
 	@State private var answer: String?
 	@State private var elapsed: TimeInterval?
 	@State private var percentComplete: Double?
+	@State private var placeholder = ""
 
 	private let queue = ProblemQueue()
 
@@ -34,7 +35,7 @@ struct ProblemDetail: View {
 				elapsed = nil
 				percentComplete = nil
 				state = .running
-				queue.start(op: problem.getOp(inputs: [amount]) { result in
+				queue.start(op: problem.getOp(inputs: [input]) { result in
 					answer = result.answer
 					percentComplete = result.precentComplete
 					elapsed = result.elapsed
@@ -87,12 +88,12 @@ struct ProblemDetail: View {
 							.bold()
 							.foregroundColor(.white)
 						HStack {
-							TextField("Enter an amount", text: $amount, onCommit: go)
+							TextField(placeholder, text: $input, onCommit: go)
 								.textFieldStyle(RoundedBorderTextFieldStyle())
 								.disableAutocorrection(true)
 								.keyboardType(.numberPad)
 								.disabled(!state.isDone)
-							if amount.count > 0 {
+							if input.count > 0 {
 								Spacer()
 								GoButton(state: state, action: go)
 							}
@@ -156,7 +157,8 @@ struct ProblemDetail: View {
 		}
 		.navigationBarTitle(Text(""), displayMode: .inline)
 		.onAppear {
-			amount = problem.defaultAmount
+			input = problem.defaultInput
+			placeholder = problem.inputPlaceholder
 		}
 		.onDisappear {
 			queue.stop()

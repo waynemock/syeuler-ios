@@ -11,12 +11,6 @@ import SwiftUI
 struct ProblemRow: View {
 	let problem: Problem
 
-	static let itemFormatter: DateFormatter = {
-		let formatter = DateFormatter()
-		formatter.dateStyle = .medium
-		return formatter
-	}()
-
 	var body: some View {
 		VStack(alignment: .leading, spacing: 4.0) {
 			ProblemTitle(problem: problem)

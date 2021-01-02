@@ -16,7 +16,6 @@ class Problem: Identifiable {
 		return formatter
 	}()
 
-
 	enum State: String {
 		case completed, inProgress
 
@@ -33,7 +32,8 @@ class Problem: Identifiable {
 	public var id: Int { return 0 }
 	public var title: String { return "" }
 	public var summary: String { return "" }
-	public var defaultAmount: String { return "" }
+	public var defaultInput: String { return "" }
+	public var inputPlaceholder: String { return "Enter a number" }
 	public var references: [ProblemReference] { return [] }
 	
 	public var state: State { return .inProgress }
@@ -43,7 +43,7 @@ class Problem: Identifiable {
 	public var daysToComplete: Int {
 		guard let startedAt = startedAt, let completedAt = completedAt,
 			  let days = Calendar.current.dateComponents([.day], from: startedAt, to: completedAt).day else { return -1 }
-		return max(days, 1)
+		return days
 	}
 
 	public var url: String { return "https://www.projecteuler.net/problem=\(id)" }
