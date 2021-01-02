@@ -17,13 +17,13 @@ struct ProblemCompletedOn: View {
 				switch days {
 				case 0:
 					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in less than a day")
-						.font(.subheadline)
+						.font(.caption)
 				case 1:
 					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in \(days) day")
-						.font(.subheadline)
+						.font(.caption)
 				default:
 					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in \(problem.daysToComplete) days")
-						.font(.subheadline)
+						.font(.caption)
 				}
 				Spacer()
 			}
