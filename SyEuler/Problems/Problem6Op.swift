@@ -17,7 +17,7 @@ class Problem6Op: ProblemIntOp {
 	override func compute(target: Int) -> IntAnswer? {
 		guard target > 0 else { return IntAnswer(error: "Must be > 0")}
 		var sumOfSquares = 0
-		var	sum = 0
+		var sum = 0
 		for x in 1...target {
 			let result = x.multipliedReportingOverflow(by: x)
 			if result.overflow {
