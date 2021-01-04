@@ -1,95 +1,62 @@
 // Here's my solution in Swift. Just copy it into a Playground and press play.
+// Finished in 290.5 ms on my iPhone 12 Pro
 
 import Foundation
 
 /**
-Returns the smallest multiple made from the sequence of 1...`target`.
+Returns the `target`th prime. So, 10, would be the 10th priime.
 
-This implementation relies on using prime factors to generate the smallest multiple,
-aka least common multiple.
-
-The least common multiple is the product of multiplying the highest power of each
-prime factor together of all the numbers in the sequence.
+Uses simplified Wheel Factorization to determine the `target`th prime.
 
 Reference:
-https://en.m.wikipedia.org/wiki/Least_common_multiple
+https://en.m.wikipedia.org/wiki/Wheel_factorization
 
-- Parameter target: The target number to consider.
-- Returns: The smallest multiple
+- Parameter target: The Nth number to generate.
+- Returns: The Nth prime.
 */
-func compute(target: Int) -> Int {
-	var primes = [Int:Int]() // keep track of each prime and its largest power
-	for x in 1...target {
-		primeFactors(of: x).forEach({ (prime, power) in
-			// Have we seen this prime?
-			if let currentPower = primes[prime] {
-				// Yes, then store it if its power is greater than the current
-				if currentPower < power {
-					primes[prime] = power
-				}
-			} else {
-				// No, then just store the power
-				primes[prime] = power
-			}
-		})
+func compute(target: Int) -> Int? {
+	guard target > 0 else { return nil }
+	var primes = [2,3,5]
+	guard target > primes.count else { return primes[target - 1] }
+	var k = 7, i = 0
+	while primes.count < target {
+		// Wheel factorization does not always produce prime numbers, so test to be sure.
+		if isPrime(k, primes: primes) {
+			primes.append(k)
+		}
+		k += inc[i]
+		i = (i + 1) % inc.count
 	}
-	// Compute the answer by raising each prime to the related power
-	var answer = 1
-	primes.forEach { (prime, count) in
-		answer *= pow(prime, count)
-	}
-	return answer
+	return primes.last
 }
 
 /**
-Returns the  prime factors and related power of `target`.
+Returns `true` if `value` is prime.
 
-Uses Wheel Factorization to determine all the factors of `target`.
+Uses the existing `primes` array to determine if `value` is prime. If it is not a multiple of any existing prime, then it is prime.
 
-See this Wikipedia article for more details:
-https://en.m.wikipedia.org/wiki/Wheel_factorization
-
-- Parameter target: The target number.
-- Returns: A dictionary of  prime factors and their powers, or `nil` if cancelled before completion.
+- Parameter value: The value to test for prime.
+- Parameter primes: An array of primes we alreay found.
+- Returns: `true` if `value` is prime, otherwise `false`.
 */
-func primeFactors(of target: Int) -> [Int:Int] {
-	var factors = [Int]()
-	var n = target
-	[2, 3, 5].forEach { factor in
-		while n % factor == 0 {
-			factors.append(factor)
-			n /= factor
+func isPrime(_ value: Int, primes: [Int]) -> Bool {
+	let sqRoot = Int(sqrt(Double(value)))
+	guard value % sqRoot != 0 else { return false }
+	for index in 0..<primes.count {
+		let prime = primes[index]
+		if value % prime == 0 {
+			/// Not prime if `value` is a multiple of a prime
+			return false
+		}
+		if sqRoot < prime {
+			/// Stop looking if the primes are larger than the square root
+			break
 		}
 	}
-	var k = 7, i = 0
-	while k * k <= n {
-		if n % k == 0 {
-			factors.append(k)
-			n /= k
-		} else {
-			k += inc[i]
-			i = (i + 1) % inc.count
-		}
-	}
-	/// n == 1 when `target` was a prime number
-	if n > 1 {
-		// n is our largest prime factor
-		factors.append(n)
-	}
-	var primes = [Int:Int]()
-	factors.forEach { factor in
-		let power = primes[factor] ?? 0
-		primes[factor] = power + 1
-	}
-	return primes
+	return true
 }
 
 /// Increments for finding the next prime.
 let inc = [4, 2, 4, 2, 4, 6, 2, 6]
 
-func pow(_ lhs: Int, _ rhs: Int) -> Int {
-	return Int(pow(Double(lhs), Double(rhs)))
-}
-
-compute(target: 10)
-compute(target: 20)
+compute(target: 10001)

@@ -162,8 +162,19 @@ struct ProblemFormatter {
 		return formatter
 	}()
 
+	static let nthFormatter: NumberFormatter = {
+		let formatter = NumberFormatter()
+		formatter.numberStyle = NumberFormatter.Style.ordinal
+		formatter.usesGroupingSeparator = true
+		return formatter
+	}()
+
 	static func format(int value: Int) -> String {
 		return intFormatter.string(from: NSNumber(value: value)) ?? "\(value)"
+	}
+
+	static func formatNth(int value: Int) -> String {
+		return nthFormatter.string(from: NSNumber(value: value)) ?? "\(value)"
 	}
 }
 
