@@ -10,13 +10,18 @@ import XCTest
 
 class Problem7Tests: XCTestCase {
 
-
 	func testTarget0() throws {
 		let problem = Problem7Op(inputs: []) { results in }
 		let answer = problem.compute(target: 0)
 		XCTAssertEqual(answer?.value, nil)
 		XCTAssertEqual(answer?.details, nil)
 		XCTAssertEqual(answer?.error, "Must be > 0")
+	}
+
+	func testTarget6() throws {
+		let problem = Problem7Op(inputs: []) { results in }
+		let answer = problem.compute(target: 6)
+		XCTAssertEqual(answer?.value, 13)
 	}
 
 	func testTarget10001() throws {

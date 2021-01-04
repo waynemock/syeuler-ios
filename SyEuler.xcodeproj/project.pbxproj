@@ -51,6 +51,7 @@
 		B0D8F5A125A37E1300129FA3 /* Problem7.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F5A025A37E1300129FA3 /* Problem7.swift */; };
 		B0D8F5A625A37E5E00129FA3 /* Problem7Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F5A525A37E5E00129FA3 /* Problem7Op.swift */; };
 		B0D8F5AB25A38FEE00129FA3 /* Problem7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F5AA25A38FEE00129FA3 /* Problem7Tests.swift */; };
+		B0EDEDE125A3BF41006A3C45 /* Problem6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDE025A3BF41006A3C45 /* Problem6Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		B0D8F5A025A37E1300129FA3 /* Problem7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem7.swift; sourceTree = "<group>"; };
 		B0D8F5A525A37E5E00129FA3 /* Problem7Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem7Op.swift; sourceTree = "<group>"; };
 		B0D8F5AA25A38FEE00129FA3 /* Problem7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem7Tests.swift; sourceTree = "<group>"; };
+		B0EDEDE025A3BF41006A3C45 /* Problem6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem6Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				B05C55A4259E18920077BEC2 /* Problem3Tests.swift */,
 				B05C55C9259FE7D00077BEC2 /* Problem4Tests.swift */,
 				B09542B125A23F8000007D5F /* Problem5Tests.swift */,
+				B0EDEDE025A3BF41006A3C45 /* Problem6Tests.swift */,
 				B0D8F5AA25A38FEE00129FA3 /* Problem7Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
@@ -472,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EDEDE125A3BF41006A3C45 /* Problem6Tests.swift in Sources */,
 				B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */,
 				B0D8F5AB25A38FEE00129FA3 /* Problem7Tests.swift in Sources */,
 				B05C55A5259E18920077BEC2 /* Problem3Tests.swift in Sources */,
@@ -637,7 +641,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -660,7 +664,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
