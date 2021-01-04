@@ -10,14 +10,6 @@ import SwiftUI
 
 @main
 struct SyEulerApp: App {
-	let problems = [
-		Problem5(),
-		Problem4(),
-		Problem3(),
-		Problem2(),
-		Problem1(),
-	]
-
 	init() {
 		initAppearance()
 	}
@@ -33,4 +25,14 @@ struct SyEulerApp: App {
             ProblemList(problems: problems)
         }
     }
+
+	let problems = [
+		Problem7(),
+		Problem6(),
+		Problem5(),
+		Problem4(),
+		Problem3(),
+		Problem2(),
+		Problem1(),
+	]
 }
