@@ -11,10 +11,11 @@ class Problem5Op: ProblemIntOp {
 	/**
 	Returns the smallest multiple made from the sequence of 1 - `target`.
 
-	This implementation relies on using prime factors to generate the smallest multile, aka least common multiple.
+	This implementation relies on using prime factors to generate the smallest multile,
+	aka least common multiple.
 
-	The least common multiple is the product of multiplying the highest power of each prime factor together of all
-	the numbers in the sequence..
+	The least common multiple is the product of multiplying the highest power of each
+	prime factor together of all the numbers in the sequence.
 
 	Reference:
 	https://en.m.wikipedia.org/wiki/Least_common_multiple
@@ -53,7 +54,7 @@ class Problem5Op: ProblemIntOp {
 			}
 		}
 		return overflow
-			? IntAnswer(error: "Result > Int.max")
+			? IntAnswer(error: "Result overflows Int.max")
 			: IntAnswer(value: answer, details: details(from: primes))
 	}
 
@@ -66,7 +67,7 @@ class Problem5Op: ProblemIntOp {
 	https://en.m.wikipedia.org/wiki/Wheel_factorization
 
 	- Parameter target: The target number.
-	- Returns: An array of  prime factors, or `nil` if cancelled before completion.
+	- Returns: A dictionary of  prime factors and their powers, or `nil` if cancelled before completion.
 	*/
 	func primeFactors(of target: Int) -> [Int:Int]? {
 		var factors = [Int]()
@@ -104,7 +105,7 @@ class Problem5Op: ProblemIntOp {
 	}
 
 	/**
-	Retruns all  the prime factors as a string.
+	Retruns all the prime factors and powers as a string.
 
 	- Parameter primes: The dictionary of primes and their powers.
 	- Returns: A the prime factors as a string.

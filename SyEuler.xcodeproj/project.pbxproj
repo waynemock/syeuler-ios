@@ -111,6 +111,7 @@
 		B095429725A20CFD00007D5F /* Problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5.swift; sourceTree = "<group>"; };
 		B095429C25A20D7200007D5F /* Problem5Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Op.swift; sourceTree = "<group>"; };
 		B09542B125A23F8000007D5F /* Problem5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Tests.swift; sourceTree = "<group>"; };
+		B09542B925A2AE7200007D5F /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +223,7 @@
 				B0533FAB259B84F3002B9581 /* Info.plist */,
 				B07BBCF5259C0C7E00A8DE25 /* Launch Screen.storyboard */,
 				B0533FFB259B87B1002B9581 /* Logger.swift */,
+				B09542B925A2AE7200007D5F /* Playground.playground */,
 				B0533FA8259B84F3002B9581 /* Preview Content */,
 				B0533FA2259B84F1002B9581 /* SyEulerApp.swift */,
 			);
