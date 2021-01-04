@@ -72,7 +72,8 @@ struct ProblemList: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
 		ProblemList(problems: [
-			Problem3(),
+			Problem5(),
+			Problem4(),
 			Problem2(),
 			Problem1(),
 		])
