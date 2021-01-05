@@ -19,18 +19,11 @@ class Problem6Op: ProblemIntOp {
 		var sumOfSquares = 0
 		var sum = 0
 		for x in 1...target {
-			let result = x.multipliedReportingOverflow(by: x)
-			if result.overflow {
-				return IntAnswer(error: "Overflowed Int.max at x=\(x)")
-			}
-			sumOfSquares += result.partialValue
+			guard let result = x *? x else { return IntAnswer(error: "Overflowed Int.max at x=\(x)") }
+			sumOfSquares += result
 			sum += x
 		}
-		let result = sum.multipliedReportingOverflow(by: sum)
-		if result.overflow {
-			return IntAnswer(error: "Overflowed Int.max squaring \(sum)")
-		}
-		let squareOfSum = result.partialValue
+		guard let squareOfSum = sum *? sum else { return IntAnswer(error: "Overflowed Int.max squaring \(sum)") }
 		let answer = squareOfSum - sumOfSquares
 		return IntAnswer(value: answer, details: "\(ProblemFormatter.format(int: squareOfSum)) - \(ProblemFormatter.format(int: sumOfSquares))")
 	}

@@ -17,8 +17,8 @@ class Problem4Op: ProblemIntOp {
 	*/
 	override func compute(target: Int) -> IntAnswer? {
 		guard target > 0 else { return IntAnswer(error: "Must be > 0")}
-		let top = pow(10, target) - 1
-		let bottom = pow(10, (target - 1))
+		let top = (10 ** target) - 1
+		let bottom = 10 ** (target - 1)
 		let range = top - bottom
 		var palindrome = 0
 		var terms = (0, 0)
