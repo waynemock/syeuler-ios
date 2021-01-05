@@ -46,11 +46,10 @@ class Problem5Op: ProblemIntOp {
 		var overflow = false
 		primes.forEach { (prime, count) in
 			// This problem can overflow an Int very quickly, so watch out for it
-			let result = answer.multipliedReportingOverflow(by: pow(prime, count))
-			if result.overflow {
-				overflow = true
+			if let result = answer *? (prime ** count) {
+				answer = result
 			} else {
-				answer = result.partialValue
+				overflow = true
 			}
 		}
 		return overflow
