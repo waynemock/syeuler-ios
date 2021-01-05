@@ -1,5 +1,5 @@
 // Here's my solution in Swift. Just copy it into a Playground and press play.
-// Finished in 0.6 ms on my iPhone 12 Pro
+// Finished in 20.6 ms on my iPhone 12 Pro
 
 import Foundation
 
