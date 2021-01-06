@@ -27,6 +27,8 @@ struct SyEulerApp: App {
     }
 
 	let problems = [
+		Problem10(),
+		Problem9(),
 		Problem8(),
 		Problem7(),
 		Problem6(),

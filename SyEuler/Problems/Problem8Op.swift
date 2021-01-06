@@ -3,6 +3,7 @@
 //  SyEuler
 //
 //  Created by Wayne Mock on 1/4/21.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import Foundation
@@ -35,6 +36,7 @@ class Problem8Op: ProblemIntOp {
 		return IntAnswer(value: answer, details: "Start index: \(start)\n\(details)")
 	}
 
+	/// Convert the sequence into an array of Ints
 	let sequence = [
 		"73167176531330624919225119674426574742355349194934",
 		"96983520312774506326239578318016984801869478851843",

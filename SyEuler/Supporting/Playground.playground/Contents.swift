@@ -1,50 +1,63 @@
 // Here's my solution in Swift. Just copy it into a Playground and press play.
-// Finished in 0.6 ms on my iPhone 12 Pro
+// Finished in 10 seconds on my iPhone 12 Pro
 
 import Foundation
 
 /**
-Returns the largest product in a series of `target` digits.
+Returns the sum of all primes below `target`.
 
-- Parameter target: The target number to consider.
-- Returns: The product, or `nil` if cancelled before completion.
+Uses simplified Wheel Factorization to determine the `target`th prime.
+
+Reference:
+https://en.m.wikipedia.org/wiki/Wheel_factorization
+
+- Parameter target: The Nth number to generate.
+- Returns: The sum, or `nil` if cancelled before completion.
 */
 func compute(target: Int) -> Int? {
-	guard target > 0 && target <= sequence.count else { return nil }
-	var answer = 0
-	for x in 0..<(sequence.count - target) {
-		var product = 1
-		for index in x..<(x + target) {
-			product *= sequence[index]
+	guard target > 0 else { return nil }
+	/// Initial set of primes to kick off the wheel factorization
+	var primes = [2,3,5]
+	var k = 7, i = 0
+	while k < target {
+		if isPrime(k, primes) {
+			primes.append(k)
 		}
-		if product > answer {
-			answer = product
-		}
+		k += inc[i]
+		i = (i + 1) % inc.count
 	}
-	return answer
+	return primes.reduce(0, { $0 + $1 })
 }
 
-let sequence = [
-	"73167176531330624919225119674426574742355349194934",
-	"96983520312774506326239578318016984801869478851843",
-	"85861560789112949495459501737958331952853208805511",
-	"12540698747158523863050715693290963295227443043557",
-	"66896648950445244523161731856403098711121722383113",
-	"62229893423380308135336276614282806444486645238749",
-	"30358907296290491560440772390713810515859307960866",
-	"70172427121883998797908792274921901699720888093776",
-	"65727333001053367881220235421809751254540594752243",
-	"52584907711670556013604839586446706324415722155397",
-	"53697817977846174064955149290862569321978468622482",
-	"83972241375657056057490261407972968652414535100474",
-	"82166370484403199890008895243450658541227588666881",
-	"16427171479924442928230863465674813919123162824586",
-	"17866458359124566529476545682848912883142607690042",
-	"24219022671055626321111109370544217506941658960408",
-	"07198403850962455444362981230987879927244284909188",
-	"84580156166097919133875499200524063689912560717606",
-	"05886116467109405077541002256983155200055935729725",
-	"71636269561882670428252483600823257530420752963450",
-].joined().compactMap { Int(String($0)) }
+/**
+Returns `true` if `value` is prime.
 
-compute(target: 13)
+Uses the existing `primes` array to determine if `value` is prime.
+If it is not a multiple of any existing prime, then it is prime.
+
+- Parameter value: The value to test for prime.
+- Parameter primes: The current array of primes.
+- Returns: `true` if `value` is prime, otherwise `false`.
+*/
+func isPrime(_ value: Int, _ primes: [Int]) -> Bool {
+	let sqRoot = Int(sqrt(Double(value)))
+	guard value % sqRoot != 0 else { return false }
+	for index in 0..<primes.count {
+		let prime = primes[index]
+		if value % prime == 0 {
+			/// Not prime if `value` is a multiple of a prime
+			return false
+		}
+		if sqRoot < prime {
+			/// Stop looking if the primes are larger than the square root
+			break
+		}
+	}
+	return true
+}
+
+/// Increments for finding the next prime.
+let inc = [4, 2, 4, 2, 4, 6, 2, 6]
+
+compute(target: 10)
+compute(target: 2000000)
