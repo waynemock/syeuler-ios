@@ -12,6 +12,10 @@ func pow(_ lhs: Int, _ rhs: Int) -> Int {
 	return Int(pow(Double(lhs), Double(rhs)))
 }
 
+func sqrt(_ x: Int) -> Int {
+	return Int(sqrt(Double(x)))
+}
+
 func ** (_ base: Int, _ exp: Int) -> Int {
 	return pow(base, exp)
 }
