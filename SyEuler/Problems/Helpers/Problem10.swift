@@ -1,26 +1,25 @@
 //
-//  Problem7.swift
+//  Problem10.swift
 //  SyEuler
 //
-//  Created by Wayne Mock on 1/4/21.
+//  Created by Wayne Mock on 1/6/21.
 //  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import Foundation
 
-class Problem7: Problem {
-	public override var id: Int { return 7 }
-	public override var title: String { return "10,001st prime" }
-	public override var summary: String { return "What is the 10,001st prime number?" }
-	public override var defaultInput: String { return "10001" }
-	public override var inputPlaceholder: String { return "Enter the Nth prime to find" }
+class Problem10: Problem {
+	public override var id: Int { return 10 }
+	public override var title: String { return "Summation of primes" }
+	public override var summary: String { return "Find the sum of all the primes below two million." }
+	public override var defaultInput: String { return "2000000" }
 
 	public override var state: State { return .completed }
-	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Jan 4, 2021") }
+	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Jan 6, 2021") }
 	public override var completedAt: Date? { return startedAt }
 
 	public override func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
-		return Problem7Op(inputs: inputs, completion: completion)
+		return Problem10Op(inputs: inputs, completion: completion)
 	}
 
 	public override var references: [ProblemReference] {[

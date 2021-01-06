@@ -1,41 +1,42 @@
 //
-//  Problem7Op.swift
+//  Problem10Op.swift
 //  SyEuler
 //
-//  Created by Wayne Mock on 1/4/21.
+//  Created by Wayne Mock on 1/6/21.
 //  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import Foundation
 
-class Problem7Op: ProblemIntOp {
+class Problem10Op: ProblemIntOp {
 	/**
-	Returns the `target`th prime. So, 10, would be the 10th priime.
+	Returns the sum of all primes below `target`.
 
-	Uses simplified Wheel Factorization to determine the `target`th prime.
+	Uses simplified Wheel Factorization to determine the largest prime.
 
 	Reference:
 	https://en.m.wikipedia.org/wiki/Wheel_factorization
 
 	- Parameter target: The Nth number to generate.
-	- Returns: The Nth prime, or a partial answer if cancelled before completion.
+	- Returns: The sum, or `nil` if cancelled before completion.
 	*/
 	override func compute(target: Int) -> IntAnswer? {
 		guard target > 0 else { return IntAnswer(error: "Must be > 0")}
 		guard target > primes.count else { return IntAnswer(value: primes[target - 1]) }
 		var k = 7, i = 0
-		while primes.count < target && !isCancelled {
+		while k < target {
 			if isPrime(k) {
 				primes.append(k)
 			}
 			k += inc[i]
 			i = (i + 1) % inc.count
-			report(progress: Double(primes.count) / Double(target))
+			if isCancelled {
+				return nil
+			}
+			report(progress: Double(k) / Double(target))
 		}
-		if isCancelled {
-			return IntAnswer(details: "Cancled at the \(ProblemFormatter.formatNth(int: primes.count)) prime\nLast computed prime was \(ProblemFormatter.format(int: primes.last!))")
-		}
-		return IntAnswer(value: primes.last!)
+		let answer = primes.reduce(0, { $0 + $1 })
+		return IntAnswer(value: answer, details: "Last prime: \(ProblemFormatter.format(int: primes.last!))")
 	}
 
 	/**
@@ -62,7 +63,7 @@ class Problem7Op: ProblemIntOp {
 		}
 		return true
 	}
-	
+
 	/// Initial set of primes to kick off the wheel factorization
 	var primes = [2,3,5]
 	/// Increments for finding the next prime.

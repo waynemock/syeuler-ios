@@ -3,6 +3,7 @@
 //  SyEulerTests
 //
 //  Created by Wayne Mock on 1/6/21.
+//  Copyright © 2021 Syzygy Softwerks LLC. All rights reserved.
 //
 
 import XCTest
