@@ -33,7 +33,7 @@ class Problem12Op: ProblemIntOp {
 			}
 			report(progress: Double(largest) / Double(target))
 		}
-		return IntAnswer(value: nextTriangleNumber, details: "Total: \(count)")
+		return IntAnswer(value: nextTriangleNumber, details: "Number of divisors: \(count)")
 	}
 
 	/**
