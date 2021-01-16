@@ -19,10 +19,10 @@ struct ProblemCompletedOn: View {
 					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in less than a day")
 						.font(.caption)
 				case 1:
-					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in \(days) day")
+					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in a day")
 						.font(.caption)
 				default:
-					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) in \(problem.daysToComplete) days")
+					Text("Completed on \(completedAt, formatter: Problem.dateFormatter) over \(problem.daysToComplete) days")
 						.font(.caption)
 				}
 				Spacer()

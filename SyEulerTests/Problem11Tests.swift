@@ -15,7 +15,7 @@ class Problem11Tests: XCTestCase {
 
 	func testTargetOutOfRange() throws {
 		[0, 11].forEach { n in
-			let answer = problem.compute(target: 0)
+			let answer = problem.compute(target: n)
 			XCTAssertEqual(answer?.value, nil)
 			XCTAssertEqual(answer?.details, nil)
 			XCTAssertEqual(answer?.error, "Must be > 0 and <= 10")
