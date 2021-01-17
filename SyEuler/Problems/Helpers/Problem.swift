@@ -140,7 +140,7 @@ class ProblemIntOp: ProblemOp {
 		super.main()
 		if let target = Int(inputs[0]) {
 			if let answer = compute(target: target) {
-				results.answer = answer.combined
+				results.answer = answer.asString
 			} else {
 				results.answer = "Canceled"
 			}
@@ -178,13 +178,12 @@ struct ProblemFormatter {
 	}
 }
 
-
 struct IntAnswer {
 	var value: Int?
 	var details: String?
 	var error: String?
 
-	var combined: String {
+	var asString: String {
 		var answers = [String]()
 		if let value = value {
 			answers.append("Answer: \(ProblemFormatter.format(int: value))")
