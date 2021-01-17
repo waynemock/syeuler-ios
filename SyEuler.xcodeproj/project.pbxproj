@@ -58,6 +58,8 @@
 		B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8825B3C6E700699F63 /* Problem14Op.swift */; };
 		B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8D25B3C75B00699F63 /* Problem14.swift */; };
 		B0D56C9325B3CE3400699F63 /* Problem14Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */; };
+		B0D56CA125B3DEEB00699F63 /* Problem15.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56CA025B3DEEB00699F63 /* Problem15.swift */; };
+		B0D56CA625B3DEF800699F63 /* Problem15Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56CA525B3DEF800699F63 /* Problem15Op.swift */; };
 		B0D8F59725A37A1100129FA3 /* Problem6.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F59625A37A1100129FA3 /* Problem6.swift */; };
 		B0D8F59C25A37A1C00129FA3 /* Problem6Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F59B25A37A1C00129FA3 /* Problem6Op.swift */; };
 		B0D8F5A125A37E1300129FA3 /* Problem7.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F5A025A37E1300129FA3 /* Problem7.swift */; };
@@ -151,6 +153,8 @@
 		B0D56C8825B3C6E700699F63 /* Problem14Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Op.swift; sourceTree = "<group>"; };
 		B0D56C8D25B3C75B00699F63 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
 		B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Tests.swift; sourceTree = "<group>"; };
+		B0D56CA025B3DEEB00699F63 /* Problem15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem15.swift; sourceTree = "<group>"; };
+		B0D56CA525B3DEF800699F63 /* Problem15Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem15Op.swift; sourceTree = "<group>"; };
 		B0D8F59625A37A1100129FA3 /* Problem6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem6.swift; sourceTree = "<group>"; };
 		B0D8F59B25A37A1C00129FA3 /* Problem6Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem6Op.swift; sourceTree = "<group>"; };
 		B0D8F5A025A37E1300129FA3 /* Problem7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem7.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 				B0E950DA25B0B18100F9B94B /* Problem12Op.swift */,
 				B066C32925B34C120033D470 /* Problem13Op.swift */,
 				B0D56C8825B3C6E700699F63 /* Problem14Op.swift */,
+				B0D56CA525B3DEF800699F63 /* Problem15Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				B0E950D525B0B10000F9B94B /* Problem12.swift */,
 				B066C32425B34ADB0033D470 /* Problem13.swift */,
 				B0D56C8D25B3C75B00699F63 /* Problem14.swift */,
+				B0D56CA025B3DEEB00699F63 /* Problem15.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				B0EDEDEF25A3CE8F006A3C45 /* Problem8.swift in Sources */,
 				B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */,
 				B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */,
+				B0D56CA125B3DEEB00699F63 /* Problem15.swift in Sources */,
 				B095429825A20CFD00007D5F /* Problem5.swift in Sources */,
 				B0EDEDF425A3CEC1006A3C45 /* Problem8Op.swift in Sources */,
 				B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */,
@@ -544,6 +551,7 @@
 				B0C5F29425A61F3B00040156 /* Problem10Op.swift in Sources */,
 				B05C55AD259E25FF0077BEC2 /* BundleExtension.swift in Sources */,
 				B0E950D625B0B10000F9B94B /* Problem12.swift in Sources */,
+				B0D56CA625B3DEF800699F63 /* Problem15Op.swift in Sources */,
 				B05C55BD259F6BE20077BEC2 /* Problem4Op.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,7 +733,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 1.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -748,7 +756,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 1.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
