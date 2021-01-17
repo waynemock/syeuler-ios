@@ -15,7 +15,7 @@ class Problem13: Problem {
 	public override var defaultInput: String { return "10" }
 	public override var inputPlaceholder: String { return "Enter the number of digits" }
 
-	public override var state: State { return .inProgress }
+	public override var state: State { return .completed }
 	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Jan 16, 2021") }
 	public override var completedAt: Date? { return startedAt }
 

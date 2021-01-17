@@ -116,8 +116,14 @@ struct ProblemDetail: View {
 							Text("\((elapsed * 1000).roundTo1) ms")
 								.font(.footnote)
 						} else {
-							Text("\(elapsed.roundTo0) seconds")
-								.font(.footnote)
+							let seconds = elapsed.roundTo0
+							if seconds == "1" {
+								Text("\(seconds) second")
+									.font(.footnote)
+							} else {
+								Text("\(seconds) seconds")
+									.font(.footnote)
+							}
 						}
 					}
 				}
