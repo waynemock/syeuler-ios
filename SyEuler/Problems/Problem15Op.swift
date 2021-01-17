@@ -17,7 +17,7 @@ class Problem15Op: ProblemIntOp {
 	*/
 	override func compute(target: Int) -> IntAnswer? {
 		guard target > 0 else { return IntAnswer(error: "Must be > 0")}
-		let k = Double(target)
+		let k = UInt(target)
 		let n = k + k
 		let value = factorial(n) / (factorial(k) * factorial(n - k))
 		return IntAnswer(value: Int(value))
@@ -29,7 +29,7 @@ class Problem15Op: ProblemIntOp {
 	- Parameter target: The number to consider.
 	- Returns: The fatorial
 	*/
-	func factorial(_ target: Double) -> Double {
-		return (1...Int(target)).map({Double($0})).reduce(1, *)
+	func factorial(_ target: UInt) -> UInt {
+		return (1...target).reduce(1, *)
 	}
 }
