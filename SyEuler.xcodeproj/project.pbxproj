@@ -55,6 +55,10 @@
 		B0C5F28F25A61EBA00040156 /* Problem10.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5F28E25A61EBA00040156 /* Problem10.swift */; };
 		B0C5F29425A61F3B00040156 /* Problem10Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5F29325A61F3B00040156 /* Problem10Op.swift */; };
 		B0C5F29925A627E400040156 /* Problem10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C5F29825A627E400040156 /* Problem10Tests.swift */; };
+		B0CEE7F625B5245E004873E7 /* Problem16.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE7F525B5245E004873E7 /* Problem16.swift */; };
+		B0CEE7FB25B524D7004873E7 /* Problem16Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */; };
+		B0CEE80325B6440F004873E7 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE80225B6440F004873E7 /* BigInt.swift */; };
+		B0CEE81325B64A68004873E7 /* Problem16Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE81225B64A68004873E7 /* Problem16Tests.swift */; };
 		B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8825B3C6E700699F63 /* Problem14Op.swift */; };
 		B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8D25B3C75B00699F63 /* Problem14.swift */; };
 		B0D56C9325B3CE3400699F63 /* Problem14Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */; };
@@ -151,6 +155,10 @@
 		B0C5F28E25A61EBA00040156 /* Problem10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem10.swift; sourceTree = "<group>"; };
 		B0C5F29325A61F3B00040156 /* Problem10Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem10Op.swift; sourceTree = "<group>"; };
 		B0C5F29825A627E400040156 /* Problem10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem10Tests.swift; sourceTree = "<group>"; };
+		B0CEE7F525B5245E004873E7 /* Problem16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16.swift; sourceTree = "<group>"; };
+		B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16Op.swift; sourceTree = "<group>"; };
+		B0CEE80225B6440F004873E7 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		B0CEE81225B64A68004873E7 /* Problem16Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16Tests.swift; sourceTree = "<group>"; };
 		B0D56C8825B3C6E700699F63 /* Problem14Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Op.swift; sourceTree = "<group>"; };
 		B0D56C8D25B3C75B00699F63 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
 		B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Tests.swift; sourceTree = "<group>"; };
@@ -259,6 +267,7 @@
 				B066C32E25B3ADC30033D470 /* Problem13Tests.swift */,
 				B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */,
 				B0D56CB025B51B5C00699F63 /* Problem15Tests.swift */,
+				B0CEE81225B64A68004873E7 /* Problem16Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -292,6 +301,7 @@
 				B066C32925B34C120033D470 /* Problem13Op.swift */,
 				B0D56C8825B3C6E700699F63 /* Problem14Op.swift */,
 				B0D56CA525B3DEF800699F63 /* Problem15Op.swift */,
+				B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -300,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				B0533FA6259B84F3002B9581 /* Assets.xcassets */,
+				B0CEE80225B6440F004873E7 /* BigInt.swift */,
 				B0533FAB259B84F3002B9581 /* Info.plist */,
 				B07BBCF5259C0C7E00A8DE25 /* Launch Screen.storyboard */,
 				B0533FFB259B87B1002B9581 /* Logger.swift */,
@@ -373,6 +384,7 @@
 				B066C32425B34ADB0033D470 /* Problem13.swift */,
 				B0D56C8D25B3C75B00699F63 /* Problem14.swift */,
 				B0D56CA025B3DEEB00699F63 /* Problem15.swift */,
+				B0CEE7F525B5245E004873E7 /* Problem16.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -543,7 +555,10 @@
 				B066C32525B34ADB0033D470 /* Problem13.swift in Sources */,
 				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
 				B0E950DB25B0B18100F9B94B /* Problem12Op.swift in Sources */,
+				B0CEE80325B6440F004873E7 /* BigInt.swift in Sources */,
+				B0CEE7F625B5245E004873E7 /* Problem16.swift in Sources */,
 				B0D8F5A125A37E1300129FA3 /* Problem7.swift in Sources */,
+				B0CEE7FB25B524D7004873E7 /* Problem16Op.swift in Sources */,
 				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
 				B05C55B8259F6AF70077BEC2 /* Problem4.swift in Sources */,
 				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
@@ -574,6 +589,7 @@
 				B0E950E025B1383B00F9B94B /* Problem12Tests.swift in Sources */,
 				B0D56CB125B51B5C00699F63 /* Problem15Tests.swift in Sources */,
 				B066C32F25B3ADC30033D470 /* Problem13Tests.swift in Sources */,
+				B0CEE81325B64A68004873E7 /* Problem16Tests.swift in Sources */,
 				B0C5F28A25A6188C00040156 /* Problem9Tests.swift in Sources */,
 				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
 				B09542B225A23F8000007D5F /* Problem5Tests.swift in Sources */,
@@ -737,7 +753,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.15;
+				MARKETING_VERSION = 1.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -760,7 +776,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.15;
+				MARKETING_VERSION = 1.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
