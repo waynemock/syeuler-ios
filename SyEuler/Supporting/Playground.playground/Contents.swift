@@ -4,30 +4,23 @@
 import Foundation
 
 /**
-Returns the number lattice path's found in a `target` X `target` grid.
+Returns the sum of the digits of the number 2^`target`
 
-Create's a Pascal's triangle to compute the result:
-https://en.wikipedia.org/wiki/Pascal%27s_triangle
+I used the BigInt protoype found on the Swift.org GitHub repo:
+https://github.com/apple/swift/blob/main/test/Prototypes/BigInt.swift
+No sense in reinventing the wheel...
 
 - Parameter target: The target number to consider.
-- Returns: The number of paths, or `nil` if out of range.
+- Returns: The sum, or `nil` if cancelled before completion.
 */
 func compute(target: Int) -> Int? {
 	guard target > 0 else { return nil }
-	/// Create's a Pascal's triangle with double the rows as the grid.
-	var rows = [[1]]
-	for n in 1..<(2 * target + 1) {
-		let previousRow = rows[n-1]
-		var nextRow = [1]
-		for i in 0..<(previousRow.count-1) {
-			let c = previousRow[i] + previousRow[i+1]
-			nextRow.append(c)
-		}
-		nextRow.append(1)
-		rows.append(nextRow)
+	let value = BigInt(1) << target
+	let digits = value.toString()
+	let sum = digits.reduce(into: 0) { sum, letter in
+		sum += Int(String(letter)) ?? 0
 	}
-	/// The result is the value in the middle of the last row of the Pascal's triangle.
-	return rows.last![rows.last!.count/2]
+	return sum
 }
 
-compute(target: 20)
+compute(target: 1000)
