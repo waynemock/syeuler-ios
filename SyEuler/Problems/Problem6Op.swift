@@ -20,7 +20,7 @@ class Problem6Op: ProblemIntOp {
 		var sumOfSquares = 0
 		var sum = 0
 		for x in 1...target {
-			guard let result = x *? x else { return IntAnswer(error: "Overflowed Int.max at x=\(x)") }
+			guard let result = x *? x else { return IntAnswer(error: "Result overflows Int.max at x=\(x)") }
 			sumOfSquares += result
 			sum += x
 		}
