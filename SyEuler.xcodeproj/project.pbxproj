@@ -159,6 +159,7 @@
 		B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16Op.swift; sourceTree = "<group>"; };
 		B0CEE80225B6440F004873E7 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
 		B0CEE81225B64A68004873E7 /* Problem16Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16Tests.swift; sourceTree = "<group>"; };
+		B0CEE82025B6566A004873E7 /* SyEuler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyEuler.entitlements; sourceTree = "<group>"; };
 		B0D56C8825B3C6E700699F63 /* Problem14Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Op.swift; sourceTree = "<group>"; };
 		B0D56C8D25B3C75B00699F63 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
 		B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Tests.swift; sourceTree = "<group>"; };
@@ -232,6 +233,7 @@
 		B0533FA1259B84F1002B9581 /* SyEuler */ = {
 			isa = PBXGroup;
 			children = (
+				B0CEE82025B6566A004873E7 /* SyEuler.entitlements */,
 				B07BBC86259B97D900A8DE25 /* Extensions */,
 				B0533FD3259B8520002B9581 /* Problems */,
 				B0534003259B87E1002B9581 /* Supporting */,
@@ -743,6 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyEuler/SyEuler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Supporting/Preview Content\"";
 				DEVELOPMENT_TEAM = PXZ9H8P4AQ;
@@ -756,6 +759,7 @@
 				MARKETING_VERSION = 1.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -766,6 +770,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SyEuler/SyEuler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Supporting/Preview Content\"";
 				DEVELOPMENT_TEAM = PXZ9H8P4AQ;
@@ -779,6 +784,7 @@
 				MARKETING_VERSION = 1.16;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -20,7 +20,8 @@ class Problem16Op: ProblemIntOp {
 	- Returns: The sum, or `nil` if cancelled before completion.
 	*/
 	override func compute(target: Int) -> IntAnswer? {
-		guard target > 0 else { return IntAnswer(error: "Must be > 0")}
+		guard target > 0 && target <= 2000 else { return IntAnswer(error: "Must be > 0 and <= 2000")}
+		/// Shifting to the left is a quick way of computing power's of 2
 		let value = BigInt(1) << target
 		let digits = value.toString()
 		let sum = digits.reduce(into: 0) { sum, letter in
