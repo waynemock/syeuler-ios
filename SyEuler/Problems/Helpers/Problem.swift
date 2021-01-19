@@ -157,7 +157,7 @@ struct ProblemFormatter {
 
 	static let intFormatter: NumberFormatter = {
 		let formatter = NumberFormatter()
-		formatter.numberStyle = NumberFormatter.Style.decimal
+		formatter.numberStyle = .decimal
 		formatter.usesGroupingSeparator = true
 		return formatter
 	}()

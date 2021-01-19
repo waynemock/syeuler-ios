@@ -46,6 +46,9 @@
 		B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */; };
 		B07BBD27259D20D100A8DE25 /* Problem1Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD26259D20D100A8DE25 /* Problem1Op.swift */; };
 		B07BBD2F259D20F900A8DE25 /* Problem2Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */; };
+		B08BEE7A25B67DCE00EB59C5 /* Problem17.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08BEE7925B67DCE00EB59C5 /* Problem17.swift */; };
+		B08BEE7F25B67DD600EB59C5 /* Problem17Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08BEE7E25B67DD600EB59C5 /* Problem17Op.swift */; };
+		B08BEE8425B67DEA00EB59C5 /* Problem17Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08BEE8325B67DEA00EB59C5 /* Problem17Tests.swift */; };
 		B095429825A20CFD00007D5F /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095429725A20CFD00007D5F /* Problem5.swift */; };
 		B095429D25A20D7200007D5F /* Problem5Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095429C25A20D7200007D5F /* Problem5Op.swift */; };
 		B09542B225A23F8000007D5F /* Problem5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09542B125A23F8000007D5F /* Problem5Tests.swift */; };
@@ -145,6 +148,9 @@
 		B07BBD13259C3D3200A8DE25 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		B07BBD26259D20D100A8DE25 /* Problem1Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem1Op.swift; sourceTree = "<group>"; };
 		B07BBD2E259D20F900A8DE25 /* Problem2Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2Op.swift; sourceTree = "<group>"; };
+		B08BEE7925B67DCE00EB59C5 /* Problem17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17.swift; sourceTree = "<group>"; };
+		B08BEE7E25B67DD600EB59C5 /* Problem17Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17Op.swift; sourceTree = "<group>"; };
+		B08BEE8325B67DEA00EB59C5 /* Problem17Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem17Tests.swift; sourceTree = "<group>"; };
 		B095429725A20CFD00007D5F /* Problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5.swift; sourceTree = "<group>"; };
 		B095429C25A20D7200007D5F /* Problem5Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Op.swift; sourceTree = "<group>"; };
 		B09542B125A23F8000007D5F /* Problem5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Tests.swift; sourceTree = "<group>"; };
@@ -270,6 +276,7 @@
 				B0D56C9225B3CE3400699F63 /* Problem14Tests.swift */,
 				B0D56CB025B51B5C00699F63 /* Problem15Tests.swift */,
 				B0CEE81225B64A68004873E7 /* Problem16Tests.swift */,
+				B08BEE8325B67DEA00EB59C5 /* Problem17Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -304,6 +311,7 @@
 				B0D56C8825B3C6E700699F63 /* Problem14Op.swift */,
 				B0D56CA525B3DEF800699F63 /* Problem15Op.swift */,
 				B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */,
+				B08BEE7E25B67DD600EB59C5 /* Problem17Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -387,6 +395,7 @@
 				B0D56C8D25B3C75B00699F63 /* Problem14.swift */,
 				B0D56CA025B3DEEB00699F63 /* Problem15.swift */,
 				B0CEE7F525B5245E004873E7 /* Problem16.swift */,
+				B08BEE7925B67DCE00EB59C5 /* Problem17.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -551,6 +560,7 @@
 				B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */,
 				B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */,
 				B0D56CA125B3DEEB00699F63 /* Problem15.swift in Sources */,
+				B08BEE7A25B67DCE00EB59C5 /* Problem17.swift in Sources */,
 				B095429825A20CFD00007D5F /* Problem5.swift in Sources */,
 				B0EDEDF425A3CEC1006A3C45 /* Problem8Op.swift in Sources */,
 				B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */,
@@ -566,6 +576,7 @@
 				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
 				B095429D25A20D7200007D5F /* Problem5Op.swift in Sources */,
 				B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */,
+				B08BEE7F25B67DD600EB59C5 /* Problem17Op.swift in Sources */,
 				B0D8F5A625A37E5E00129FA3 /* Problem7Op.swift in Sources */,
 				B07BBCBA259BC5B600A8DE25 /* Safari.swift in Sources */,
 				B0C5F29425A61F3B00040156 /* Problem10Op.swift in Sources */,
@@ -581,6 +592,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0EDEDE125A3BF41006A3C45 /* Problem6Tests.swift in Sources */,
+				B08BEE8425B67DEA00EB59C5 /* Problem17Tests.swift in Sources */,
 				B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */,
 				B0D8F5AB25A38FEE00129FA3 /* Problem7Tests.swift in Sources */,
 				B0EDEDF925A3FA7D006A3C45 /* Problem8Tests.swift in Sources */,
@@ -747,7 +759,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SyEuler/SyEuler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Supporting/Preview Content\"";
 				DEVELOPMENT_TEAM = PXZ9H8P4AQ;
 				ENABLE_PREVIEWS = YES;
@@ -757,7 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.16;
+				MARKETING_VERSION = 1.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -773,7 +785,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SyEuler/SyEuler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SyEuler/Supporting/Preview Content\"";
 				DEVELOPMENT_TEAM = PXZ9H8P4AQ;
 				ENABLE_PREVIEWS = YES;
@@ -783,7 +795,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.16;
+				MARKETING_VERSION = 1.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
