@@ -32,7 +32,7 @@ class Problem11Tests: XCTestCase {
 	func testResults() throws {
 		for n in 1...10 {
 			let answer = problem.compute(target: n)
-			XCTAssertEqual(answer?.value, problem.values.reduce(1, { $0 * $1 }))
+			XCTAssertEqual(answer?.value, problem.values.reduce(1, *))
 		}
 	}
 }
