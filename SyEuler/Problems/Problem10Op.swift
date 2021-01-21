@@ -35,7 +35,7 @@ class Problem10Op: ProblemIntOp {
 			}
 			report(progress: Double(k) / Double(target))
 		}
-		let answer = primes.reduce(0, { $0 + $1 })
+		let answer = primes.reduce(0, +)
 		return IntAnswer(value: answer, details: "Last prime: \(ProblemFormatter.format(int: primes.last!))")
 	}
 
