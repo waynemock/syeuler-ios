@@ -92,6 +92,9 @@
 		B0EDEDEF25A3CE8F006A3C45 /* Problem8.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDEE25A3CE8F006A3C45 /* Problem8.swift */; };
 		B0EDEDF425A3CEC1006A3C45 /* Problem8Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDF325A3CEC1006A3C45 /* Problem8Op.swift */; };
 		B0EDEDF925A3FA7D006A3C45 /* Problem8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EDEDF825A3FA7D006A3C45 /* Problem8Tests.swift */; };
+		B0F4A6AE25C25A9700887805 /* Problem21.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4A6AD25C25A9700887805 /* Problem21.swift */; };
+		B0F4A6B325C25AA400887805 /* Problem21Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4A6B225C25AA400887805 /* Problem21Op.swift */; };
+		B0F4A6B825C25AB400887805 /* Problem21Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4A6B725C25AB400887805 /* Problem21Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +208,9 @@
 		B0EDEDEE25A3CE8F006A3C45 /* Problem8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem8.swift; sourceTree = "<group>"; };
 		B0EDEDF325A3CEC1006A3C45 /* Problem8Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem8Op.swift; sourceTree = "<group>"; };
 		B0EDEDF825A3FA7D006A3C45 /* Problem8Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem8Tests.swift; sourceTree = "<group>"; };
+		B0F4A6AD25C25A9700887805 /* Problem21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem21.swift; sourceTree = "<group>"; };
+		B0F4A6B225C25AA400887805 /* Problem21Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem21Op.swift; sourceTree = "<group>"; };
+		B0F4A6B725C25AB400887805 /* Problem21Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem21Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +304,7 @@
 				B0C58B6A25B88A6300AE97DA /* Problem18Tests.swift */,
 				B0C58B8225B9109000AE97DA /* Problem19Tests.swift */,
 				B0E6539D25B92C23006D0D0B /* Problem20Tests.swift */,
+				B0F4A6B725C25AB400887805 /* Problem21Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -336,6 +343,7 @@
 				B0C58B6525B88A5A00AE97DA /* Problem18Op.swift */,
 				B0C58B7D25B9107C00AE97DA /* Problem19Op.swift */,
 				B0E6539825B92C1A006D0D0B /* Problem20Op.swift */,
+				B0F4A6B225C25AA400887805 /* Problem21Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -423,6 +431,7 @@
 				B0C58B6025B88A4F00AE97DA /* Problem18.swift */,
 				B0C58B7825B9107100AE97DA /* Problem19.swift */,
 				B0E6539325B92C04006D0D0B /* Problem20.swift */,
+				B0F4A6AD25C25A9700887805 /* Problem21.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -598,11 +607,13 @@
 				B066C32525B34ADB0033D470 /* Problem13.swift in Sources */,
 				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
 				B0E950DB25B0B18100F9B94B /* Problem12Op.swift in Sources */,
+				B0F4A6B325C25AA400887805 /* Problem21Op.swift in Sources */,
 				B0CEE80325B6440F004873E7 /* BigInt.swift in Sources */,
 				B0CEE7F625B5245E004873E7 /* Problem16.swift in Sources */,
 				B0D8F5A125A37E1300129FA3 /* Problem7.swift in Sources */,
 				B0CEE7FB25B524D7004873E7 /* Problem16Op.swift in Sources */,
 				B07BBC9C259BB49800A8DE25 /* ProblemCompletedOn.swift in Sources */,
+				B0F4A6AE25C25A9700887805 /* Problem21.swift in Sources */,
 				B05C55B8259F6AF70077BEC2 /* Problem4.swift in Sources */,
 				B07BBD14259C3D3200A8DE25 /* DoubleExtension.swift in Sources */,
 				B095429D25A20D7200007D5F /* Problem5Op.swift in Sources */,
@@ -638,6 +649,7 @@
 				B0E950E025B1383B00F9B94B /* Problem12Tests.swift in Sources */,
 				B0D56CB125B51B5C00699F63 /* Problem15Tests.swift in Sources */,
 				B066C32F25B3ADC30033D470 /* Problem13Tests.swift in Sources */,
+				B0F4A6B825C25AB400887805 /* Problem21Tests.swift in Sources */,
 				B0CEE81325B64A68004873E7 /* Problem16Tests.swift in Sources */,
 				B0C5F28A25A6188C00040156 /* Problem9Tests.swift in Sources */,
 				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
@@ -805,7 +817,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.20;
+				MARKETING_VERSION = 1.21;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -831,7 +843,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.20;
+				MARKETING_VERSION = 1.21;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;

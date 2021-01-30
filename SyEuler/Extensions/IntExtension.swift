@@ -60,3 +60,13 @@ Returns `target!`, or the factorial of `target`.
 func factorial(_ target: UInt) -> UInt {
 	return (1...target).reduce(1, *)
 }
+
+/**
+Returns `target!`, or the factorial of `target`.
+
+- Parameter target: The number to consider.
+- Returns: The fatorial
+*/
+func factorial(_ target: BigInt) -> BigInt {
+	return (1...target).reduce(1, *)
+}
