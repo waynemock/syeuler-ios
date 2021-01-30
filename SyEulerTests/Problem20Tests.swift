@@ -18,7 +18,7 @@ class Problem20Tests: XCTestCase {
 			let answer = problem.compute(target: n)
 			XCTAssertEqual(answer?.value, nil)
 			XCTAssertEqual(answer?.details, nil)
-			XCTAssertEqual(answer?.error, "Must be > 0")
+			XCTAssertEqual(answer?.error, "Must be > 0 and <= 200")
 		}
 	}
 
