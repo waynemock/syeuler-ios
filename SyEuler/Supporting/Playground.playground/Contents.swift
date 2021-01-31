@@ -1,70 +1,82 @@
 // Here's my solution in Swift. Just copy it into a Playground and press play.
-// Finished in 60 ms on my iPhone 12 Pro
+// Finished in 1.2 seconds on my iPhone 12 Pro
 
 import Foundation
 
 /**
-Returns the total of all the name scores in the file.
+Returns the sum of all the positive integers which cannot be written as the sum of two abundant numbers..
+
+Every integer greater than 20161 can be written as the sum of two abundant numbers.
+I know the problem says 28123, but my research shows it's actually 20161.
+https://en.wikipedia.org/wiki/Abundant_number
 
 - Parameter target: The target number to consider.
-- Returns: The total
+- Returns: The sum, or `nil` or if out of range.
 */
-func compute(target: Int) -> Int {
-	let names = getSortedNames()
-	guard !names.isEmpty else { return 0 }
-	if target <= 0 || target > names.count {
-		var sum = 0
-		for index in 1...names.count {
-			sum += computeNameScore(of: index, with: names)
+func compute(target: Int) -> Int? {
+	guard target > 0 else { return nil }
+	let max = min(target, 20161)
+	abundantNumbers = []
+	/// Find all abundant numbers in the range
+	for number in 1...max {
+		if sumOfProperDivisors(of: number) > number {
+			abundantNumbers.insert(number)
 		}
-		return sum
-	} else {
-		return computeNameScore(of: target, with: names)
 	}
-}
-
-/**
-Computes the name score of the `nth` name found in `names`
-
-The name score is the sume of the character values, 1 - 26, times it's position in the `names` array.
-
-- Parameter nth: The nth name to consider, so 1 is the 1st name, with an index of 0.
-- Parameter names: An array of names to consider.
-*/
-func computeNameScore(of nth: Int, with names: [String]) -> Int {
+	/// Compute the sum by considering all numbers up to our `max`.
+	/// Even some abundant numbers are not sums of abundant numbers.
 	var sum = 0
-	names[nth-1].forEach { character in
-		let charScore = Int(character.asciiValue!) - asciiValueOfA + 1
-		// Assuming English name made from the letters A-Z
-		if (1...26).contains(charScore) {
-			sum += charScore
+	for nonAbundant in 1...max {
+		if !isSumOfAbundantNumbers(nonAbundant) {
+			sum += nonAbundant
 		}
 	}
-	return sum * nth
+	return sum
 }
 
 /**
-Returns the names found in `Problem22Names.txt` as an array of strings.
+Determines if `target` is the sum of abundant numbers.
 
-Copy the `p022_names.txt` file into the `Resources` direcotry of the playground.
+- Parameter target: The number to consider.
+- Returns: `true` if `target` is the sum of abundant numbers.
 */
-func getSortedNames() -> [String] {
-	do {
-		guard let url = Bundle.main.url(forResource: "p022_names", withExtension: "txt") else { return [] }
-		let data = try String(contentsOf: url, encoding: String.Encoding.utf8)
-		/// Remove any non-ascii non-letter characters.
-		/// There might be whitespace or other symbols that do not count.
-		return data.filter({($0.isASCII && $0.isLetter) || $0 == ","})
-			.uppercased()
-			.components(separatedBy: ",")
-			.sorted()
-	} catch {
-		return []
+func isSumOfAbundantNumbers(_ target: Int) -> Bool {
+	for abundantNumber in abundantNumbers {
+		if abundantNumbers.contains(target - abundantNumber) {
+			return true
+		}
 	}
+	return false
 }
 
-/// We assume the names are uppercased already, by `getSortedNames`.
-let asciiValueOfA = Int(Character("A").asciiValue!)
+/**
+Returns the sum of all the proper divisors of `target`.
 
-compute(target: 938)
-compute(target: 0)
+- Parameter target: The number to consider.
+- Returns: The sum
+*/
+func sumOfProperDivisors(of target: Int) -> Int {
+	let t = abs(target)
+	guard t > 0 else { return 0 }
+	let max = sqrt(t)
+	guard max > 2 else { return 1 }
+	var sum = 1
+	for m in 2...max {
+		if t % m == 0 {
+			sum += m
+			let n = t / m
+			if m != n {
+				sum += n
+			}
+		}
+	}
+	return sum
+}
+
+func sqrt(_ x: Int) -> Int {
+	return Int(sqrt(Double(x)))
+}
+
+var abundantNumbers: Set<Int> = []
+
+compute(target: 28123)

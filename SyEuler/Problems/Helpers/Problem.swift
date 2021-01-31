@@ -83,6 +83,10 @@ class ProblemOp: Operation {
 		lastProgressReport = results.elapsed
 	}
 
+	func report(progress x: Int, _ y: Int) {
+		report(progress: Double(x) / Double(y))
+	}
+
 	func report(progress: Double) {
 		if lastProgressReport + 0.01 < results.elapsed {
 			results.precentComplete = progress
@@ -141,6 +145,7 @@ class ProblemIntOp: ProblemOp {
 		if let target = Int(inputs[0]) {
 			if let answer = compute(target: target) {
 				results.answer = answer.asString
+				LogInfo(self, "answer=\(String(describing: answer.value))")
 			} else {
 				results.answer = "Canceled"
 			}
@@ -149,7 +154,7 @@ class ProblemIntOp: ProblemOp {
 		}
 		results.isDone = true
 		results.precentComplete = nil
-		self.completion(self.results)
+		self.completion(results)
 	}
 }
 

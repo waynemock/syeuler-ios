@@ -11,6 +11,9 @@
 		B04417DE25C59974007AC901 /* Problem22Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04417DD25C59974007AC901 /* Problem22Op.swift */; };
 		B04417E325C59B81007AC901 /* Problem22Names.txt in Resources */ = {isa = PBXBuildFile; fileRef = B04417E225C59B81007AC901 /* Problem22Names.txt */; };
 		B04417EE25C5DB26007AC901 /* Problem22Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04417ED25C5DB26007AC901 /* Problem22Tests.swift */; };
+		B04417F925C6143E007AC901 /* Problem23.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04417F825C6143E007AC901 /* Problem23.swift */; };
+		B04417FE25C631C5007AC901 /* Problem23Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04417FD25C631C5007AC901 /* Problem23Op.swift */; };
+		B044180325C71A1A007AC901 /* Problem23Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B044180225C71A1A007AC901 /* Problem23Tests.swift */; };
 		B0533FA3259B84F1002B9581 /* SyEulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA2259B84F1002B9581 /* SyEulerApp.swift */; };
 		B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0533FA4259B84F1002B9581 /* ProblemList.swift */; };
 		B0533FA7259B84F3002B9581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0533FA6259B84F3002B9581 /* Assets.xcassets */; };
@@ -123,6 +126,9 @@
 		B04417DD25C59974007AC901 /* Problem22Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem22Op.swift; sourceTree = "<group>"; };
 		B04417E225C59B81007AC901 /* Problem22Names.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Problem22Names.txt; sourceTree = "<group>"; };
 		B04417ED25C5DB26007AC901 /* Problem22Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem22Tests.swift; sourceTree = "<group>"; };
+		B04417F825C6143E007AC901 /* Problem23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem23.swift; sourceTree = "<group>"; };
+		B04417FD25C631C5007AC901 /* Problem23Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem23Op.swift; sourceTree = "<group>"; };
+		B044180225C71A1A007AC901 /* Problem23Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem23Tests.swift; sourceTree = "<group>"; };
 		B0533F9F259B84F1002B9581 /* SyEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0533FA2259B84F1002B9581 /* SyEulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyEulerApp.swift; sourceTree = "<group>"; };
 		B0533FA4259B84F1002B9581 /* ProblemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemList.swift; sourceTree = "<group>"; };
@@ -314,6 +320,7 @@
 				B0E6539D25B92C23006D0D0B /* Problem20Tests.swift */,
 				B0F4A6B725C25AB400887805 /* Problem21Tests.swift */,
 				B04417ED25C5DB26007AC901 /* Problem22Tests.swift */,
+				B044180225C71A1A007AC901 /* Problem23Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -354,6 +361,7 @@
 				B0E6539825B92C1A006D0D0B /* Problem20Op.swift */,
 				B0F4A6B225C25AA400887805 /* Problem21Op.swift */,
 				B04417DD25C59974007AC901 /* Problem22Op.swift */,
+				B04417FD25C631C5007AC901 /* Problem23Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -444,6 +452,7 @@
 				B0F4A6AD25C25A9700887805 /* Problem21.swift */,
 				B04417D825C5983C007AC901 /* Problem22.swift */,
 				B04417E225C59B81007AC901 /* Problem22Names.txt */,
+				B04417F825C6143E007AC901 /* Problem23.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -594,6 +603,7 @@
 				B0C5F28525A4120900040156 /* Problem9Op.swift in Sources */,
 				B0533FF7259B87A2002B9581 /* Problem.swift in Sources */,
 				B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */,
+				B04417F925C6143E007AC901 /* Problem23.swift in Sources */,
 				B0E6539925B92C1A006D0D0B /* Problem20Op.swift in Sources */,
 				B05C5597259D618E0077BEC2 /* CapsuleButton.swift in Sources */,
 				B0D9390A25AFE05500951EDD /* Problem11Op.swift in Sources */,
@@ -613,6 +623,7 @@
 				B0EDEDEF25A3CE8F006A3C45 /* Problem8.swift in Sources */,
 				B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */,
 				B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */,
+				B04417FE25C631C5007AC901 /* Problem23Op.swift in Sources */,
 				B0D56CA125B3DEEB00699F63 /* Problem15.swift in Sources */,
 				B08BEE7A25B67DCE00EB59C5 /* Problem17.swift in Sources */,
 				B095429825A20CFD00007D5F /* Problem5.swift in Sources */,
@@ -650,6 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B044180325C71A1A007AC901 /* Problem23Tests.swift in Sources */,
 				B0EDEDE125A3BF41006A3C45 /* Problem6Tests.swift in Sources */,
 				B08BEE8425B67DEA00EB59C5 /* Problem17Tests.swift in Sources */,
 				B0533FE7259B863C002B9581 /* Problem1Tests.swift in Sources */,
@@ -833,7 +845,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.22;
+				MARKETING_VERSION = 1.23;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -859,7 +871,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.22;
+				MARKETING_VERSION = 1.23;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;

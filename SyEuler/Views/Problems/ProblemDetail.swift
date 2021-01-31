@@ -112,18 +112,15 @@ struct ProblemDetail: View {
 						ProgressView(value: percentComplete)
 					}
 					if let elapsed = elapsed {
-						if elapsed < 1 {
-							Text("\((elapsed * 1000).roundTo1) ms")
-								.font(.footnote)
+						if elapsed < 0.01 {
+							Text("\((elapsed * 1000).roundTo1) ms").font(.footnote)
+						} else if elapsed < 2 {
+							Text("\((elapsed * 1000).roundTo0) ms").font(.footnote)
+						} else if elapsed < 10 {
+							Text("\((elapsed).roundTo1) seconds").font(.footnote)
 						} else {
 							let seconds = elapsed.roundTo0
-							if seconds == "1" {
-								Text("\(seconds) second")
-									.font(.footnote)
-							} else {
-								Text("\(seconds) seconds")
-									.font(.footnote)
-							}
+							Text("\(seconds) seconds").font(.footnote)
 						}
 					}
 				}

@@ -49,7 +49,7 @@ extension Double {
 	func round(to decimalPlace:Int) -> String {
 		let formatter = NumberFormatter()
 		formatter.roundingMode = .halfUp
-		formatter.minimumFractionDigits = 0
+		formatter.minimumFractionDigits = 1
 		formatter.maximumFractionDigits = decimalPlace
 		formatter.minimumIntegerDigits = 1
 		formatter.numberStyle = NumberFormatter.Style.decimal
