@@ -88,6 +88,8 @@
 		B0D8F5AB25A38FEE00129FA3 /* Problem7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8F5AA25A38FEE00129FA3 /* Problem7Tests.swift */; };
 		B0D9390525AFDFC800951EDD /* Problem11.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9390425AFDFC700951EDD /* Problem11.swift */; };
 		B0D9390A25AFE05500951EDD /* Problem11Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9390925AFE05500951EDD /* Problem11Op.swift */; };
+		B0E2AED525C729AB00B33B19 /* Problem24.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2AED425C729AB00B33B19 /* Problem24.swift */; };
+		B0E2AEDA25C72A1900B33B19 /* Problem24Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E2AED925C72A1900B33B19 /* Problem24Op.swift */; };
 		B0E6539425B92C04006D0D0B /* Problem20.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E6539325B92C04006D0D0B /* Problem20.swift */; };
 		B0E6539925B92C1A006D0D0B /* Problem20Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E6539825B92C1A006D0D0B /* Problem20Op.swift */; };
 		B0E6539E25B92C23006D0D0B /* Problem20Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E6539D25B92C23006D0D0B /* Problem20Tests.swift */; };
@@ -211,6 +213,8 @@
 		B0D8F5AA25A38FEE00129FA3 /* Problem7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem7Tests.swift; sourceTree = "<group>"; };
 		B0D9390425AFDFC700951EDD /* Problem11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem11.swift; sourceTree = "<group>"; };
 		B0D9390925AFE05500951EDD /* Problem11Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem11Op.swift; sourceTree = "<group>"; };
+		B0E2AED425C729AB00B33B19 /* Problem24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem24.swift; sourceTree = "<group>"; };
+		B0E2AED925C72A1900B33B19 /* Problem24Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem24Op.swift; sourceTree = "<group>"; };
 		B0E6539325B92C04006D0D0B /* Problem20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem20.swift; sourceTree = "<group>"; };
 		B0E6539825B92C1A006D0D0B /* Problem20Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem20Op.swift; sourceTree = "<group>"; };
 		B0E6539D25B92C23006D0D0B /* Problem20Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem20Tests.swift; sourceTree = "<group>"; };
@@ -362,6 +366,7 @@
 				B0F4A6B225C25AA400887805 /* Problem21Op.swift */,
 				B04417DD25C59974007AC901 /* Problem22Op.swift */,
 				B04417FD25C631C5007AC901 /* Problem23Op.swift */,
+				B0E2AED925C72A1900B33B19 /* Problem24Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				B04417D825C5983C007AC901 /* Problem22.swift */,
 				B04417E225C59B81007AC901 /* Problem22Names.txt */,
 				B04417F825C6143E007AC901 /* Problem23.swift */,
+				B0E2AED425C729AB00B33B19 /* Problem24.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 				B05C55C2259FB1410077BEC2 /* IntExtension.swift in Sources */,
 				B04417D925C5983C007AC901 /* Problem22.swift in Sources */,
 				B0533FFC259B87B1002B9581 /* Logger.swift in Sources */,
+				B0E2AED525C729AB00B33B19 /* Problem24.swift in Sources */,
 				B0C58B7E25B9107C00AE97DA /* Problem19Op.swift in Sources */,
 				B07BBD2F259D20F900A8DE25 /* Problem2Op.swift in Sources */,
 				B0C58B6625B88A5A00AE97DA /* Problem18Op.swift in Sources */,
@@ -621,6 +628,7 @@
 				B07BBD07259C163E00A8DE25 /* Problem3.swift in Sources */,
 				B0D8F59725A37A1100129FA3 /* Problem6.swift in Sources */,
 				B0EDEDEF25A3CE8F006A3C45 /* Problem8.swift in Sources */,
+				B0E2AEDA25C72A1900B33B19 /* Problem24Op.swift in Sources */,
 				B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */,
 				B05C5585259D388E0077BEC2 /* Problem3Op.swift in Sources */,
 				B04417FE25C631C5007AC901 /* Problem23Op.swift in Sources */,
@@ -845,7 +853,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.23;
+				MARKETING_VERSION = 1.24;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -871,7 +879,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.23;
+				MARKETING_VERSION = 1.24;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
