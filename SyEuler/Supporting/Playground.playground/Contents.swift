@@ -4,79 +4,79 @@
 import Foundation
 
 /**
-Returns the sum of all the positive integers which cannot be written as the sum of two abundant numbers..
-
-Every integer greater than 20161 can be written as the sum of two abundant numbers.
-I know the problem says 28123, but my research shows it's actually 20161.
-https://en.wikipedia.org/wiki/Abundant_number
+Computes  the Nth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9, where N is `target`.
 
 - Parameter target: The target number to consider.
-- Returns: The sum, or `nil` or if out of range.
+- Returns: The permutation, or `nil` if cancelled before completion.
 */
-func compute(target: Int) -> Int? {
+func compute(target: Int) -> String? {
 	guard target > 0 else { return nil }
-	let max = min(target, 20161)
-	abundantNumbers = []
-	/// Find all abundant numbers in the range
-	for number in 1...max {
-		if sumOfProperDivisors(of: number) > number {
-			abundantNumbers.insert(number)
+	var count = 1
+	let digits = "0123456789"
+	var permutation = Array(digits)
+	let last = permutation.count - 1
+	while count < target {
+		let first = findFirst(permutation)
+		if first == -1 {
+			break
 		}
+		let second = findSecond(target: permutation, first: permutation[first], start: first + 1, end: last)
+		permutation.swapAt(first, second)
+		reverse(&permutation, first + 1, last)
+		count += 1
 	}
-	/// Compute the sum by considering all numbers up to our `max`.
-	/// Even some abundant numbers are not sums of abundant numbers.
-	var sum = 0
-	for nonAbundant in 1...max {
-		if !isSumOfAbundantNumbers(nonAbundant) {
-			sum += nonAbundant
-		}
-	}
-	return sum
+	return String(permutation)
 }
 
 /**
-Determines if `target` is the sum of abundant numbers.
-
-- Parameter target: The number to consider.
-- Returns: `true` if `target` is the sum of abundant numbers.
+Returns the index of the first digit to swap, where the first digit is the first that's smaller than one to it's right.
+- Parameter target: The array to consider.
+- Returns: The index fo the first digit.
 */
-func isSumOfAbundantNumbers(_ target: Int) -> Bool {
-	for abundantNumber in abundantNumbers {
-		if abundantNumbers.contains(target - abundantNumber) {
-			return true
+func findFirst(_ target: [String.Element]) -> Int {
+	for index in (0..<target.count-1).reversed() {
+		if target[index] < target[index+1] {
+			return index
 		}
 	}
-	return false
+	return -1
 }
 
 /**
-Returns the sum of all the proper divisors of `target`.
-
-- Parameter target: The number to consider.
-- Returns: The sum
+Returns the index of the second digit to swap, where the second digit is the smallest digit to the right of `start` that
+is greater than the `first` digit.
+- Parameter target: The array to consider.
+- Parameter first: The first digit to consider.
+- Parameter start: The start of the subsection.
+- Parameter end: The end of the subsection.
+- Returns: The index fo the second digit.
 */
-func sumOfProperDivisors(of target: Int) -> Int {
-	let t = abs(target)
-	guard t > 0 else { return 0 }
-	let max = sqrt(t)
-	guard max > 2 else { return 1 }
-	var sum = 1
-	for m in 2...max {
-		if t % m == 0 {
-			sum += m
-			let n = t / m
-			if m != n {
-				sum += n
-			}
+func findSecond(target: [String.Element], first: String.Element, start: Int, end: Int) -> Int {
+	guard start < end else { return end }
+	var ceilIndex = start
+	for index in (start+1)...end {
+		if target[index] > first && target[index] < target[ceilIndex] {
+			ceilIndex = index
 		}
 	}
-	return sum
+	return ceilIndex
 }
 
-func sqrt(_ x: Int) -> Int {
-	return Int(sqrt(Double(x)))
+/**
+Reverses a subsection of an array of String.Element. Reverses the entire array by default.
+- Parameter target: The array to consider.
+- Parameter start: The start of the subsection.
+- Parameter end: The end of the subsection.
+*/
+func reverse(_ target: inout [String.Element], _ start: Int = 0, _ end: Int = Int.max) {
+	guard start < end else { return }
+	var sstart = max(start, 0)
+	var eend = min(end, target.count - 1)
+	while sstart < eend {
+		target.swapAt(sstart, eend)
+		sstart += 1
+		eend -= 1
+	}
 }
 
-var abundantNumbers: Set<Int> = []
-
-compute(target: 28123)
+compute(target: 1_000_000)

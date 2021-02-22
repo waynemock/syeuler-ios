@@ -158,6 +158,30 @@ class ProblemIntOp: ProblemOp {
 	}
 }
 
+class ProblemStringOp: ProblemOp {
+
+	func compute(target: Int) -> StringAnswer? {
+		return nil
+	}
+
+	override func main() {
+		super.main()
+		if let target = Int(inputs[0]) {
+			if let answer = compute(target: target) {
+				results.answer = answer.asString
+				LogInfo(self, "answer=\(String(describing: answer.value))")
+			} else {
+				results.answer = "Canceled"
+			}
+		} else {
+			results.answer = "NaN"
+		}
+		results.isDone = true
+		results.precentComplete = nil
+		self.completion(results)
+	}
+}
+
 struct ProblemFormatter {
 
 	static let intFormatter: NumberFormatter = {
@@ -180,6 +204,26 @@ struct ProblemFormatter {
 
 	static func formatNth(int value: Int) -> String {
 		return nthFormatter.string(from: NSNumber(value: value)) ?? "\(value)"
+	}
+}
+
+struct StringAnswer {
+	var value: String?
+	var details: String?
+	var error: String?
+
+	var asString: String {
+		var answers = [String]()
+		if let value = value {
+			answers.append("Answer: \(value)")
+		}
+		if let details = details {
+			answers.append(details)
+		}
+		if let error = error {
+			answers.append(error)
+		}
+		return answers.joined(separator: "\n")
 	}
 }
 
