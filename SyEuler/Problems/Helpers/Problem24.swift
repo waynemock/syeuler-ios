@@ -15,11 +15,16 @@ class Problem24: Problem {
 	public override var defaultInput: String { return "1000000" }
 
 	public override var state: State { return .completed }
-	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Jan 31, 2021") }
-//	public override var completedAt: Date? { return Problem.dateFormatter.date(from: "Jan 31, 2021") }
+	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Feb 20, 2021") }
+	public override var completedAt: Date? { return Problem.dateFormatter.date(from: "Feb 22, 2021") }
 
 	public override func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
 		return Problem24Op(inputs: inputs, completion: completion)
 	}
+
+	public override var references: [ProblemReference] {[
+		ProblemReference(label: "Lexicographic order", link: "https://en.wikipedia.org/wiki/Lexicographic_order"),
+		ProblemReference(label: "Lexicographic order algorithm", link: "https://www.geeksforgeeks.org/lexicographic-permutations-of-string/"),
+	]}
 }
 
