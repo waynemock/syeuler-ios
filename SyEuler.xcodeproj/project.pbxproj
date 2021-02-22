@@ -37,6 +37,7 @@
 		B066C32525B34ADB0033D470 /* Problem13.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066C32425B34ADB0033D470 /* Problem13.swift */; };
 		B066C32A25B34C120033D470 /* Problem13Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066C32925B34C120033D470 /* Problem13Op.swift */; };
 		B066C32F25B3ADC30033D470 /* Problem13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B066C32E25B3ADC30033D470 /* Problem13Tests.swift */; };
+		B07362F325E4135E001F65B6 /* Problem24Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07362F225E4135E001F65B6 /* Problem24Tests.swift */; };
 		B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC70259B8F8200A8DE25 /* Problem2.swift */; };
 		B07BBC79259B92E000A8DE25 /* ProblemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC78259B92E000A8DE25 /* ProblemRow.swift */; };
 		B07BBC88259B981200A8DE25 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07BBC87259B981200A8DE25 /* UIColorExtension.swift */; };
@@ -160,6 +161,7 @@
 		B066C32425B34ADB0033D470 /* Problem13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem13.swift; sourceTree = "<group>"; };
 		B066C32925B34C120033D470 /* Problem13Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem13Op.swift; sourceTree = "<group>"; };
 		B066C32E25B3ADC30033D470 /* Problem13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem13Tests.swift; sourceTree = "<group>"; };
+		B07362F225E4135E001F65B6 /* Problem24Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem24Tests.swift; sourceTree = "<group>"; };
 		B07BBC70259B8F8200A8DE25 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 		B07BBC78259B92E000A8DE25 /* ProblemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemRow.swift; sourceTree = "<group>"; };
 		B07BBC87259B981200A8DE25 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				B0F4A6B725C25AB400887805 /* Problem21Tests.swift */,
 				B04417ED25C5DB26007AC901 /* Problem22Tests.swift */,
 				B044180225C71A1A007AC901 /* Problem23Tests.swift */,
+				B07362F225E4135E001F65B6 /* Problem24Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -678,6 +681,7 @@
 				B0EDEDF925A3FA7D006A3C45 /* Problem8Tests.swift in Sources */,
 				B0C5F29925A627E400040156 /* Problem10Tests.swift in Sources */,
 				B0E950C825B099D600F9B94B /* Problem11Tests.swift in Sources */,
+				B07362F325E4135E001F65B6 /* Problem24Tests.swift in Sources */,
 				B05C55A5259E18920077BEC2 /* Problem3Tests.swift in Sources */,
 				B0D56C9325B3CE3400699F63 /* Problem14Tests.swift in Sources */,
 				B0E6539E25B92C23006D0D0B /* Problem20Tests.swift in Sources */,

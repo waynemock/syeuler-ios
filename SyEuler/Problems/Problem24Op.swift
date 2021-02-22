@@ -26,7 +26,7 @@ class Problem24Op: ProblemStringOp {
 			if first == -1 {
 				break
 			}
-			let second = findSecond(target: permutation, first: permutation[first], low: first + 1, high: last)
+			let second = findSecond(target: permutation, first: permutation[first], start: first + 1, end: last)
 			permutation.swapAt(first, second)
 			reverse(&permutation, first + 1, last)
 			count += 1
@@ -38,6 +38,11 @@ class Problem24Op: ProblemStringOp {
 		return StringAnswer(value: String(permutation))
 	}
 
+	/**
+	Returns the index of the first digit to swap, where the first digit is the first that's smaller than one to it's right.
+	- Parameter target: The array to consider.
+	- Returns: The index fo the first digit.
+	*/
 	func findFirst(_ target: [String.Element]) -> Int {
 		for index in (0..<target.count-1).reversed() {
 			if target[index] < target[index+1] {
@@ -47,10 +52,19 @@ class Problem24Op: ProblemStringOp {
 		return -1
 	}
 
-	func findSecond(target: [String.Element], first: String.Element, low: Int, high: Int) -> Int {
-		guard low < high else { return high }
-		var ceilIndex = low
-		for index in (low+1)...high {
+	/**
+	Returns the index of the second digit to swap, where the second digit is the smallest digit to the right of `start` that
+	is greater than the `first` digit.
+	- Parameter target: The array to consider.
+	- Parameter first: The first digit to consider.
+	- Parameter start: The start of the subsection.
+	- Parameter end: The end of the subsection.
+	- Returns: The index fo the second digit.
+	*/
+	func findSecond(target: [String.Element], first: String.Element, start: Int, end: Int) -> Int {
+		guard start < end else { return end }
+		var ceilIndex = start
+		for index in (start+1)...end {
 			if target[index] > first && target[index] < target[ceilIndex] {
 				ceilIndex = index
 			}
@@ -58,15 +72,20 @@ class Problem24Op: ProblemStringOp {
 		return ceilIndex
 	}
 
-	func reverse(_ target: inout [String.Element], _ low: Int, _ high: Int) {
-		guard low < high else { return }
-		var l = max(low, 0)
-		var h = min(high, target.count - 1)
-		while l < h {
-			target.swapAt(l, h)
-			l += 1
-			h -= 1
+	/**
+	Reverses a subsection of an array of String.Element. Reverses the entire array by default.
+	- Parameter target: The array to consider.
+	- Parameter start: The start of the subsection.
+	- Parameter end: The end of the subsection.
+	*/
+	func reverse(_ target: inout [String.Element], _ start: Int = 0, _ end: Int = Int.max) {
+		guard start < end else { return }
+		var sstart = max(start, 0)
+		var eend = min(end, target.count - 1)
+		while sstart < eend {
+			target.swapAt(sstart, eend)
+			sstart += 1
+			eend -= 1
 		}
 	}
-
 }
