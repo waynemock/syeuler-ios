@@ -17,13 +17,13 @@ Uses a simple formula based on tBinet's Formula. The number of digits in Fib(n) 
 */
 func compute(target: Int) -> Int? {
 	guard target > 0 else { return nil }
-	var index = 0
+	var n = 0
 	var numDigits = 1
 	while numDigits < target {
-		index += 1
-		numDigits = Double.fibDigits(of: index)
+		n += 1
+		numDigits = Double.digits(ofFib: n)
 	}
-	return index
+	return n
 }
 
 extension Double {
@@ -32,12 +32,12 @@ extension Double {
 	static let log5by2 = log10(5.0) / 2
 
 	/**
-	Computes the number of digits in the Fibonacci Fib(`index`)
-	- Parameter index: The Fibonacci index to consider
-	- Returns: The number of digits of Fib(`index`)
+	Computes the number of digits in the Fibonacci `Fib(n)`
+	- Parameter fibN: The Fibonacci index to consider
+	- Returns: The number of digits of `Fib(n)`
 	*/
-	static func fibDigits(of index: Int) -> Int {
-		return Int((Double(index) * Double.logPhi) - Double.log5by2) + 1
+	static func digits(ofFib n: Int) -> Int {
+		return Int((Double(n) * Double.logPhi) - Double.log5by2) + 1
 	}
 }
 
