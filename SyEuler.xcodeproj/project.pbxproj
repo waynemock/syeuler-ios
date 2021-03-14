@@ -62,6 +62,7 @@
 		B095429825A20CFD00007D5F /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095429725A20CFD00007D5F /* Problem5.swift */; };
 		B095429D25A20D7200007D5F /* Problem5Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095429C25A20D7200007D5F /* Problem5Op.swift */; };
 		B09542B225A23F8000007D5F /* Problem5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09542B125A23F8000007D5F /* Problem5Tests.swift */; };
+		B0971A4325FEBA3200A105F7 /* Problem26Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0971A4225FEBA3200A105F7 /* Problem26Tests.swift */; };
 		B0C58B6125B88A4F00AE97DA /* Problem18.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C58B6025B88A4F00AE97DA /* Problem18.swift */; };
 		B0C58B6625B88A5A00AE97DA /* Problem18Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C58B6525B88A5A00AE97DA /* Problem18Op.swift */; };
 		B0C58B6B25B88A6300AE97DA /* Problem18Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C58B6A25B88A6300AE97DA /* Problem18Tests.swift */; };
@@ -192,6 +193,7 @@
 		B095429C25A20D7200007D5F /* Problem5Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Op.swift; sourceTree = "<group>"; };
 		B09542B125A23F8000007D5F /* Problem5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Tests.swift; sourceTree = "<group>"; };
 		B09542B925A2AE7200007D5F /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B0971A4225FEBA3200A105F7 /* Problem26Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem26Tests.swift; sourceTree = "<group>"; };
 		B0C58B6025B88A4F00AE97DA /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
 		B0C58B6525B88A5A00AE97DA /* Problem18Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18Op.swift; sourceTree = "<group>"; };
 		B0C58B6A25B88A6300AE97DA /* Problem18Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18Tests.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				B044180225C71A1A007AC901 /* Problem23Tests.swift */,
 				B07362F225E4135E001F65B6 /* Problem24Tests.swift */,
 				B08D552C25E4AEE80028C397 /* Problem25Tests.swift */,
+				B0971A4225FEBA3200A105F7 /* Problem26Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -715,6 +718,7 @@
 				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
 				B09542B225A23F8000007D5F /* Problem5Tests.swift in Sources */,
 				B0C58B8325B9109000AE97DA /* Problem19Tests.swift in Sources */,
+				B0971A4325FEBA3200A105F7 /* Problem26Tests.swift in Sources */,
 				B05C55CA259FE7D00077BEC2 /* Problem4Tests.swift in Sources */,
 				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);

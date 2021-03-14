@@ -14,9 +14,9 @@ class Problem26: Problem {
 	public override var summary: String { return "Find the value of d < 1000 for which 1/d contains the longest recurring cycle in its decimal fraction part." }
 	public override var defaultInput: String { return "1000" }
 
-	public override var state: State { return .inProgress }
+	public override var state: State { return .completed }
 	public override var startedAt: Date? { return Problem.dateFormatter.date(from: "Feb 24, 2021") }
-//	public override var completedAt: Date? { return Problem.dateFormatter.date(from: "Feb 22, 2021") }
+	public override var completedAt: Date? { return Problem.dateFormatter.date(from: "Feb 25, 2021") }
 
 	public override func getOp(inputs: [String], completion: @escaping ProblemOpCompletion) -> ProblemOp {
 		return Problem26Op(inputs: inputs, completion: completion)
