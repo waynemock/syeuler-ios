@@ -78,6 +78,8 @@
 		B0CEE7FB25B524D7004873E7 /* Problem16Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */; };
 		B0CEE80325B6440F004873E7 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE80225B6440F004873E7 /* BigInt.swift */; };
 		B0CEE81325B64A68004873E7 /* Problem16Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE81225B64A68004873E7 /* Problem16Tests.swift */; };
+		B0D39BE125E73E6A00057C65 /* Problem26Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D39BE025E73E6A00057C65 /* Problem26Op.swift */; };
+		B0D39BE625E73E7B00057C65 /* Problem26.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D39BE525E73E7B00057C65 /* Problem26.swift */; };
 		B0D3EC5425E47218000ECCE0 /* Problem25Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EC5325E47218000ECCE0 /* Problem25Op.swift */; };
 		B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8825B3C6E700699F63 /* Problem14Op.swift */; };
 		B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8D25B3C75B00699F63 /* Problem14.swift */; };
@@ -207,6 +209,8 @@
 		B0CEE80225B6440F004873E7 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
 		B0CEE81225B64A68004873E7 /* Problem16Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16Tests.swift; sourceTree = "<group>"; };
 		B0CEE82025B6566A004873E7 /* SyEuler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyEuler.entitlements; sourceTree = "<group>"; };
+		B0D39BE025E73E6A00057C65 /* Problem26Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem26Op.swift; sourceTree = "<group>"; };
+		B0D39BE525E73E7B00057C65 /* Problem26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem26.swift; sourceTree = "<group>"; };
 		B0D3EC5325E47218000ECCE0 /* Problem25Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem25Op.swift; sourceTree = "<group>"; };
 		B0D56C8825B3C6E700699F63 /* Problem14Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Op.swift; sourceTree = "<group>"; };
 		B0D56C8D25B3C75B00699F63 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
@@ -378,6 +382,7 @@
 				B04417FD25C631C5007AC901 /* Problem23Op.swift */,
 				B0E2AED925C72A1900B33B19 /* Problem24Op.swift */,
 				B0D3EC5325E47218000ECCE0 /* Problem25Op.swift */,
+				B0D39BE025E73E6A00057C65 /* Problem26Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 				B04417F825C6143E007AC901 /* Problem23.swift */,
 				B0E2AED425C729AB00B33B19 /* Problem24.swift */,
 				B08905BF25E47049005F4B61 /* Problem25.swift */,
+				B0D39BE525E73E7B00057C65 /* Problem26.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -634,6 +640,7 @@
 				B0D9390525AFDFC800951EDD /* Problem11.swift in Sources */,
 				B07BBC97259BA17F00A8DE25 /* GeneralInfo.swift in Sources */,
 				B0C5F28F25A61EBA00040156 /* Problem10.swift in Sources */,
+				B0D39BE125E73E6A00057C65 /* Problem26Op.swift in Sources */,
 				B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */,
 				B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */,
 				B0C58B7925B9107100AE97DA /* Problem19.swift in Sources */,
@@ -650,6 +657,7 @@
 				B08BEE7A25B67DCE00EB59C5 /* Problem17.swift in Sources */,
 				B095429825A20CFD00007D5F /* Problem5.swift in Sources */,
 				B0EDEDF425A3CEC1006A3C45 /* Problem8Op.swift in Sources */,
+				B0D39BE625E73E7B00057C65 /* Problem26.swift in Sources */,
 				B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */,
 				B066C32525B34ADB0033D470 /* Problem13.swift in Sources */,
 				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
