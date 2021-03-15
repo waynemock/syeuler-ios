@@ -19,6 +19,7 @@ class Problem26Op: ProblemIntOp {
 		guard target > 0 else { return IntAnswer(error: "Must be > 0") }
 		for (index, value) in (0..<target).reversed().enumerated() {
 			if isCancelled { return nil }
+			/// Assumes the answer will be a cyclic number where it's recurring cycle length is itself - 1
 			if recurringCycleLength(of: value) == (value - 1) {
 				return IntAnswer(value: value)
 			}
@@ -36,8 +37,8 @@ class Problem26Op: ProblemIntOp {
 	func recurringCycleLength(of target: Int) -> Int {
 		var n = 10, q = 0, r = 0
 		var qr = [String:Int]()
-		while qr["\(q).\(r)"] == nil && !isCancelled {
-			qr["\(q).\(r)"] = n
+		while qr["\(q) \(r)"] == nil && !isCancelled {
+			qr["\(q) \(r)"] = n
 			q = n / target
 			r = n % target
 			n = r * 10
