@@ -62,6 +62,7 @@
 		B095429825A20CFD00007D5F /* Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095429725A20CFD00007D5F /* Problem5.swift */; };
 		B095429D25A20D7200007D5F /* Problem5Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095429C25A20D7200007D5F /* Problem5Op.swift */; };
 		B09542B225A23F8000007D5F /* Problem5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09542B125A23F8000007D5F /* Problem5Tests.swift */; };
+		B0971A4325FEBA3200A105F7 /* Problem26Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0971A4225FEBA3200A105F7 /* Problem26Tests.swift */; };
 		B0C58B6125B88A4F00AE97DA /* Problem18.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C58B6025B88A4F00AE97DA /* Problem18.swift */; };
 		B0C58B6625B88A5A00AE97DA /* Problem18Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C58B6525B88A5A00AE97DA /* Problem18Op.swift */; };
 		B0C58B6B25B88A6300AE97DA /* Problem18Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C58B6A25B88A6300AE97DA /* Problem18Tests.swift */; };
@@ -78,6 +79,8 @@
 		B0CEE7FB25B524D7004873E7 /* Problem16Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE7FA25B524D7004873E7 /* Problem16Op.swift */; };
 		B0CEE80325B6440F004873E7 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE80225B6440F004873E7 /* BigInt.swift */; };
 		B0CEE81325B64A68004873E7 /* Problem16Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEE81225B64A68004873E7 /* Problem16Tests.swift */; };
+		B0D39BE125E73E6A00057C65 /* Problem26Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D39BE025E73E6A00057C65 /* Problem26Op.swift */; };
+		B0D39BE625E73E7B00057C65 /* Problem26.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D39BE525E73E7B00057C65 /* Problem26.swift */; };
 		B0D3EC5425E47218000ECCE0 /* Problem25Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EC5325E47218000ECCE0 /* Problem25Op.swift */; };
 		B0D56C8925B3C6E700699F63 /* Problem14Op.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8825B3C6E700699F63 /* Problem14Op.swift */; };
 		B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D56C8D25B3C75B00699F63 /* Problem14.swift */; };
@@ -190,6 +193,7 @@
 		B095429C25A20D7200007D5F /* Problem5Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Op.swift; sourceTree = "<group>"; };
 		B09542B125A23F8000007D5F /* Problem5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem5Tests.swift; sourceTree = "<group>"; };
 		B09542B925A2AE7200007D5F /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B0971A4225FEBA3200A105F7 /* Problem26Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem26Tests.swift; sourceTree = "<group>"; };
 		B0C58B6025B88A4F00AE97DA /* Problem18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18.swift; sourceTree = "<group>"; };
 		B0C58B6525B88A5A00AE97DA /* Problem18Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18Op.swift; sourceTree = "<group>"; };
 		B0C58B6A25B88A6300AE97DA /* Problem18Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem18Tests.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 		B0CEE80225B6440F004873E7 /* BigInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
 		B0CEE81225B64A68004873E7 /* Problem16Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem16Tests.swift; sourceTree = "<group>"; };
 		B0CEE82025B6566A004873E7 /* SyEuler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyEuler.entitlements; sourceTree = "<group>"; };
+		B0D39BE025E73E6A00057C65 /* Problem26Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem26Op.swift; sourceTree = "<group>"; };
+		B0D39BE525E73E7B00057C65 /* Problem26.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem26.swift; sourceTree = "<group>"; };
 		B0D3EC5325E47218000ECCE0 /* Problem25Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem25Op.swift; sourceTree = "<group>"; };
 		B0D56C8825B3C6E700699F63 /* Problem14Op.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14Op.swift; sourceTree = "<group>"; };
 		B0D56C8D25B3C75B00699F63 /* Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem14.swift; sourceTree = "<group>"; };
@@ -335,6 +341,7 @@
 				B044180225C71A1A007AC901 /* Problem23Tests.swift */,
 				B07362F225E4135E001F65B6 /* Problem24Tests.swift */,
 				B08D552C25E4AEE80028C397 /* Problem25Tests.swift */,
+				B0971A4225FEBA3200A105F7 /* Problem26Tests.swift */,
 				B0533FB4259B84F3002B9581 /* SyEulerTests.swift */,
 			);
 			path = SyEulerTests;
@@ -378,6 +385,7 @@
 				B04417FD25C631C5007AC901 /* Problem23Op.swift */,
 				B0E2AED925C72A1900B33B19 /* Problem24Op.swift */,
 				B0D3EC5325E47218000ECCE0 /* Problem25Op.swift */,
+				B0D39BE025E73E6A00057C65 /* Problem26Op.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -471,6 +479,7 @@
 				B04417F825C6143E007AC901 /* Problem23.swift */,
 				B0E2AED425C729AB00B33B19 /* Problem24.swift */,
 				B08905BF25E47049005F4B61 /* Problem25.swift */,
+				B0D39BE525E73E7B00057C65 /* Problem26.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -634,6 +643,7 @@
 				B0D9390525AFDFC800951EDD /* Problem11.swift in Sources */,
 				B07BBC97259BA17F00A8DE25 /* GeneralInfo.swift in Sources */,
 				B0C5F28F25A61EBA00040156 /* Problem10.swift in Sources */,
+				B0D39BE125E73E6A00057C65 /* Problem26Op.swift in Sources */,
 				B07BBC71259B8F8200A8DE25 /* Problem2.swift in Sources */,
 				B0533FA5259B84F1002B9581 /* ProblemList.swift in Sources */,
 				B0C58B7925B9107100AE97DA /* Problem19.swift in Sources */,
@@ -650,6 +660,7 @@
 				B08BEE7A25B67DCE00EB59C5 /* Problem17.swift in Sources */,
 				B095429825A20CFD00007D5F /* Problem5.swift in Sources */,
 				B0EDEDF425A3CEC1006A3C45 /* Problem8Op.swift in Sources */,
+				B0D39BE625E73E7B00057C65 /* Problem26.swift in Sources */,
 				B0D56C8E25B3C75B00699F63 /* Problem14.swift in Sources */,
 				B066C32525B34ADB0033D470 /* Problem13.swift in Sources */,
 				B07BBD0F259C234300A8DE25 /* GoButton.swift in Sources */,
@@ -707,6 +718,7 @@
 				B07BBCE3259BE36500A8DE25 /* Problem2Tests.swift in Sources */,
 				B09542B225A23F8000007D5F /* Problem5Tests.swift in Sources */,
 				B0C58B8325B9109000AE97DA /* Problem19Tests.swift in Sources */,
+				B0971A4325FEBA3200A105F7 /* Problem26Tests.swift in Sources */,
 				B05C55CA259FE7D00077BEC2 /* Problem4Tests.swift in Sources */,
 				B0533FB5259B84F3002B9581 /* SyEulerTests.swift in Sources */,
 			);
@@ -869,7 +881,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.25;
+				MARKETING_VERSION = 1.26;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -895,7 +907,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.25;
+				MARKETING_VERSION = 1.26;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syzygysoftwerksllc.SyEuler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
