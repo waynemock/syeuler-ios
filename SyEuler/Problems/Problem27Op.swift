@@ -10,10 +10,11 @@ import Foundation
 
 class Problem27Op: ProblemIntOp {
 	/**
-	Returns the value of `d < target` for which `1/d` contains the longest recurring cycle in its decimal fraction part.
+	Returns the product of the coefficients, `a` and `b`, for the quadratic expression `n*n + an + b`,
+	that produces the maximum number of primes for consecutive values of `n`, starting with `n = 0`.
 
-	- Parameter target: The largest denominator to consider
-	- Returns: The longest recurring cycle, or `nil` if cancelled before completion.
+	- Parameter target: The largest `b` to consider
+	- Returns: The product of a and b, or `nil` if cancelled before completion.
 	*/
 	override func compute(target: Int) -> IntAnswer? {
 		guard target > 1 else { return IntAnswer(error: "No solution") }
